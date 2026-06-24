@@ -1,0 +1,20 @@
+[
+	{
+		"id": "64",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-02-10T07:44:14.000Z",
+		"content": "http://www.marumushi.com/apps/flickrgraph/flickrgraph.cfm\nFlickGraph ist ein SocialNetwork-Grapher... Stellt also verbindungen zwischen einzelnnen Flickr Bildern her.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "101",
+		"author": "Glück auf! - Andreas sein Weblog",
+		"authorUrl": "http://www.andreas.de/wordpress/archives/2005/02/23/flickr-spielerei/",
+		"date": "2005-02-23T18:44:17.000Z",
+		"content": "<strong>Flickr Spielerei</strong>\nFlicker Spielerei : kurze Betrachtung eines Hypes",
+		"parent": "0",
+		"type": "trackback"
+	}
+]

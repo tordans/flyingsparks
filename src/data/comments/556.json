@@ -1,0 +1,20 @@
+[
+	{
+		"id": "33144",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-27T10:08:49.000Z",
+		"content": "Ergänzung: Johnny Lee zeigt seine Technik auf den TED Talks 2008 und erwähnt, welche Bedeutung YouTube bei der Verbreitung dieser Idee hatte...  http://www.ted.com/speakers/view/id/204",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33233",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-02-18T15:52:49.000Z",
+		"content": "Ergänzung: Man kann das auch ohne Wii, ein cooles YouTube-Video bei dem mit Hilfe von normalen WebCams Objekte erkannt und deren Bewegungen verfolgt werden:\nhttp://www.youtube.com/watch?v=v0srY37kkMw&eurl=http://dev01.nexum.de/flurfunk/&feature=player_embedded\n\n<object width=\"320\" height=\"265\"><param name=\"movie\" value=\"http://www.youtube.com/v/v0srY37kkMw&hl=en&fs=1\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/v0srY37kkMw&hl=en&fs=1\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"320\" height=\"265\"></embed></object>",
+		"parent": "0",
+		"type": "comment"
+	}
+]

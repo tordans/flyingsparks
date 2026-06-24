@@ -1,0 +1,43 @@
+---
+// Renders every migrated post and page at its original WordPress permalink
+// (e.g. /2006-04-24/zeichnen-nicht-reden/ and /ueber/) for 1:1 URL parity.
+// Drafts + private entries are excluded from the build (preserved in the repo).
+import { getCollection, render } from 'astro:content';
+import Post from '../layouts/Post.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts', ({ data }) => !data.draft);
+	const pages = await getCollection('pages', ({ data }) => !data.draft);
+
+	const entries = [
+		...posts.map((entry) => ({ entry, type: 'post' as const })),
+		...pages.map((entry) => ({ entry, type: 'page' as const })),
+	].filter(({ entry }) => entry.data.permalink);
+
+	const seen = new Set<string>();
+	const paths = [];
+	for (const { entry, type } of entries) {
+		const permalink = entry.data.permalink!.replace(/^\/|\/$/g, '');
+		if (seen.has(permalink)) continue;
+		seen.add(permalink);
+		paths.push({ params: { permalink }, props: { entry, type } });
+	}
+	return paths;
+}
+
+const { entry, type } = Astro.props;
+const { Content } = await render(entry);
+const { title, description, pubDate, updatedDate, tags, wpPostId } = entry.data;
+---
+
+<Post
+	title={title}
+	description={description}
+	pubDate={pubDate}
+	updatedDate={updatedDate}
+	tags={tags}
+	wpPostId={wpPostId}
+	kind={type}
+>
+	<Content />
+</Post>

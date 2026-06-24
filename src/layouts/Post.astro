@@ -1,0 +1,82 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Comments from '../components/Comments.astro';
+import { tagSlug } from '../lib/slug';
+import { SITE_TITLE } from '../consts';
+
+interface Props {
+	title: string;
+	description?: string;
+	pubDate: Date;
+	updatedDate?: Date;
+	tags?: string[];
+	wpPostId?: string;
+	kind?: 'post' | 'page';
+}
+const { title, description, pubDate, updatedDate, tags = [], wpPostId, kind = 'post' } = Astro.props;
+const isPost = kind === 'post';
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`${title} — ${SITE_TITLE}`} description={description ?? ''} />
+	</head>
+	<body id={isPost ? 'single' : 'page'} class={isPost ? 'einzeln' : 'content'}>
+		<Header variant="single" />
+
+		<div id="vorwort">
+			<p class="rss">
+				Tipp: <a href="/feed/">RSS-Liste der Artikel</a> und <a href="/comments/feed/">Kommentare</a>.
+			</p>
+		</div>
+
+		<article class="einPost postsingle" id={`post${wpPostId ?? ''}`}>
+			<h2 class="posttitel"><span set:html={title} /></h2>
+			<div class="post-content">
+				<slot />
+			</div>
+			{
+				tags.length > 0 && (
+					<div class="post-tags">
+						<strong>Themen:</strong>{' '}
+						{tags.map((t, i) => (
+							<>
+								{i > 0 && ', '}
+								<a class="tag" href={`/tag/${tagSlug(t)}/`}>{t}</a>
+							</>
+						))}
+					</div>
+				)
+			}
+		</article>
+
+		<aside class="einPostMeta" id={`post${wpPostId ?? ''}Meta`}>
+			<ul>
+				<li>
+					&lowast; <strong>abgehoben am:</strong><br />
+					<FormattedDate date={pubDate} />
+				</li>
+				{
+					updatedDate && (
+						<li>
+							&lowast; <strong>letzter Aufwind:</strong><br />
+							<FormattedDate date={updatedDate} />
+						</li>
+					)
+				}
+			</ul>
+		</aside>
+
+		<div class="clear"></div>
+
+		{isPost && <div id="kommentare"><Comments postId={wpPostId} /></div>}
+
+		<Sidebar />
+		<Footer />
+	</body>
+</html>

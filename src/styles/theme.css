@@ -1,0 +1,220 @@
+/*
+ * flyingsparks theme — faithful recreation of the original WordPress "flyingspark"
+ * theme (v3.0 by Tobias Jordans). Layout, colours and typography preserved; image
+ * URLs point to /theme/, comment markup mapped to the Astro components, plus a
+ * responsive fallback for narrow viewports.
+ *
+ * Accent: #FF8C00 (orange) · light: #ffece0 · grays: #dcdcdc/#d3d3d3/#ebebeb
+ */
+
+/* ---------- reset (from alles-null.css) ---------- */
+html, body, div, p, address, blockquote, noscript,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, pre, dl, dt, dd,
+span, a, cite, q, b, strong, i, em, big, small, abbr, acronym, code, dfn,
+hr, img, br,
+label, legend,
+table, caption, thead, tbody, tfoot, td, th, tr, tt {
+	margin: 0;
+	padding: 0;
+	border: 0 solid;
+}
+form, fieldset, object, button, input, textarea { margin: 0; padding: 0; }
+* { box-sizing: border-box; }
+
+/* ---------- globals ---------- */
+body {
+	font: normal normal normal 75%/130% Verdana, sans-serif;
+	background: #dcdcdc url(/theme/bg_seite.gif) repeat left;
+	width: 800px;
+	margin: 0 auto;
+}
+.ausblenden { display: none; }
+acronym, abbr { background-color: #dcdcdc; }
+code {
+	font-size: 130%; font-family: monospace; font-weight: normal;
+	padding: 0 3px; color: #696969; background-color: #dcdcdc;
+}
+pre {
+	font-size: 120%; line-height: 105%; font-family: monospace; margin: 8px 0;
+	overflow-x: auto; background: #f4f4f4; padding: 8px;
+}
+p { margin-bottom: .8em; }
+ul { margin: 10px 0 15px 0; padding-left: 35px; }
+ul li { list-style: disc outside url(/theme/listenstern.gif); margin-bottom: 2px; }
+li ol, li ul { margin: 3px 0 3px 20px; }
+li ul li { list-style: disc outside url(/theme/listenstern_orange.gif); }
+
+img { margin: 5px 0 7px 0; vertical-align: text-bottom; border: 0; max-width: 100%; height: auto; }
+.post-content img { border: 15px solid #ebebeb; }
+img.noborder, img.nix, img.keinrand, img.nostyle { border: 0; }
+a img { margin: 0; border: 0; }
+figure { margin: 1em 0; }
+figcaption { font-size: 90%; color: gray; margin-top: 4px; }
+
+blockquote, ins.block, .update, div.block {
+	background: #ffece0 url(/theme/bg_zitat.gif) repeat top;
+	margin: 0 -15px 5px -15px; padding: 5px 15px 5px 7px;
+	border-left: 8px solid #ff8c00;
+}
+ins.block, .update, div.block { display: block; background-color: #ffece0; margin-top: 15px; margin-bottom: 15px; }
+ins { text-decoration: none; }
+blockquote, q { font-family: Georgia, serif; font-size: 110%; line-height: 160%; background-color: #eaf2ff; border-left-color: #d1d4fc; }
+blockquote p { font-family: Georgia, serif; }
+
+/* ---------- links ---------- */
+a:link, a:visited, a:hover, a:active {
+	color: black; text-decoration: none; padding: 0 1px; border-bottom: 1px solid #ff8c00;
+}
+a:visited { color: #f4ab6d; }
+#kopf a.headlink:link, #vorwort a:link, .einPostMeta a:link { color: gray; border-bottom-color: gray; }
+#kopf a.headlink:visited, #vorwort a:visited, .einPostMeta a:visited { color: #f4ab6d; border-bottom-color: gray; }
+a:hover, a:active { background-color: black; color: white !important; border-bottom-width: 2px; border-bottom-color: #ff8c00 !important; }
+
+#kopf h1, .einPostMeta, #vorwort { font: normal normal normal 95%/140% Arial, sans-serif; color: gray; }
+
+/* ---------- content headings ---------- */
+.post-content h2 {
+	font: normal normal bold 130%/100% "Trebuchet MS", sans-serif;
+	margin: 0 -15px; border-left: 8px solid #ff8c00; padding: 4px 15px; background-color: #ffece0;
+}
+.post-content h3 {
+	font: normal normal bold 130%/100% "Trebuchet MS", sans-serif; color: #ff8c00;
+	margin: 0 -15px; border-left: 8px solid #d3d3d3; padding: 4px 15px;
+	background: #ebebeb url(/theme/bg_headline.gif) repeat top;
+}
+.post-content h4 {
+	font: normal normal bold 110%/100% "Trebuchet MS", sans-serif;
+	margin-left: -15px; border-left: 8px solid #f4ab6d; padding-left: 7px;
+}
+.post-content { line-height: 160%; }
+.post-content a.taglink { color: silver !important; }
+
+/* ---------- column layout (800 = 600 + 199) ---------- */
+#kopf, #vorwort, .einPost, .einPostMeta, #sidebar, #footer {
+	overflow: hidden; display: inline-block; text-align: left;
+}
+#vorwort, #sidebar, #footer { width: 100%; }
+#kopf, .einPost, .einPostMeta, #linkDown { float: left; }
+#kopf, .einPost { width: 600px; }
+.einPostMeta, #linkDown { width: 199px; }
+#sidebar, #footer, .einPost, #vorwort { clear: left; }
+.clear, .floatend { clear: both; display: block; }
+
+/* ---------- #kopf (header) ---------- */
+#kopf h1 { background-color: white; width: 600px; margin: 0; padding: 12px 0 13px 0; }
+#kopf h1 img, #kopf h1 a#startseite { margin: 0; padding: 0; border: 0; background-color: transparent !important; }
+#kopf h1 img { float: left; margin-right: 22px; margin-top: -12px; }
+#kopf .ueber, #kopf .tags { display: block; }
+#kopf .tags { margin-top: 6px; }
+#kopf .tags a { margin-right: 6px; white-space: nowrap; }
+
+/* "Funken" timeline hero — canvas recreation of the original Flash header (600x175) */
+#flash-header { position: relative; width: 600px; height: 175px; display: block; background: #000; overflow: hidden; }
+#flash-header canvas { display: block; width: 100%; height: 100%; }
+#funken-tip {
+	position: absolute; transform: translate(-50%, -130%);
+	background: rgba(15, 15, 15, 0.96); color: #fff; border: 1px solid #ff8c00;
+	padding: 4px 8px; border-radius: 4px; font: normal 11px/1.35 Verdana, sans-serif;
+	max-width: 240px; pointer-events: none; z-index: 5; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+#funken-tip strong { display: block; color: #ffd27a; font-weight: bold; }
+#funken-tip span { color: #bbb; }
+.funken-label {
+	position: absolute; bottom: 4px; z-index: 4; pointer-events: none;
+	color: #a86a2a; font: normal 10px Verdana, sans-serif;
+}
+.funken-label-start { left: 8px; }
+.funken-label-end { right: 8px; }
+
+#linkDown ul { padding: 180px 0 0 0; margin: 0; }
+#linkDown li { margin: 0 0 3px 25px; list-style: square outside url(/theme/icon_pfeil-runter.gif); }
+
+/* ---------- #vorwort (foreword) ---------- */
+#vorwort { min-height: 100px; width: 600px; }
+#vorwort p { margin: 13px 0 0 15px; }
+#vorwort .rss img { vertical-align: middle; border: 0; }
+#dieUeberschrift, .page-title {
+	font-family: "Trebuchet MS", sans-serif; margin: 15px 0 0 0; padding: 15px 0 10px 15px;
+	background: #ffece0 url(/theme/bg_seite.gif) repeat top;
+}
+
+/* ---------- post list / single ---------- */
+.einPost .posttitel { background: #d3d3d3 url(/theme/bg_seite.gif) repeat top; margin: 0; border-top: 15px solid white; }
+.einPost .posttitel a, .einzeln .einPost .posttitel span {
+	font: normal normal bold 160%/100% "Trebuchet MS", sans-serif;
+	background: #ebebeb url(/theme/bg_headline.gif) repeat top;
+	padding: 45px 15px 10px 7px; margin: 0 0 0 8px; border: 0; display: block;
+}
+.einPost .posttitel a:hover, .einPost .posttitel a:active { color: #ff8c00 !important; background-color: black; }
+.einPost .post-content { padding: 15px 15px 45px 15px; background-color: white; }
+.einPostMeta ul { margin: 75px 0 0 10px; padding: 0; }
+.einPostMeta li { list-style: none; margin-bottom: 10px; }
+.post-tags { padding: 0 15px 20px; background: white; }
+.post-tags .tag { display: inline-block; margin: 0 6px 4px 0; }
+
+/* page (static) variant */
+#page .posttitel a, #page .posttitel span { font-size: 130%; padding: 20px 15px 10px 7px; }
+
+/* ---------- post index (home) ---------- */
+.tagline { color: gray; font-style: italic; padding: 0 15px; }
+.post-index { list-style: none; margin: 10px 0; padding: 0 15px; }
+.post-index li { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px dotted #ccc; list-style: none; }
+.post-index time { color: gray; white-space: nowrap; }
+
+/* ---------- sidebar ---------- */
+.nachOben { margin: 8px 0; }
+#sidebar .suche { margin-top: 15px; }
+#sidebar .suche, #sidebar .suche input { font-size: 1.3em; }
+#sidebar .suche .sucheingabe { width: 400px; max-width: 70%; }
+#sidebar .suche .suchbutton { width: 100px; }
+#sidebar .zweiSpalten { width: 290px; float: left; margin: 20px 9px 15px 0; }
+#sidebar .zweiSpalten h2 {
+	font: normal normal bold 140%/100% "Trebuchet MS", Arial, sans-serif;
+	background: white url(/theme/bg_seite.gif) repeat top; padding: 4px 5px 4px 20px;
+}
+
+/* ---------- comments (mapped from #commentarea) ---------- */
+.comments { clear: both; margin-top: 30px; background: white; padding: 15px; }
+.comments h2, .comments h3 {
+	font: normal normal bold 130%/100% "Trebuchet MS", sans-serif;
+	margin: 0 -15px 10px; border-left: 8px solid #ff8c00; padding: 4px 15px; background-color: #ffece0;
+}
+.comments h3 { margin-top: 25px; border-left-color: #d1d4fc; }
+.comment-list, .comment-children { list-style: none; margin: 5px 0 0; padding: 0 0 0 20px; }
+.comment-list { padding-left: 0; }
+.comment { margin: 0 0 15px 0; padding: 0; }
+.comment-meta { margin-bottom: 4px; }
+.comment-author { font-style: normal; color: gray; font-weight: bold; }
+.comment-meta time { color: #bbb; font-size: 90%; margin-left: 8px; }
+.comment-body { line-height: 150%; }
+.comment-children { border-left: 2px solid #ebebeb; margin-top: 10px; }
+.pingback-list { list-style: none; padding-left: 20px; }
+.pingback-list li { color: #9aa; margin-bottom: 6px; }
+.pingback-list a { color: #8890c0; }
+.comments-closed { color: gray; margin-top: 20px; font-size: 90%; }
+
+/* ---------- legacy flash embed placeholder ---------- */
+.legacy-embed {
+	background: #f4f4f4; border: 1px dashed #ff8c00; border-radius: 4px;
+	padding: 12px 15px; margin: 12px 0; color: #555; font-size: 95%;
+}
+.legacy-embed strong { color: #c66a00; }
+.legacy-embed a { word-break: break-all; }
+iframe { max-width: 100%; }
+
+/* ---------- footer ---------- */
+#footer { margin: 10px 0; padding: 10px 15px; color: gray; }
+
+/* ---------- responsive fallback ---------- */
+@media (max-width: 820px) {
+	body { width: 100%; }
+	#kopf, .einPost, .einPostMeta, #linkDown, #vorwort, #flash-header { width: 100%; float: none; }
+	#flash-header { height: 120px; }
+	#flash-header canvas { width: 100%; height: 120px; }
+	#kopf h1 { width: 100%; }
+	#linkDown ul { padding-top: 10px; }
+	.einPostMeta ul { margin-top: 10px; }
+	#sidebar .zweiSpalten { width: 100%; float: none; }
+	#sidebar .suche .sucheingabe { max-width: 60%; }
+}

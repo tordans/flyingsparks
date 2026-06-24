@@ -1,0 +1,59 @@
+---
+// Read-only comment archive for a post: approved comments (threaded) + pingbacks.
+// No submit form — new commenting is intentionally not offered.
+import Comment from './Comment.astro';
+import FormattedDate from './FormattedDate.astro';
+import { getComments } from '../lib/wpComments';
+
+interface Props {
+	postId?: string;
+}
+const { postId } = Astro.props;
+const all = getComments(postId);
+
+const regular = all.filter((c) => c.type === 'comment');
+const pings = all.filter((c) => c.type !== 'comment');
+
+// Group by parent id to render threads.
+const byParent: Record<string, typeof regular> = {};
+for (const c of regular) {
+	const p = c.parent && c.parent !== '0' ? c.parent : '0';
+	(byParent[p] ??= []).push(c);
+}
+const roots = byParent['0'] ?? [];
+---
+
+{
+	all.length > 0 && (
+		<section class="comments" aria-label="Kommentare">
+			{regular.length > 0 && (
+				<>
+					<h2>{regular.length} {regular.length === 1 ? 'Kommentar' : 'Kommentare'}</h2>
+					<ol class="comment-list">
+						{roots.map((c) => (
+							<Comment comment={c} byParent={byParent} />
+						))}
+					</ol>
+				</>
+			)}
+			{pings.length > 0 && (
+				<>
+					<h3>Pingbacks &amp; Trackbacks</h3>
+					<ul class="pingback-list">
+						{pings.map((p) => (
+							<li>
+								{p.authorUrl ? (
+									<a href={p.authorUrl} rel="nofollow noopener">{p.author}</a>
+								) : (
+									p.author
+								)}
+								{p.date && <> — <FormattedDate date={new Date(p.date)} /></>}
+							</li>
+						))}
+					</ul>
+				</>
+			)}
+			<p class="comments-closed"><em>Die Kommentarfunktion ist geschlossen. Bestehende Kommentare bleiben als Archiv erhalten.</em></p>
+		</section>
+	)
+}

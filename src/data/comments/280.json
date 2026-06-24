@@ -1,0 +1,20 @@
+[
+	{
+		"id": "742",
+		"author": "tamim",
+		"authorUrl": null,
+		"date": "2006-03-06T13:43:56.000Z",
+		"content": "erster eindruck: sehr gut.\nmir gefällt die tag funktion.\ndie optik ist ansprechend. kein knaller aber ich denke zielgruppengerecht.\nich denke am logo könnte man auch noch etwas arbeiten.\nder zweite eindruck kommt später nochmal. da wird dann butter bei de fische getan.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "746",
+		"author": "Pfadiblog - Das Pfadfinder-Magazin. » Pfadiblog-Design",
+		"authorUrl": "http://www.pfadiblog.de/2006/03/07/pfadiblog-design/",
+		"date": "2006-03-07T16:23:44.000Z",
+		"content": "[...] Etwas mehr über die Technik des Blogs steht übrigens bei mir (flyingsparks) und im Update unseres Release-Artikel.     // (c) Script http://www.shauninman.com/js/si.js // Here: Used vor testing only... // Example: http://www.shauninman.com/mentary/past/delete_cookies.php#comments // onkeyup=\"SI_previewText();\" // Zu Beginn schon mal alle aufrufen function SI_previewName() { var d = document; d.getElementById('commentpreviewName').innerHTML = d.getElementById('author').value; d.getElementById('vorschau').style.display = \"block\"; } function SI_previewHP() { var d = document; d.getElementById('commentpreviewURI').innerHTML = d.getElementById('url').value; d.getElementById('vorschau').style.display = \"block\"; } function SI_previewText() { var d = document; d.getElementById('commentpreviewText').innerHTML = SI_markdownWithSmartyPants(d.getElementById('comment').value); d.getElementById('vorschau').style.display = \"block\"; } function SI_markdownWithSmartyPants(txt) { // ` :: code txt = txt.replace(/`([^`]+)`/g,''+'$1'+''); // Need to remove and protect this code block from the other replacements // &#38; :: &amp; txt = txt.replace(/&#38;/g,'&amp;'); txt = txt.replace(/&amp;(amp;)+/g,'&amp;'); // --- :: en dash txt = txt.replace(/-{3}/g, '&#8211;'); // -- :: em dash txt = txt.replace(/-{2}/g,'&#8212;'); // ... :: ellipsis txt = txt.replace(/.{3}/g,'&#8230;'); // \" :: to smart quotes txt = txt.replace(/\"(.*[^\"])\"/g,'&#8220;$1&#8221;'); // **|__ :: strong txt = txt.replace(/(*|_){2}([^*_]+)(*|_){2}/g,''+'$2'+''); // *|_ :: em txt = txt.replace(/(*|_)([^*_]+)(*|_)/g,''+'$2'+''); // paragraph breaks txt = ''+txt.replace(/(rn|n)/g,'').replace(/(){2,}/gi,'')+'' return txt; } [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

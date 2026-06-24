@@ -1,0 +1,37 @@
+---
+// Recursive single comment (read-only). Renders its threaded replies via self-import.
+import Self from './Comment.astro';
+import FormattedDate from './FormattedDate.astro';
+import { sanitizeComment } from '../lib/sanitize';
+import type { WpComment } from '../lib/wpComments';
+
+interface Props {
+	comment: WpComment;
+	byParent: Record<string, WpComment[]>;
+}
+const { comment, byParent } = Astro.props;
+const children = byParent[comment.id] ?? [];
+---
+
+<li class="comment" id={`comment-${comment.id}`}>
+	<div class="comment-meta">
+		{
+			comment.authorUrl ? (
+				<a class="comment-author" href={comment.authorUrl} rel="nofollow noopener ugc">{comment.author}</a>
+			) : (
+				<span class="comment-author">{comment.author}</span>
+			)
+		}
+		{comment.date && <FormattedDate date={new Date(comment.date)} />}
+	</div>
+	<div class="comment-body" set:html={sanitizeComment(comment.content)} />
+	{
+		children.length > 0 && (
+			<ol class="comment-children">
+				{children.map((child) => (
+					<Self comment={child} byParent={byParent} />
+				))}
+			</ol>
+		)
+	}
+</li>

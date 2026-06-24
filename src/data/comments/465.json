@@ -1,0 +1,29 @@
+[
+	{
+		"id": "24082",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-06-12T21:16:32.000Z",
+		"content": "test mit neuer spam-abwehr. das math-plugin ist zwar immer noch unbefriedigend, funktioniert jetzt aber hoffentlich...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24098",
+		"author": "Konstantin",
+		"authorUrl": "http://konnexus.de",
+		"date": "2007-06-14T11:47:22.000Z",
+		"content": "sehr gut beobachtet. danke für die links.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33190",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-09-05T13:28:32.000Z",
+		"content": "Sehr schöne und ungewöhnliche Kalender-Darstellung. \nhttp://davidseah.com/page/compact-calendar \n\nKann man sie sinnvoll für Interfacedesign verwenden?\n\n<img src=\"http://davidseah.com/_eecontent/imgcache/images/07/466-1126-ccal01.jpg\" />\n<img src=\"http://davidseah.com/_eecontent/imgcache/images/06/198-0217-ccal03.jpg\" />",
+		"parent": "0",
+		"type": "comment"
+	}
+]

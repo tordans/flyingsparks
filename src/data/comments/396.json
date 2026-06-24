@@ -1,0 +1,65 @@
+[
+	{
+		"id": "4671",
+		"author": "Karl Kliem",
+		"authorUrl": "http://",
+		"date": "2006-10-11T23:31:02.000Z",
+		"content": "das ist denke ich einer der ersten gewesen: <a href=\"http://www.gootodo.com\">gootodo.com</a>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "30416",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-01-22T13:01:43.000Z",
+		"content": "Ein weiteres schönes Beispiel: http://lighthouseapp.com/tour/email-tickets",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33126",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-05T23:13:45.000Z",
+		"content": "Weitere gute Beispiele:\n\nAntworten auf Kommentare via E-Mail:\nhttp://37signals.blogs.com/products/2008/03/basecamp-new-fe.html\n\nHinzufügen von Aufgaben/Notizen etc via E-Mail:\nhttp://37signals.blogs.com/products/2008/03/testing-an-e-ma.html\n\nAccount-Creation via E-Mail und Einladung-Account-Creation via E-Mail\nhttp://www.37signals.com/svn/posts/935-screens-around-town-tripit-theocacao-gmail-and-a-look-at-availability-ui\n\nTripit ist insg. ein gutes Beispiel für die Nutzung von E-Mail (Weiterleiten von Trip-Buchung und Auswertungen durch System etc).",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33132",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-09T08:08:30.000Z",
+		"content": "Update: Beschreibung des neuen 37signals-Features:\nhttp://37signals.blogs.com/products/2008/04/new-basecamp-fe.html",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33145",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-28T12:07:25.000Z",
+		"content": "Ergänzung: Neues Video von 37signals dazu http://37signals.blogs.com/products/2008/04/new-highrise-sc.html",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33159",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-05-25T10:47:41.000Z",
+		"content": "Ergänzung: http://keeptempo.com/ Timetracking via E-Mail, Twitter, ...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33191",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-09-07T20:11:02.000Z",
+		"content": "Picasa-Web hat jetzt auch einen Foto-Email-Gateway eingerichtet: <a href=\"http://twitpic.com/ann9\" title=\"Share photos on twitter with Twitpic\"><img src=\"http://twitpic.com/show/thumb/ann9.png\" width=\"150\" height=\"150\" alt=\"Share photos on twitter with Twitpic\"/></a>\n\nSehr vielversprechend.\n\nUnd hier noch der FAQ-Link von Picasaweb zu dem Feature. http://picasa.google.com/support/bin/answer.py?answer=83342&topic=10754\n\nPS: THX@Twitpic für den super unkomplizierten Upload und fertigen HTML-Code :)",
+		"parent": "0",
+		"type": "comment"
+	}
+]

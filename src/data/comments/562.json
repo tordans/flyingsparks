@@ -1,0 +1,101 @@
+[
+	{
+		"id": "33148",
+		"author": "Andreas",
+		"authorUrl": "http://www.newsofthefuture.net",
+		"date": "2008-05-02T21:51:13.000Z",
+		"content": "\"Nicht in unserem Interesse\". Grossartig. :)\n\nAuch in der Schweiz werden solche Überlegungen angestellt:\nhttp://www.keepthebyte.ch/2008/03/fwd-ohne-tram-nichts-los.html",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33149",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-05-05T06:57:10.000Z",
+		"content": "Danke, toller Link.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33192",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-09-14T09:52:27.000Z",
+		"content": "Update: Für das iPhone gibt es eine sehr einfache, schlange App mit der man sicht Bus und Bahn-Fahrpläne (inkl. Verspätung) anzeigen lassen kann.\nLeider nur als Liste... -- aber die Datenbasis muss sehr gut sein. Ich hoffe, Frank, der Autor, verrät, woher er die Daten bekommt...\nDas ist sein Blog: http://vercruesse.de/",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33193",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-09-14T10:05:54.000Z",
+		"content": "Und hier noch mal der Link zu der iPhone-App, da gibts auch Screenshots: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284970116&mt=8",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33203",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-11-10T10:28:36.000Z",
+		"content": "Update: Hier eine weitere iPhone-App die Fahrplaninfos anzeigt http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284971745&mt=8",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33318",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-12-23T15:04:28.000Z",
+		"content": "Hinweis: Es gab damals noch ne zweite E-Mail, die war etwas positiver und fragte \"was haben Sie denn vor, lassen Sie uns mal reden\". Die nahm interessanter Weise keine Bezug zur ersten. Leider finde ich die alten Mails nicht mehr...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33381",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2011-06-08T06:15:19.000Z",
+		"content": "Updates: Die 2. Mail, die ich in meinem letzten Kommentar angesprochen habe, lautete \"Guten Tag Herr Jordans,\n\nbisher ist aus diversen Gründen noch keine offene Schnittstelle zu\nFahrplandaten geplant. Allerdings würden ich es sehr begrüßen, wenn Sie Ihre\nIdee bzw. Ihr Projekt einfach mal kurz bei uns im Hause vorstellen würden.\n\nZwecks einer Terminabsprache können Sie mich telefonisch erreichen.\n\nMit freundlichen Grüßen\"",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33391",
+		"author": "Us Koelle",
+		"authorUrl": "http://",
+		"date": "2012-02-07T11:35:34.000Z",
+		"content": "Hi,\n\n ich bin über eine Suche zum Thema Widget und OEPNV hier gelandet, da ich selber nach einer entsprechenden Schnittstelle suche. Eventuell solltest Du mal bei der VRS nachfragen, die sind da m.E nicht so klüngelig.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33392",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2012-02-07T11:43:26.000Z",
+		"content": "Hi \"Us Koelle\". Ich bin mir recht sicher, dass die KVB heute eher mit sich reden lässt als vor 3,5 Jahren…\nDas Thema ist für mich persönlich aber archiviert – ich weiß aber, dass andere (Beispielsweise http://www.mapnificent.net/cologne/) auch an Daten interessiert wären.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33399",
+		"author": "Google Now – Mal wieder ohne Deutschland / Europa? › neunzehn82",
+		"authorUrl": "http://www.neunzehn82.de/2012/07/google-now-mal-wieder-ohne-deutschland-europa/",
+		"date": "2012-07-03T09:25:02.000Z",
+		"content": "[...] Fluginformationen, Umrechnungskurse oder Anzeige der Uhrzeit des Heimatortes konnte ich mangels Möglichkeiten noch nicht testen. Öffentliche Verkehrsmittel werden in Deutschland noch nicht angezeigt. Es besteht allerdings die Chance das Städte wie Berlin bei denen die Informationen via API zur Verfügung stehen auch bald eingepflegt werden. Hier in Köln möchte die KVB die Informationen nicht Preis geben. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33402",
+		"author": "Bekommen wir bald volle Google Now Funktionalität in Deutschland? › Christian Birkenbeul",
+		"authorUrl": "http://birkenbeul.eu/technik/bekommen-wir-bald-volle-google-now-funktionalitat-in-deutschland/",
+		"date": "2012-08-30T08:05:13.000Z",
+		"content": "[...] der Züge (U-, S- und Straßenbahnen) und Busse verfügbar. Unternehmen wie die KVB hier in Köln bieten derzeit leider noch keine Möglichkeit an, die Daten für Unternehmen wie Google frei zugänglich machen zu können. Die Dienste werden [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

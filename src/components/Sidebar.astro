@@ -1,0 +1,19 @@
+---
+// Faithful recreation of the original sidebar: back-to-top + search box.
+// (The original AJAX timeline + blogroll widgets were dynamic; search is wired to
+//  a client-side index on the /suche/ page.)
+---
+
+<div id="sidebar">
+	<p class="nachOben"><a href="#oben">zurück nach oben</a></p>
+	<div class="suche">
+		<a id="suche"></a>
+		<form class="suchfeld" method="get" action="/suche/">
+			<div>
+				<label class="dynamic" for="s">Suchwort</label>
+				<input class="sucheingabe" type="search" name="q" id="s" placeholder="Beiträge durchsuchen…" />
+				<input class="suchbutton" type="submit" value="suchen" />
+			</div>
+		</form>
+	</div>
+</div>

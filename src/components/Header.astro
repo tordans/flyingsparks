@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import { tagSlug } from '../lib/slug';
+import FunkenHero from './FunkenHero.astro';
+
+interface Props {
+	variant?: 'single' | 'list';
+}
+const { variant = 'list' } = Astro.props;
+
+// Tag cloud: most-used tags (original used wp_tag_cloud, 12 tags).
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const counts: Record<string, number> = {};
+for (const p of posts) for (const t of p.data.tags) counts[t] = (counts[t] ?? 0) + 1;
+const topTags = Object.entries(counts)
+	.sort((a, b) => b[1] - a[1])
+	.slice(0, 12)
+	.map(([t]) => t);
+---
+
+<a id="oben"></a>
+<div id="kopf">
+	<!-- Interactive "Funken" timeline hero — modern recreation of the original Flash
+	     header (flyingsparks-feuerfunken.swf): each post is a spark placed by date. -->
+	<FunkenHero />
+	<div id="absender">
+		<h1>
+			<a id="startseite" href="/" title="Zur Startseite."
+				><img src="/theme/flyingsparks-logo.gif" alt="flying sparks" width="180" /></a
+			>
+			<span class="ueber">ein Weblog von <a class="headlink" href="/ueber/" title="über dieses Weblog">Tobias Jordans</a> zu den Themen</span>
+			<span class="tags">
+				{topTags.map((t) => (
+					<a class="headlink" href={`/tag/${tagSlug(t)}/`} title={`alle Funken zum Thema ${t}`}>{t}</a>
+				))}
+				<a class="headlink alleTags" href="/themen-liste/"><strong>alle Themen…</strong></a>
+			</span>
+		</h1>
+	</div>
+</div>
+<div id="linkDown" class="einPostMeta">
+	<ul>
+		{variant === 'single' ? (
+			<>
+				<li><a href="#kommentare">Kommentare lesen</a></li>
+				<li><a href="#suche">Suche</a></li>
+			</>
+		) : (
+			<>
+				<li><a href="#suche">Suche</a></li>
+				<li><a href="/archiv/">Archiv</a></li>
+				<li><a href="/themen-liste/">Themen</a></li>
+			</>
+		)}
+	</ul>
+</div>

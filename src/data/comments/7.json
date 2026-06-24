@@ -1,0 +1,20 @@
+[
+	{
+		"id": "12",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-01-04T05:45:48.000Z",
+		"content": "Umlaute funktionieren irgendwie nicht... nur bie mir so? Oder machen öäüs bei allen Probleme? (Er zeigt einfach nichts an...)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "13",
+		"author": "Tobias",
+		"authorUrl": null,
+		"date": "2005-01-04T12:58:43.000Z",
+		"content": "nein, ist auch bei mir so.\nkeine ahnung, warum....\n\nlieght wahrscheinlich am editor den ich verwende da sie grundsätzlich rifchtig angezegit werden (siehe info-absatz unten)",
+		"parent": "0",
+		"type": "comment"
+	}
+]

@@ -1,0 +1,20 @@
+[
+	{
+		"id": "2449",
+		"author": "semanticpool",
+		"authorUrl": "http://www.semanticpool.de/index.php?tid=41",
+		"date": "2006-06-18T06:43:31.000Z",
+		"content": "<strong>Von Adressen zu Geo-Koordinaten...</strong>\n\nDurch das Stöbern nach der Google Maps API bin ich auf diesen Eintrag gestossen und hab erfahren, dass die API seit Neuestem die Möglichkeit bietet, aus Adresse......",
+		"parent": "0",
+		"type": "trackback"
+	},
+	{
+		"id": "2493",
+		"author": "semanticpool » Von Adressen zu Geo-Koordinaten",
+		"authorUrl": "http://www2.semanticpool.de/2006/von-adressen-zu-geo-koordinaten/",
+		"date": "2006-07-01T12:05:14.000Z",
+		"content": "[...] Durch das Stöbern nach der Google Maps API bin ich auf diesen Eintrag gestossen und hab erfahren, dass die API seit Neuestem die Möglichkeit bietet, aus Adressen die Geo-Koordinaten (Längen-/Breitengrad) zu bestimmen. [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

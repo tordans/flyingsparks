@@ -1,0 +1,65 @@
+[
+	{
+		"id": "33328",
+		"author": "Davide 'Folletto' Casali",
+		"authorUrl": "http://intenseminimalism.com",
+		"date": "2010-02-17T20:00:09.000Z",
+		"content": "Since I completely agree with you, I'd like to hear your feedback about my submission. I hope I wasn't in the 5 the system gave you. ;)\n\nYou can see it here: \nhttp://j.mp/cJFklu\n\nThanks. :)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33329",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2010-02-17T20:15:31.000Z",
+		"content": "Hi Davide, so the 5 submissions I see on the page are only a selection and there are more? Oh, I didnt understand that yet, thanks for pointing out. Yours wasnt one of them, but I will certainly have a look soon :).",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33330",
+		"author": "Arthur Klepchukov",
+		"authorUrl": "http://artvankilmer.wordpress.com/",
+		"date": "2010-02-17T20:18:38.000Z",
+		"content": "I completely agree with you. I think this applies to most submissions, which is why I went a radically different route with something much simpler: http://artvankilmer.wordpress.com/2010/02/13/firefox-4-home-tab-concept/",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33331",
+		"author": "Davide 'Folletto' Casali",
+		"authorUrl": "http://intenseminimalism.com",
+		"date": "2010-02-17T20:34:59.000Z",
+		"content": "Yes, it's a selection of 5, I think it's done to avoid the \"call all your friends yo vote\" issue. :)\n\nThe interesting part is that the brief itself says: \"An explicit non-goal of this challenge is to design something like My Yahoo, iGoogle or similar start pages that let you put widgets/gadgets.\" ;)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33332",
+		"author": "Euge",
+		"authorUrl": "http://www.eugeniaortiz.com.ar",
+		"date": "2010-02-17T20:57:04.000Z",
+		"content": "Well, I think that your point of view is a valid one. But as a participant of an old design challenge I must say that the idea of mozilla and the design challange is to have new ideas and let the people (real users) to participate with their ideas and opinions. Maybe they won't implement non of those ideas, but certainly they come from real users, who are not designers (UX, IxD related) or programmers, but they know what they want (sometimes!).\nBy the other hand It would be nice to see a design that could take a little bit further the functionality of the home tab.\nRegards!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33335",
+		"author": "Natanael L",
+		"authorUrl": "http://natanael.yiid.com/",
+		"date": "2010-02-18T16:16:15.000Z",
+		"content": "I'd like to add that I think that there should be some \"dynamicness\" in the page.\nMaybe it should have \"widgets\", but not iGoogle style, rather in a \"Firefox data &amp; controllers\" style.\n\nIt should be \"subtle\", as in never trying to steal your focus.\nIt could tell you how many unread emails you have, it could have a static link list, a search box, and a few more things.\n\nI like these ideas: http://alexdahl.com/thoughts/firefox-home.html\n\nYou should be able to mark something as interesting for now when bookmarking a tab, and have it listed on your home tab.\n\nIt should probably also have Ubiquity built in by some means, and have some suggested commands listed below the \"text bar\". Maybe in the search box.\nOr the adress bar could be \"integrated\" so that when you've got that tab open, the search bar becomes the search/Ubiquity bar that allows you to control everything in the browser, including the home tab.\nIt should be obvious that the adress bar \"is a part of\" the home tab then.\n\nMaybe it should have tabs of it's own. The main page would be as clean possible. It could also indicate which other tabs that has an update. There could alos be a dynamic tab that shows updates only.\n\nI'm not sure on how it should look, just that I want flexibility.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33337",
+		"author": "Tamim",
+		"authorUrl": "http://www.cobocards.com",
+		"date": "2010-02-19T23:12:59.000Z",
+		"content": "I really just jumped through the videos. Didn't liked one of them. Voted all with 1. My advice is: Please make Firefox much faster and reduce the clutter. The internet defines the browser and not the browser defines the internet. Everybody has his own habits. Don't force us into a certain direction. Ubiquity didn't really work for me. Why? I didn't need it. But you could use the idea of ubiquity inside the browser input field.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

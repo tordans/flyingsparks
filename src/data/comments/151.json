@@ -1,0 +1,11 @@
+[
+	{
+		"id": "645",
+		"author": "RadRails kann mehr (Video) * flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2005-12-18/radrails-kann-mehr-video/",
+		"date": "2005-12-18T17:19:49.000Z",
+		"content": "[...] RadRails ist eine hervorragende Ruby On Rails-Entwicklungsumgebung (Eclipse-basiert), die aus meiner Sicht alle anderen in den Schatten stellt. RadRails wird zwar erst seit ein paar Monaten entwickelt, trotzdem musste ich feststellen, dass ich schon jetzt nicht mehr alle Kernfunktionen mitbekomme. Zum Glück soll es zukünftig Lernvideos geben&#8230; &#8212; ein erstes ist schon jetzt online: &#34;RadRails Import Existing Project Video&#34;. Hört sich erst mal nicht interessant an, zeigt aber dann, wie einfach man WebBrick in RadRails startet und den eingebauten Browser und DB-Manager nutzt&#8230; Sehr praktisch! [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

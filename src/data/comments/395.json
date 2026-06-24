@@ -1,0 +1,20 @@
+[
+	{
+		"id": "21711",
+		"author": "Dev House Cologne - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2007-05-08/dev-house-cologne/",
+		"date": "2007-05-08T12:31:12.000Z",
+		"content": "[...] Zumindest eine Idee habe ich mal eingetragen, &#252;ber die ich hier schonmal sinniert habe. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33230",
+		"author": "docque",
+		"authorUrl": "http://www.schweineherbst.de",
+		"date": "2009-02-16T17:58:11.000Z",
+		"content": "Opennetworx.org ist da noch eine interessante Alternative. Opennetworx biete die Möglichkeit sehr einfach, kostenlos und werbefrei(finanziert sich wie Wikipedia über Spenden) eigene Soziale Netzwerke zu gründen. Das interessante ist, dass die Opennetworx Stiftung besonderen Wert auf Datenschutz legt und die Weitergabe der Daten an dritte (zu Werbezwecken zb) ausschließt. Da es eine Stiftung ist, wird sie in der Hinsicht auch von Stiftungsrat überwacht und so ist außerdem ein Verkauf der Plattform absolut ausgeschlossen.\nDas macht sie nicht nur für Schulen und Unis, sondern auch für NGOs besonders interessant. Für NGOs besonders, da über das Metakonzept die User und Organisationen(Netzwerke) miteinander verbunden bleiben und sie so die Möglichkeit haben, sich(die Netzwerke) sehr leicht miteinander zu vernetzen und so besser/stärker zu kooperieren. Die ersten NGOs haben bereits begonnen dort Netzwerke aufzubauen, und ich denke es werden noch einige folgen.\nDie Plattform befindet sich in ständiger Weiterentwicklung und das nächste große Release soll schon sehr bald kommen. Besonders interessant ist, dass Opennetworx die Möglichkeit bietet eigene Programme für die Netzwerke zu entwickeln(Opensocial) und einzubinden.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

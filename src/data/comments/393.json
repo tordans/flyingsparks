@@ -1,0 +1,47 @@
+[
+	{
+		"id": "4577",
+		"author": "Konstantin",
+		"authorUrl": "http://konnexus.de",
+		"date": "2006-10-05T07:31:40.000Z",
+		"content": "Eines der dienste, die deine ID verifizieren:\n\nhttp://claimID.com\n\n<blockquote>  claimID lets you track, verify, classify, annotate, prioritize and share the information that is about you online.  </blockquote>\n\ngesehen bei einem BarCamp-vortrag zu <a href=\"http://barcampberlin.pbwiki.com/Open%20Social%20Networks\">social networks</a>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4581",
+		"author": "Fabian Nöthe",
+		"authorUrl": "http://blog.insnet.de",
+		"date": "2006-10-05T13:00:24.000Z",
+		"content": "http://www.ikarma.de/ recht interessantes/ gewagtes Projekt zum Thema eReputation",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4665",
+		"author": "Soziale Netzwerke für Events und NGOs - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2006-10-11/soziale-netzwerke-fuer-events-und-ngos/",
+		"date": "2006-10-11T08:51:04.000Z",
+		"content": "[...] Das schon im Identity-Post verlinkte Projekt von Cameron und Tim zur Web Directions-Konferenz in Australien finde ich eine tolle L&#246;sung f&#252;r das angesprochene Problem der Verkn&#252;pfung von Person und digitaler Identit&#228;t. Tim hat auf meine eMail-Anfrage geantwortet, dass sie das Tool vielleicht f&#252;r Barcamps etc. zur Verf&#252;gung stellen, wahrscheinlich aber nicht ganz &#246;ffnen (kein OpenSource). [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "24727",
+		"author": "web identity « mon petit web - chindogu",
+		"authorUrl": "http://pierromarie.wordpress.com/2006/12/15/web-identity/",
+		"date": "2007-09-03T07:23:35.000Z",
+		"content": "[...] original von Tobias - identity [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33152",
+		"author": "Sabine",
+		"authorUrl": "http://idleaf.com/SA6981",
+		"date": "2008-05-18T11:38:11.000Z",
+		"content": "Hi Du,\ninteressanter Artikel. Hab auch schon öfters über Identitätsverwaltung im Netz nachgedacht. Ich finde ja http://www.idleaf.com/ ganz cool.\n\nBine",
+		"parent": "0",
+		"type": "comment"
+	}
+]

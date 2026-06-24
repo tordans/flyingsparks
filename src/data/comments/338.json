@@ -1,0 +1,20 @@
+[
+	{
+		"id": "2399",
+		"author": "Peter",
+		"authorUrl": "http://dipe.de",
+		"date": "2006-05-31T07:47:10.000Z",
+		"content": "Ajax braucht man nur dann, wenn man auf die Datenbank oder andere Resourcen des Servers zugreifen muss. Das ist hier offenbar nicht der Fall. Datums-Arithmetik beherrscht JavaScript schon so. Die Lösung ließe sich also mit JavaScript, CSS und Fleiß realisieren.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2400",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-05-31T13:06:48.000Z",
+		"content": "Hallo Peter, da hast du selbstverständlich recht. Habe mich vom Ajax-Buzz verleiten lassen und das direkt geändert. Danke.\n\nDabei fällt mir auf: Ich kann mich nicht erinnern, derartige Autocomplete-Funktionen vor den Ajax-Autocomplete-Scripten gesehen zu haben... Interessant.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

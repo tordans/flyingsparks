@@ -1,0 +1,147 @@
+---
+// "Funken" timeline hero — modern Canvas/JS recreation of the original Flash header
+// (flyingsparks-feuerfunken.swf). Each published post is a glowing spark placed on a
+// horizontal timeline by its date; hover shows the title + date, click opens the post.
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const dates = posts.map((p) => p.data.pubDate.getTime()).sort((a, b) => a - b);
+const startY = dates.length ? new Date(dates[0]).getFullYear() : '';
+const endY = dates.length ? new Date(dates[dates.length - 1]).getFullYear() : '';
+const count = posts.length;
+---
+
+<div id="flash-header">
+	<canvas
+		id="funken-canvas"
+		role="img"
+		aria-label={`flying sparks: ${count} Beiträge als Funken auf einer Zeitleiste von ${startY} bis ${endY}. Bewege die Maus über einen Funken für Titel und Datum, klicke zum Öffnen.`}
+	></canvas>
+	<div id="funken-tip" hidden></div>
+	<span class="funken-label funken-label-start">{startY}</span>
+	<span class="funken-label funken-label-end">{endY}</span>
+</div>
+
+<script>
+	const wrap = document.getElementById('flash-header');
+	const canvas = document.getElementById('funken-canvas') as HTMLCanvasElement | null;
+	const tip = document.getElementById('funken-tip') as HTMLElement | null;
+
+	if (wrap && canvas && tip) {
+		const ctx = canvas.getContext('2d')!;
+		const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const PAD = 22;
+		const esc = (s: string) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c] as string);
+		// deterministic pseudo-random so each spark keeps a stable vertical position
+		const rand = (seed: number) => {
+			const x = Math.sin(seed * 99991) * 10000;
+			return x - Math.floor(x);
+		};
+
+		type Spark = { t: string; u: string; d: number; fx: number; fy: number; ph: number; r: number };
+		let sparks: Spark[] = [];
+		let W = 0, H = 0, hover = -1, raf = 0;
+
+		const pos = (s: Spark) => ({ x: PAD + s.fx * (W - 2 * PAD), y: 10 + s.fy * (H - 30) });
+
+		function layout() {
+			const rect = canvas!.getBoundingClientRect();
+			const dpr = Math.min(window.devicePixelRatio || 1, 2);
+			W = rect.width || 600;
+			H = rect.height || 175;
+			canvas!.width = Math.round(W * dpr);
+			canvas!.height = Math.round(H * dpr);
+			ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+		}
+
+		function draw(t: number) {
+			ctx.clearRect(0, 0, W, H);
+			ctx.fillStyle = '#000';
+			ctx.fillRect(0, 0, W, H);
+			for (let i = 0; i < sparks.length; i++) {
+				const s = sparks[i];
+				const { x, y } = pos(s);
+				const isH = i === hover;
+				const tw = reduced ? 0.85 : 0.5 + 0.5 * Math.sin(t / 600 + s.ph);
+				const r = isH ? s.r + 2 : s.r;
+				ctx.beginPath();
+				ctx.fillStyle = isH ? 'rgba(255,215,130,1)' : `rgba(255,150,0,${tw.toFixed(3)})`;
+				ctx.shadowBlur = isH ? 14 : 6;
+				ctx.shadowColor = 'rgba(255,140,0,0.9)';
+				ctx.arc(x, y, r, 0, Math.PI * 2);
+				ctx.fill();
+			}
+			ctx.shadowBlur = 0;
+		}
+
+		function loop(t: number) {
+			draw(t);
+			raf = requestAnimationFrame(loop);
+		}
+
+		function hit(mx: number, my: number) {
+			let best = -1;
+			let bd = 13 * 13;
+			for (let i = 0; i < sparks.length; i++) {
+				const { x, y } = pos(sparks[i]);
+				const dx = mx - x, dy = my - y, d = dx * dx + dy * dy;
+				if (d < bd) { bd = d; best = i; }
+			}
+			return best;
+		}
+
+		canvas.addEventListener('mousemove', (e) => {
+			const rect = canvas.getBoundingClientRect();
+			const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+			const h = hit(mx, my);
+			if (h === hover) return;
+			hover = h;
+			if (h >= 0) {
+				const s = sparks[h];
+				const { x, y } = pos(s);
+				const dt = new Date(s.d).toLocaleDateString('de-DE', { year: 'numeric', month: 'short', day: 'numeric' });
+				tip!.innerHTML = `<strong>${esc(s.t)}</strong><span>${dt}</span>`;
+				tip!.style.left = Math.min(Math.max(x, 70), W - 70) + 'px';
+				tip!.style.top = Math.max(y, 6) + 'px';
+				tip!.hidden = false;
+				canvas.style.cursor = 'pointer';
+			} else {
+				tip!.hidden = true;
+				canvas.style.cursor = 'default';
+			}
+			if (reduced) draw(0);
+		});
+		canvas.addEventListener('mouseleave', () => {
+			hover = -1;
+			tip!.hidden = true;
+			canvas.style.cursor = 'default';
+			if (reduced) draw(0);
+		});
+		canvas.addEventListener('click', () => {
+			if (hover >= 0) window.location.href = sparks[hover].u;
+		});
+
+		fetch('/funken.json')
+			.then((r) => r.json())
+			.then((data: { t: string; u: string; d: number }[]) => {
+				if (!data.length) return;
+				const min = data[0].d;
+				const max = data[data.length - 1].d;
+				const span = max - min || 1;
+				sparks = data.map((p, i) => ({
+					...p,
+					fx: (p.d - min) / span,
+					fy: 0.05 + rand(i + 1) * 0.85,
+					ph: rand(i + 7) * Math.PI * 2,
+					r: 1 + rand(i + 3) * 1.7,
+				}));
+				layout();
+				if (reduced) draw(0);
+				else if (!raf) loop(0);
+			})
+			.catch(() => {});
+
+		new ResizeObserver(() => { layout(); if (reduced) draw(0); }).observe(canvas);
+		layout();
+	}
+</script>

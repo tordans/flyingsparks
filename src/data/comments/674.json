@@ -1,0 +1,83 @@
+[
+	{
+		"id": "33277",
+		"author": "Oliver Wrede",
+		"authorUrl": "http://wrede.interfacedesign.org/",
+		"date": "2009-08-02T22:54:19.000Z",
+		"content": "Danke für diese Zusammenfassung. Bin auf dem Sprung und hoffe, dass ich nach meinem Urlaub wieder anknüpfen kann.\n\nIch sehe noch folgende ungelöste Probleme:\n\na) Wohin geht die Reise? Zu wenig \"user stories\" könnten Wave lähmen. Was Du hier ausmalst klingt auch noch einfacher als es in der momentanen Situation noch ist: Es wird schwer die vorhandenen Routinen zu durchbrechen.\n\nb) Asynchronität vs. Gleichzeitigkeit: in Wave passiert vieles gleichzeitig ohne, das man es merkt (wohl aber in dem Moment merken sollte)\n\nc) Informationsüberlastung: Man muss gut dosieren können, welche Ereignisse mir in der \"Active\"-Sektion als Updates angezeigt werden sollen. Anders: Was nicht in meinem Fokus ist oder sein soll, gehört auch nicht auf meine Retina (für eine Weile). Da braucht es \"smart alerts\" oder sehr gute Filtermöglichkeiten.\n\nd) Wechselnde Zugriffsrechte: Man kann in einem Reply wieder Leute dazuholen oder privat anworten. Das führt dazu, dass eine Wave für 10 Nutzer irgendwann 10 verschiedene Inhaltsperspektiven darstellen. Man weiss dann irgendwann nicht mehr recht, wer was lesen kann – und muss sich immer wieder rückversichern (overhead!).\n\nGedanken dazu hier: http://wrede.interfacedesign.org/archives/1701.html\n\nOliver",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33278",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-08-03T07:22:40.000Z",
+		"content": "Hallo Oliver, ich stimme dir in allen Punkten zu!\nWave geht einen sehr neuen Weg und die Feinjustierung die nötig ist, um neuen Funktionen im Alltag angenehm nutzbar zu machen, fehlt noch. Auch fehlen uns noch die Konfentionen, wie man mit diesem neuen Medium umgehen soll.\nBis damit eMail abgelöst wurde, wird es sehr lange dauern.\nIch denke, das ist auch Google bewusst und darum haben die das Produkt so früh und so weitgehend offengelegt.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33279",
+		"author": "Carsten Brüggenolte",
+		"authorUrl": null,
+		"date": "2009-08-03T07:35:40.000Z",
+		"content": "Hi,\n\nbei der Erwähnung von balsamiq musste ich ein wenig schmunzeln. Dein Beitrag gefällt mir sehr gut. Und ich kann es selber kaum erwarten WAVE mal auszuprobieren.\n\nCarsten",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33280",
+		"author": "Tim Bruysten",
+		"authorUrl": "http://bruysten.com",
+		"date": "2009-08-03T08:32:30.000Z",
+		"content": "Mehr Links!!! ;-)\nIm Kreise der anderen Produzenten des Obenstehenden sammelt sich sonst womöglich noch Zynismus…",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33281",
+		"author": "Alexander Benker",
+		"authorUrl": "http://blog.abenker.com",
+		"date": "2009-08-03T08:50:43.000Z",
+		"content": "Hallo Tobias,\n\nsuper Zusammenfassung - und die erste schriftliche die ich vom Konzeptpart des Hackathons sehe ;-) (um Tim zu ärgern - dort wurde ja noch nichts verlinkbares produziert)\n\nEine Sammlung der Beiträge zum Hackathon sammle ich \n<a href=\"http://sites.google.com/site/duesseldorfgtug/googlewave\" rel=\"nofollow\">hier auf der GTUG Seite Düsseldorf</a>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33282",
+		"author": "Huibert Gill",
+		"authorUrl": null,
+		"date": "2009-08-03T09:07:14.000Z",
+		"content": "Von Wegen 3D Games im Browser: http://www.techcrunch.com/2008/07/09/otoy-developing-server-side-3d-rendering-technology/",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33283",
+		"author": "siggi",
+		"authorUrl": "http://www.siggibecker.de/blog/",
+		"date": "2009-08-03T09:11:25.000Z",
+		"content": "Nu hetzt doch nicht so ;-) Festima lente, auch in beschleunigten Zeiten. Ich schnitze gerade an einem Post....",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33287",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-08-25T06:40:09.000Z",
+		"content": "@Tim: Habe jetzt (vielleicht) herausgefunden, wo ein Link fehlte und noch Credits für dich in den ZUI-Abschnitt eingefügt.\nKonkrete weitere Hinweise gerne vie DM.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33315",
+		"author": "Embedding Balsamiq in Google Wave - flyingsparks",
+		"authorUrl": "http://fly.ingsparks.de/2009-11-28/embedding-balsamiq-in-google-wave/",
+		"date": "2009-11-28T10:56:43.000Z",
+		"content": "[...] die Ideen, die ich Peldi dort in m&#228;&#223;igem Englisch versuche, n&#228;her zu bringen in meinem Blogpost &#252;ber Google Wave. Verwandte [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

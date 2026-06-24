@@ -1,0 +1,38 @@
+[
+	{
+		"id": "728",
+		"author": "Gregor J. Rothfuss",
+		"authorUrl": "http://greg.abstrakt.ch",
+		"date": "2006-02-18T07:47:51.000Z",
+		"content": "Was fuer API features wuerdest du den gerne sehen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "730",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-02-18T09:30:37.000Z",
+		"content": "Die Frage ist gar nicht so leicht :-)\n\nAm allerliebsten eine Parallelprogrammierung zu Google-Maps, so dass man nur noch den API-Key + URL ändern muss, um die gleichen Scripte für goyellow nutzen zu können... :-)\n\nVielleicht ist das gar nicht so abwegig... zumindest, wenn ihr einige Kernfunktionen über eine Adapter direkt übersetzen könntet... Schließlich gibt es eine Reihe fertiger Scripts, <a href=\"http://rubyforge.org/projects/cartographer/\">wie zum Beispiel für Rails</a>, die der GoogleAPI einen enormen Vorsprung geben, was die einfache Implementierung angeht.\n\nFür uns wäre interessant:\n<ul>\n\t<li>Karte in Website einbinden (konfigurierbar)</li>\n\t<li>Punkte setzen auf Karte</li>\n\t<li>Infos zu Punkten einblenden (incl. eigener Textinhalte)</li>\t<li>Kreise auf der Karte zeichnen können (um Radien für Entfernung darzustellen)</li>\n\t<li>Die Informationen, die schon in euren Nodes bestehen, ergänzen (wichtig, wenn man einen Punkt beschriften will, den ihr schon erfassst habt. Andernfalls hätte man ja zwei Punkte über/nebeneinander)</li>\n</ul>\n\nRichtig punkten könnt ihr noch im Bereich\n<ul>\n\t<li>Routen anzeigen</li>\n\t<li>PLZ/Straßen-Daten in Geo-Tags (lat/long) umwandeln (das ist zur Zeit noch nirgends kostenlos automatisiert...)</li>\n</ul>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "826",
+		"author": "Deutsche Luftbilder / Vergleich - flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2006-04-30/deutsche-luftbilder-vergleich/",
+		"date": "2006-04-30T16:51:35.000Z",
+		"content": "[...] Damit ist f&#252;r mich der gro&#223;e Vorteil von GoYellow, die als einzige Firma unkompliziert hochwertiges Luftbildmaterial angeboten haben, aufgebraucht&#8230; Jetzt ist es f&#252;r mich nicht mehr sinnvoll, auf die GoYellow-API zu warten oder diesen Dienst &#252;berhaupt irgendwo einzubinden. Da greife ich lieber auf die bestehenden L&#246;sungen f&#252;r Google zur&#252;ck. Schlie&#223;lich gibt es hierf&#252;r schon viel Quellcode, der die Integration erleichtert und au&#223;erdem sind die Branchensuche und der Routendienst besser. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "2447",
+		"author": "Adresse in Geo-Koordinaten umwandeln - flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2006-06-16/adresse-in-geo-koordinaten-umwandeln/",
+		"date": "2006-06-16T07:41:24.000Z",
+		"content": "[...] Endlich, darauf habe ich eine Weile gewartet: Geocoding in der erweiterten Google-Maps-API [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

@@ -1,0 +1,38 @@
+[
+	{
+		"id": "286",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-08-28T14:58:59.000Z",
+		"content": "Gläserner Mensch? Was ist das?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "568",
+		"author": "Datensicht:mobil » Blog Archive » Navigationssystem-Fotos im WWW",
+		"authorUrl": "http://nexus.design2.fh-aachen.de/seminare/gasteier/WS05_1/?p=69",
+		"date": "2005-10-30T11:45:19.000Z",
+		"content": "[...] Die schöne neue Welt des Web2.0 liefert uns zu Navigations-Aufgabe schon viele Beispiel-Fotos im Internet. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "778",
+		"author": "Pfadiblog - Das Pfadfinder-Magazin. » Achtung vor dem Internet!",
+		"authorUrl": "http://www.pfadiblog.de/2006/04/05/achtung-vor-dem-internet/",
+		"date": "2006-04-05T10:51:06.000Z",
+		"content": "[...] Auch diese Aussage ist nicht neu und ich bin gespannt auf die Dienste, die da kommen werden. In meinem Weblog habe ich mich schon einmal gefragt, wie so etwas wohl aussehen könnte&#8230; [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "789",
+		"author": "Web2.0 und Datenschutz - flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2006-04-11/web20-und-datenschutz/",
+		"date": "2006-04-11T20:27:57.000Z",
+		"content": "[...] Andreas bloggt &#252;ber MeinProf.de und ihre Probleme mit der RWTH. Ein anschauliches Beispiel f&#252;r die Probleme, die die zunehmende Vernetzung von personen- und ortsbezogenen Daten mit sich bringt (und noch bringen kann). [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

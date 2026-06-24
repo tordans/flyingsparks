@@ -1,0 +1,74 @@
+[
+	{
+		"id": "179",
+		"author": "Vera",
+		"authorUrl": null,
+		"date": "2005-05-04T17:46:02.000Z",
+		"content": "Eine sehr coole Homepage!!!\nBei den ganzen Billigflugseiten blickt man ja überhaupt nicht durch, jedenfalls nicht auf anhieb... =)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "180",
+		"author": "HarHar",
+		"authorUrl": "http://www.harhar.de",
+		"date": "2005-05-13T11:48:24.000Z",
+		"content": "Welch ein Scheiss!\nFunktioniert nicht einwandfrei und stiftet jede menge Verwirrung!\nGeht lieber zu www.floogie.de\n\nSchneller, besser, effizienter!!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "181",
+		"author": "HarHar",
+		"authorUrl": "http://www.harhar.de",
+		"date": "2005-05-13T11:52:12.000Z",
+		"content": "was fürn mist.\n\nich buche immer bei www.floogie.de\n\nviel schneller, übersichtlicher und besser!!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "186",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2005-05-19T14:32:22.000Z",
+		"content": "@HarHar: Sorry, deine Kommentare waren in die Moderationsschlaufe gerutscht. Daher die verspätete Veröffentlichung.\n\nDanke für den Link!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "669",
+		"author": "reu",
+		"authorUrl": null,
+		"date": "2006-01-05T18:49:11.000Z",
+		"content": "Das sind doch zei unterschieldiche Suchansätze. ich-flieg-billig.de zeigt einem kalendarisch das beste angebot an dem jeweiligen tag an ohne das datum angeben zu müssen. Sehr übersichtlich. Bei Floogie dagegen muss man das datum angeben. Das ist ja bei vielen vergleichsseiten so. Wenn ich also an kein reisedatum gebunden bin ist ich-flieg-billig für mich die erste wahl.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4430",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-09-27T08:12:18.000Z",
+		"content": "Notiz für mich selbst: http://www.opodo.de/ ist ganz hilfreich wenn man Flüge sucht...\n\nLeider habe ich nirgends eine Lösung gefunden, bei der ich den Zielflughafen angebe und mir Vorschläge für den Startflughafen gemacht werden (Preisgestaffelt)...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4755",
+		"author": "Michael",
+		"authorUrl": null,
+		"date": "2006-10-18T20:18:22.000Z",
+		"content": "Es gibt eine ganze Reihe Billigflieger Vergleichsseiten. \n<a href=\"http://www.airbookers.de\">Airbookers - Der unabhängige Billigflieger Preisvergleich</a>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25177",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-09-26T16:55:00.000Z",
+		"content": "Noch ein solcher Dienst: http://www.de.kayak.com/ (thx@marian)",
+		"parent": "0",
+		"type": "comment"
+	}
+]

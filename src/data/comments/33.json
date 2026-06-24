@@ -1,0 +1,20 @@
+[
+	{
+		"id": "33",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-01-27T20:42:08.000Z",
+		"content": "Gibt's das Bild auch in groß?\nSo, OnClick oder so ;)?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "34",
+		"author": "TJ",
+		"authorUrl": null,
+		"date": "2005-01-27T22:55:09.000Z",
+		"content": "Nein, das war so schon genug Arbeit, das zuzuschneiden und hochzuladen :).\nUnd lesen kann man eh nix - wäre aber auch uninteressant.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

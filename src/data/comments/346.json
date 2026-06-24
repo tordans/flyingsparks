@@ -1,0 +1,290 @@
+[
+	{
+		"id": "2423",
+		"author": "Christian",
+		"authorUrl": "http://webdesignblog.de",
+		"date": "2006-06-07T10:06:07.000Z",
+		"content": "Hi!\nich würde die Subdomain-Variante empfehlen wenn du weniger ein Website-Tüfftler bist und dich hauptsächlich für das Schreiben interessierst.\n\nWenn du häufig an der Website rumbastelst und neue Plugins/Features einbaust, würde ich \"Bunny's Basic Bilingual Plugin\" empfehlen, bei mehreren Sprachen weiß ich es nicht, wird aber keine gut-funktionierende Lösung geben, hoffe das ändert sich aber bald.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2424",
+		"author": "Basic Thinking Blog » Mehrsprachige Blogs",
+		"authorUrl": "http://www.basicthinking.de/blog/2006/06/07/mehrsprachige-blogs/",
+		"date": "2006-06-07T19:21:55.000Z",
+		"content": "[...] es passiert hin und wieder, dass ein deutschsprachiger Blogger gerne seine Inhalte auch auf Englisch einstellen m&#246;chte. Die Gr&#252;nde dazu k&#246;nnen vielf&#228;ltiger Natur sein, manchmal des Traffics wegen f&#252;r ProBlogger Interessierte, manchmal um seine Zielgruppe auch international ansprechen zu k&#246;nnen, etcpp. Und somit geht die Suche nach einer L&#246;sung los, wie man denn bittesch&#246;n eine multilinguale L&#246;sung hinbekommen soll. Tobias Jordans hat sich auf seinem Flying Sparks schlau gemacht und bietet eine hervorragende Sammlung an L&#246;sungspfaden f&#252;r mehrsprachige Wordpress-Blogs. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "2426",
+		"author": "LJay",
+		"authorUrl": "http://ml_multilingual.code-in-design.de/",
+		"date": "2006-06-07T21:00:00.000Z",
+		"content": "Hi.\nZu den Kommentaren zu ML Multilingual:\n- Doku nun weiter vervollständigt\n- Theme-Anpassung für Jederman simpel und schnell (dokumentiert)\n\nzu \"- Es scheint keine Lösung für Pages / Kategorien-Einleitungen zu geben.\"\nDa weiss ich immo leider nicht genau, was du meinst?\n\nzu \"RSS\"\nJa das stimmt allerdings. Bisher fehlte mir noch die Zeit, mich dem anzunehmen, was aber garnicht mal so schwer sein sollte, da man das RSS ja lediglich auf eine Kategorie beziehen muss.\nIn einer freien \"Minute\" werd ich mich dem nochmal annehmen.\n\nzu \"Wordpress 2.0\"\nSagen wir es mal so; aktuell setze ich das Plugin beruflich ein (www.bluebuy.info).\nDas ist eine WP 1.5.2 Installtion.\nDa sich leider die Community sehr verschlossen zurückhält, Feedback zu geben, muss ich gestehen, hat das PlugIn keine Priorität mehr.\nDenn wo kein Nutzer, da kein Zweck.\n\nSeit also angeregt, auf der PlugIn Site Feedback  zu posten!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2427",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-06-07T21:04:23.000Z",
+		"content": "@Robert Basic-Trackback:\n\nMein lieblingszitat zu der Frage, warum man mehrsprachig sein sollte: \"My favourite is number 53, which for most people is the most difficult to follow, but honestly could be some of his best advice on the list: write in Chinese.\" (<a href=\"http://www.bloggingpro.com/archives/2006/06/05/56-ways-to-increase-your-blog-traffic/\">Quelle BloggingPro</a>)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2428",
+		"author": "Heinz Grünwald",
+		"authorUrl": "http://www.comdao.net",
+		"date": "2006-06-07T23:11:07.000Z",
+		"content": "Wir haben auch ein 2-Sprachiges Blog und uns dabei für Variante 1 entschieden, macht meiner Meinung nach am Wenigsten Probleme, klar man hat die dopplete Arbeit - hey aber so viel Arbeit ist ein Blog auch nicht ;) ... die Verlinkungen sind halt ein Problem.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2431",
+		"author": "LJay",
+		"authorUrl": "http://ml_multilingual.code-in-design.de/",
+		"date": "2006-06-08T19:32:10.000Z",
+		"content": "Nochmal zu ML Multilinugal -&gt; \"Es scheint keine Lösung für Pages \".\n\nDas bezieht sich NUR auf WP2.x !\nIn den WP1.5.x Versionen funktioniert die Zuordnung pages genauso, wie die der posts!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2433",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-06-08T23:15:44.000Z",
+		"content": "LJay: Mir war nicht bewusst, dass WP 1.5 überhaupt Pages kennt... Ich habe den ersten Satz aber jetzt konkretisiert: Es geht mir rein um WP2-Lösungen.\nDanke für die Ergänzungen!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2434",
+		"author": "LJay",
+		"authorUrl": "http://ml_multilingual.code-in-design.de",
+		"date": "2006-06-09T11:34:42.000Z",
+		"content": "Hoffe wir missverstehen uns hier jetzt nicht.\nSicher kennt WP1.5 \"pages\".\nWürde sogar behaupten, das es dies seit Begin kennt.\n\nDu hast vermutlich mit WP2 angefangen und kennst 1.5 garnicht, dann kann ich die Aussage natürlich nachvollziehen, und stelle sie hiermit richtig. ;)\n\nPS: Heute gibts ein neues Update - leider noch nicht für WP2.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "5616",
+		"author": "Vitali",
+		"authorUrl": "http://www.fernseher-zubehoer.de",
+		"date": "2006-11-28T20:51:38.000Z",
+		"content": "Suche die ganze Zeit nach einer Lösung Ohne erfolg :-( \n\nginbt es vielecht was neues auf dem Gebiet ? \neinige CMS können das einfach wie ZB. XTC ! Vielleicht hat ja jemand so was für WordPress geschrieben !",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "6824",
+		"author": "otoF",
+		"authorUrl": "http://otof.de",
+		"date": "2007-01-07T12:05:23.000Z",
+		"content": "Zur Variante 1: Um nicht mehrer Wordpress Instanzen zu installieren, kann man sich das Plugin <a href=\"http://rephrase.net/box/word/multiply/\">Multiply</a> installieren.  Man bedient die verschiedenen Blogs im Backend. Hat bei mir funktioniert, allerdings wollte ich in einer zweiten Instanz ein Fotoblog laufen lassen, was bei mir mit dem Plugin nicht geklappt hat. Aber weitere Sprachen wären bestimmt möglich.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24308",
+		"author": "Manfred",
+		"authorUrl": "http://www.filorosso.de",
+		"date": "2007-06-27T12:10:22.000Z",
+		"content": "Ich habe mein letztes Projekt <a href=\"http://www.sardain.de/\">Ferienhäuser in Sardinien</a> mit der Variante <a href=\"http://fly.ingsparks.de/2006-06-07/wordpress-mehrsprachig/\">Multi-(Sub)Domain-WordPress</a> gelöst. Nachteil: Beim editieren der Sprachen hat man nicht alles auf einen Blick, sondern muß pro Sprache einen Admin-Tab öffnen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24714",
+		"author": "Glutamin",
+		"authorUrl": "http://www.fitness-am.de",
+		"date": "2007-08-31T15:41:41.000Z",
+		"content": "Für meien rojekte find ich einfach keine Lösung. SUche auch en Lösung für Wordpress",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25081",
+		"author": "Kaiser",
+		"authorUrl": "http://",
+		"date": "2007-09-20T02:30:13.000Z",
+		"content": "Hello,\nzu LJAY: Dann aktivier doch einmal bitte die Kommentare... auf Deiner Seite war ich schon. SO ist das ziemlich fad.\n\nzu polyglot: Wer es sich antut und 800 Kommentare liest, sieht zwar, dass das die beste Lösung ist, aber noch weit entfernt von einsatzbereit. Es fehlt an soviel... zB Kann man title nicht übersetzten, Menü, usw. sehr mühsam außerdem wenn man noch auf die anderen Fehler drauf kommt. zB das die komplette Adminarea auf einmal wieder in english ist... auch wenns gar keine Englische Sprachdatei mehr gibt... Oida! Was soll das. Ist verdammt frustrierend. Und was bei polyglot (und das ist das beste bis jetzt)  sowieso fehlt ist einfach einmal eine to-do liste für die kommenden veröffetnlichungen und eine zusammenfassung der lösungen, die einzelne user unter kommentar zB #563 bieten ... bei grauem text auf schwarzem hintergrund. mir ist es vergangen. ich pfeif drauf. ehrlich. das thema ist einfach gestorben (und ich war schon dabei einen tinymce button für die [lang_usw.] zu machen...) Na denn. Vielleicht gitb wer anderer nicht auf und erklährts mir per Mail: der.kaiser [at] gmx.at Ich revanchiere mich gerne mit Hilfe bei Grafik, 3D o.Ä. Beste Grüße! Euer Herr.Kaiser.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25181",
+		"author": "My favorite WordPress Resources | sebthom.de",
+		"authorUrl": "http://sebthom.de/46-favorite-wordpress-resources/",
+		"date": "2007-09-30T09:15:14.000Z",
+		"content": "[...] WordPress mehrsprachig [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "28358",
+		"author": "Lampen",
+		"authorUrl": "http://www.handelsring.de",
+		"date": "2007-12-28T13:39:00.000Z",
+		"content": "Ich würde variante a nehmen. Das mit den subdomains finde ich am sinnvollsten. Macht zwar für den Moment ein wenig aufwand aber langfristig ist es ideal.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "28391",
+		"author": "Plissee",
+		"authorUrl": "http://www.gardinen-vertrieb.de/",
+		"date": "2007-12-28T19:09:24.000Z",
+		"content": "Wir haben auch ein 2-Sprachiges Blog und uns dabei für Variante 1 entschieden, macht meiner Meinung nach am Wenigsten Probleme, klar man hat die dopplete Arbeit - hey aber so viel Arbeit ist ein Blog auch nicht ;) … die Verlinkungen sind halt ein Problem.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "28541",
+		"author": "Kurzurlaub",
+		"authorUrl": "http://www.mein-kurzurlaub.de",
+		"date": "2007-12-29T20:13:18.000Z",
+		"content": "Ein 2-sprachiges Blog macht schon viel Arbeit. Anders lässt es sich aber kaum realisieren. Denn die üblichen Übersetzer, die man findet, können niemals die gleiche Qualität wie eine eigene Übersetzung erreichen. \nWenn man also Sinn darin sieht und Lust hat, sollte man sich die Mühe machen, in beiden Sprachen zu schreiben - vielleicht auch nicht immer die gleichen Einträge.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "29513",
+		"author": "Peter",
+		"authorUrl": "http://www.konzerte-abfeiern.de/",
+		"date": "2008-01-14T13:29:06.000Z",
+		"content": "2-Sprachiges Blog ist mir zu viel arbeit, die ganze verlinkung etc. Ein 2-Sprachiges Blog ist ok aber nur auf 2 domains, dann ja.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "30607",
+		"author": "Nils",
+		"authorUrl": "http://www.saltylemon.de",
+		"date": "2008-01-23T23:16:07.000Z",
+		"content": "Hallo!\n\nIch stimme Peter zu. Ich habe derzeit ein kleines, neues Projekt gestartet, bei dem wir große Marktführer mit kleinen Anbietern im Hinblick auf die Qualität vergleichen. Das Ganze ist für großen Finanz- und Versicherungsbereich gedacht, früher oder später - je nachdem, ob die Marktführer da mit machen, werd ich mir wohl auch überlegen, einen englischen Blog für <a rel=\"nofollow\" href=\"http://www.versicherungswesen.info\">versicherungswesen.info</a>\nanzulegen. Allerdings würd ich dann wohl eine 2te Domain holen und die Artikel direkt immer übersetzen und per Trackback unmittelbar vernetzen. Oder aber pro Beitrag je eng und de Version posten. Man wird sehen, was die Zeit bringt. Ich kann gern noch einmal zu gegebener Zeit darüber berichten?\n\n\nViele Grüße,\nnils\n\n<em>//Edit 24.1.08: rel=\"nofollow\" gesetzt da Beitrag hart an der Grenze zu Link-Spam :-) ~Tobias</em>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33140",
+		"author": "Tim Bormann",
+		"authorUrl": "http://www.auswandern-spanien.net/",
+		"date": "2008-04-20T08:14:37.000Z",
+		"content": "Hallo Tobias, zunächst danke für Deine Übersicht (hätte mich einen Tag gekostet!) und dann eine Frage: Hast Du nun ein Projekt mit der Subdomainvariante begonnen und wie gewährleistet Du die Vernetzung?\n\nGrüße Tim",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33141",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-20T15:40:49.000Z",
+		"content": "Hallo Tim, freut mich, dass der Artikel hilft. Er ist ja schon etwas älter. Es kann daher sein, dass sich für WP 2.5 etwas Neues getan hat... Bitte auch den Codex und das offizielle Pluginverzeichnis von WP auf wordpress.org.\n\nIch habe damals leider gar kein WP-Sprachenprojekt gemacht. Man müsste innerhalb des Plugins die Vernetzung gewährleisten. Man könnte ja eines schreiben, dass die Artikel der anderen Instanz jew. \"kennt\" indem man ihm DB-Zugriff gibt...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33143",
+		"author": "Tilo Schröder",
+		"authorUrl": "http://tiloschroeder.de",
+		"date": "2008-04-24T13:44:25.000Z",
+		"content": "Hej Tobias,\nalso erstmal danke für diese gute Übersicht . Auch wenn sie schon ein bisschen älter ist, scheints so also ob sich in dieser Hinsicht noch nicht viel geändert hat.\nMom stehe ich auch gerade vor diesem Problem: einen Blog in deutsch und englisch einzurichten.\nMein erster Ansatz war, die englischen Seiten als Unterseiten einzurichten und über die function.php gezielt abzufragen,  so dass man dann z.B. auch ein anderes Logo etc für diese Seiten einfügen kann.\nDa aber mit 2 unterschiedlichen Domains (.de und .com) gearbeitet werden soll, und es sich bei dem Blog nicht unbedingt um \"ein paar\" Seiten handelt, werde ich es wohl mit Deiner als erstes vorgestellten Variante - die mir auch als die einfachste und unkomplizierteste Variante erscheint - realisieren.\n\nViele Grüsse\nTilo",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33219",
+		"author": "Chiro",
+		"authorUrl": "http://",
+		"date": "2008-12-10T11:56:03.000Z",
+		"content": "In Typo3 scheint das ja insgesamt nicht sehr schwer zu sein.\nIn Wordpress habe ich auch mit erster Variante gearbeitet, da die anderen meist Probleme machen, wenn man sein Theme updatet oder ändert. Grundsätzlich sollte es ja nicht so schwer sein, ein Plugin zu schreibe, kann es nur selbst nicht.\nUm ein Blog mehrsprachig betreiben zu können reicht es ja eigentlich, Titel und Beitrag zu übersetzen. Hier könnte man bspw. mit custom fields arbeiten. Besser gefiele mir ein Plugin, dass für jede Sprache eine eigenes Titel und Beitragsfeld (ggf. auch Tag-feld= anbietet. In der Datenbank wird dies zusammen gespeichert (so dass die Page- oder Post-ID identisch bleibt, und auch alle weiteren Daten wie custom-fields, Time-Stamp etc. gleich bleiben).\nBei der Umschaltung der Sprache im Frontend, bleibt man so einfach auf der gleichen Seite (und springt nicht, wie bei Variante m. doppelter Installation, auf die Startseite). Alles wäre in einer Installation machbar und sollte auch perfekt suchmaschinenfreundlich sein.\nWürde mich freuen an einem solchen Plugin-Projekt konziperend mitzuarbeiten.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33264",
+		"author": "Vitaliy",
+		"authorUrl": "http://www.design4u.org",
+		"date": "2009-07-12T18:24:47.000Z",
+		"content": "Hallo Tobias!\nErstens vielen Dank für die Übersicht. Zweitens, hat sich etwas geändert / dazugekommen etc.? Ich stehe momentan vor dem Problem, vor dem wahrscheinlich die meisten stehen die diesen Artikel lesen - ich will mein WP mehrsprachig machen ;) Könntest du etwas empfehlen? Die letzten Kommentare sind ja schon älter.. Danke!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33265",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-07-13T12:41:52.000Z",
+		"content": "Hallo Vitaliy, ich kann dir leider keinen aktuellen Tipp geben, würde ich aber freuen, wenn du deine Erfahrung hier berichtest. \nMeine Empfehlung wäre, auf ein Plugin zurück zu greifen, das eine sehr gute Community hat oder einen kommerziellen Background hat. Sonst hast du mit jedem WP Update Probleme. Erstere Plugins findet man meist im offiziellen Pluginverzeichnis...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33327",
+		"author": "WordPress mehrsprachig | Oberlehrer",
+		"authorUrl": "http://www.oberlehrer.de/?p=3257",
+		"date": "2010-02-17T08:20:13.000Z",
+		"content": "[...] WordPress mehrsprachig, bietet Informationen zu mehreren Ansätzen [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33345",
+		"author": "Bernd eichinger",
+		"authorUrl": null,
+		"date": "2010-04-23T13:33:55.000Z",
+		"content": "wow geile erfahrung....vielen dank",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33351",
+		"author": "delicious Links: 26. June 2010 | miZine",
+		"authorUrl": "http://mizine.de/daily-delicious-links/links-253/",
+		"date": "2010-06-27T23:01:45.000Z",
+		"content": "[...] WordPress mehrsprachig &#8211; flyingsparks Tags: worpress mehrsprachig multilingual wp [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33367",
+		"author": "Michi",
+		"authorUrl": null,
+		"date": "2010-11-21T18:36:05.000Z",
+		"content": "Deine erste Lösung habe ich auch erfolgreich auf einem anderen Projekt benutzt. find ich gut danke",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33374",
+		"author": "Mathias",
+		"authorUrl": null,
+		"date": "2011-03-30T18:54:27.000Z",
+		"content": "wir benutzen lieber 2 Blogs als einen mehrsprachigen, das ist meistens weniger Arbeit und zweitens können wir die Märkte gezielter bearbeiten.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33380",
+		"author": "Mathias Flensburg",
+		"authorUrl": null,
+		"date": "2011-05-17T10:15:17.000Z",
+		"content": "ich liebe mehrsprachige blogs, da man als seo maßnahme den linkjuice besser fokussieren kann. Ausserdem steigt die Qualität des Blogs durch mehrere Sprachen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33382",
+		"author": "Björn",
+		"authorUrl": null,
+		"date": "2011-06-10T23:44:30.000Z",
+		"content": "Wir haben auch ein 2-Sprachiges Blog und uns dabei für Variante 1 entschieden, macht meiner Meinung nach am Wenigsten Probleme",
+		"parent": "0",
+		"type": "comment"
+	}
+]

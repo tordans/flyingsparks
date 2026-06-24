@@ -1,0 +1,38 @@
+[
+	{
+		"id": "111",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-03-01T07:17:07.000Z",
+		"content": "Ich kenne eine unschlagbare Alternative, bei der Geräte nichtmehr im Standby Strom verbrauchen:\nEinfach Geräte nichtmehr ausschalten!\nWahnsinnig gerissen, ich weiß.\n\nAber ernsthaft: So energetisch betrachtet toll das Ganze doch ist, oftmals hat selbst die Stanbyfunktion ihre Funktion. Ich denke da an Senderspeicherung etc., all das, was nur mit Strom gespeichert wird.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "113",
+		"author": "TJ",
+		"authorUrl": "http://www.jordans-online.de",
+		"date": "2005-03-04T11:30:05.000Z",
+		"content": "Guck dir mal die Stiftung-Warentest-Auswertungen an. Es gibt viele Geräte die unverhältnismäßig viel Strom saugen!\nUnd viele der Funktionen könnten auch anders gelöst werden!\n\nPS: Ich scheine wirklich keine Kommentar-eMails zu bekommen =(",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "586",
+		"author": "Infografiken und Infofilme * flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2005-11-11/infografiken-und-infofilme/",
+		"date": "2005-11-11T09:09:28.000Z",
+		"content": "[...] Und wenn die Anleitung auch Nicht-Filmisch erfolgen darf, könnten das Energiesparen-Plakat  und die Filme-als-Plakat eine Anregung sein (beide hier verlinkt). [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "2425",
+		"author": "Pfadiblog - Das Pfadfinder-Magazin. » Tu was, denn \"We Are What We Do\"",
+		"authorUrl": "http://www.pfadiblog.de/2006/06/07/tu-was-denn-we-are-what-we-do/",
+		"date": "2006-06-07T20:53:05.000Z",
+		"content": "[...] [via konsumblog, flyingsparks, konsumblog] [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

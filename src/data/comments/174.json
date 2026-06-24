@@ -1,0 +1,38 @@
+[
+	{
+		"id": "433",
+		"author": "bernie",
+		"authorUrl": "http://gondi-online.de",
+		"date": "2005-09-27T11:10:18.000Z",
+		"content": "Grundsätzlich hast du ja Recht, dass vieles in wikipedia besser aufgehoben wäre. Das Problem, das ich sehe, dass es viele Themen gibt, die dann halt doch nicht passen. Z.B.: Spiele, Rezepte, ganz spezifische, stammesbezogene (nicht neutrale) Anleitungen usw. oder auch spezifische Themen für Kinder aufbereitet. Das eine dann in wikipedia, das andere in einem spezifischen wiki ist für Kinder und Jugendliche dann auch nicht so einfach zu verkraften und macht das Ganze auch nicht übersichtlicher. Das war auch der Grund, dass wir gondi-online gegründet haben, das sich auch noch mit scout-o-wiki überlappt. (Wobei wir etwas früher dran waren.)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "441",
+		"author": "bernie",
+		"authorUrl": "http://gondi-online.de",
+		"date": "2005-09-28T05:43:54.000Z",
+		"content": "du hast sicher Recht, dass vieles in wikipedia auch Platz hätte, aber viele Themen schreiben wir nicht neutral, sondern für Kinder und Jugendliche, spezifische Aufbauanleitungen für einen bestimmten Stamm, Spiele und eigene Rezepte; das eine dann in wikipedia, das andere in einem eigenen wiki halte ich auch nicht für gut; meines Erachtens würde das das Arbeiten mit den Themen auch erschweren; deshalb haben wir gondi-online aufgesetzt; das auch noch parallel zu scout-o-wiki ist (nur waren wir etwas früher dran)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "447",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-09-28T12:47:08.000Z",
+		"content": "Ich habs gelesen :).\nUnd ich finde es wichtig. Immerhin habe ich ja auch bei passendem (und verlinkten) Artikel im Scout-o-Wiki (SoW) nicht weiterdiskutiert. Allerdings bewusst.\n\nZur Abgrenzung von Themenwikis: Es ist eine Frage des Kosmos. Denke ich. In der Wikipedia (WP) bewegst du dich in ALLEM, es folgt keine Abgrenzung. Wenn du aber im SoW über Axt und Beil schreibst, wird damit automatisch vermittelt, dass es sich dabei um eine pfadfinderische Betrachtungsweise von Axt und Beil handelt (funktioniert im speziellen Fall jetzt nciht, aber allgemein sollte es darauf hinauslaufen). Tiefgehender noch: Ein allgemeiner WP-Artikel \"Zelt\" sollte weit anders aussehen als ein SoW-Artikel \"Zelt\"! \nUnd ich denke, beide Artikel hätten ihre jeweilige Daseinsberechtigung! Was interessiert einen WP-Leser, dass man Juffis und Wös, Pfadis und Rover, nicht aber Rover und Wös mischen kann? Was interessiert einen SoW-Leser, dass die neuen Aldi-Zelte am besten vertikal gerollt werden? (Beides sind fiktive, aber durchaus mögliche spezielle Betrachtungsweisen in den Artikeln).\nWenn dann noch ein ordentliches Crosslinking in den \"Weblink\"-Sektionen der jeweiligen Artikel durchgeführt wird, sehe ich kein Problem über teilweise inhaltliche Redundanz (die dann aber ja durch jeweilige inhaltliche Ergänzungen komplettiert und individualisiert wird).\n(Hier ist natürlich immer von einem im Moment im SoW kaum erreichten Idealbild eines Pfadfinderartikels die Rede)\n\nWeiterhin ist auch dein Ansatz mit der WP-Größe tiefgehender: (speziell für das SoW) Ich habe große Skrupel (ok, hatte ;D) bei der WP etwas zu bearbeiten. Es gibt da einen HAUFEN Leute, die es wesentlich besser können. Das, was ich da gerade geschrieben habe. Aber bei einem Pfadfinderwiki weiß ich, von den Pfadfidnern gibt es garnicht soooviele, und Pfadfindern ist etwas ganz persönliches, da ist meine Meinung-Schrägstrich-Betrachtungsweise durchaus gefragt!\nUnd weil man unter Pfadfindern sowieso skrupel-ähm-hemmungslos ist, bearbeitet man dann IMHO schneller als in der WP etwas. So zumindest ein mögliches Szenario, was ich mir vorstellen könnte.\n\n(Ich kann auch lange Artikel-Schrägstrich-Kommentare schreiben, wusstest du das schon :D?)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "678",
+		"author": "Wiki als CMS: StugA Sport * flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2006-01-07/wiki-als-cms-stuga-sport/",
+		"date": "2006-01-07T09:08:00.000Z",
+		"content": "[...] &#8230;und es ist ein Wiki! In meinem Artikel Wiki-Splitting und Wikpedia 2.0 habe ich schon einige Wiki-Nutzungsvarianten gesammelt, diese ist neu: Das Wiki-System als Redaktionssystem für Standard-Websiteinhalte zu nutzen. Natürlich, das geht. Man kann Weblogs simmulieren, Artikel schreiben, Fotos darstellen, Benutzerrechte vergeben&#8230; &#8212; im Grunde alles, was ein &#34;richtiges&#34; System wie Typo3 oder Joomla auch kann. Und wenn man einmal in die Eigenheiten der MediaWikis eingearbeitet ist, ist dieser Weg für die Admins wahrscheinlich bequemer&#8230; [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

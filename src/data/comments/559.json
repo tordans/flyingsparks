@@ -1,0 +1,20 @@
+[
+	{
+		"id": "33129",
+		"author": "IT-Republik-php",
+		"authorUrl": "http://it-republik.de/php/news/Google-visuell-042539.html",
+		"date": "2008-04-07T07:47:26.000Z",
+		"content": "<strong>Google visuell...</strong>\n\nTobias Jordans hat sich in seinem Blog einmal kurz Googles Visualization API ...",
+		"parent": "0",
+		"type": "trackback"
+	},
+	{
+		"id": "33169",
+		"author": "Die schönen Fokus+Kontext-Timelines verbreiten sich zunehmend… - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-08-17/die-schoenen-fokuskontext-timelines-verbreiten-sich-zunehmend/",
+		"date": "2008-08-17T16:01:28.000Z",
+		"content": "[...] Prominentestes Beispiel: Google Finance und &#8212; seit einer kurzen Weile &#8212; die Google-Visualisation API, YouTube und viele andere Google-Dienste. &#8212; Mehr hierzu hier im Blog&#8230; [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

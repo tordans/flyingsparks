@@ -1,0 +1,47 @@
+[
+	{
+		"id": "25134",
+		"author": "2D-Barcodes und die Wireless Posting Control - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2007-07-26/2d-barcodes-und-die-wireless-posting-control/",
+		"date": "2007-09-22T08:04:26.000Z",
+		"content": "[...] kann Barcodes via Tastatur und (neu) via Webcam erkennen. arbeitet noch mit dem herk&#246;mmlichen Barcode und hat leider auch noch [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "25182",
+		"author": "Konstantin",
+		"authorUrl": "http://konnexus.de",
+		"date": "2007-10-01T14:50:46.000Z",
+		"content": "bei mir funzt es mit der webcam des imacs nicht. schade. oder weiß jemand warum die webcam nur schwarz anzeigt?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25183",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-10-01T15:03:14.000Z",
+		"content": "Dort wird ja die Flash-Funktion verwendet... Kann dein Flash denn auf die Webcam zugreifen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25184",
+		"author": "Konstantin",
+		"authorUrl": "http://konnexus.de",
+		"date": "2007-10-01T15:09:01.000Z",
+		"content": "jep. hab es autorisiert.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "26212",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-12-06T11:32:19.000Z",
+		"content": "Ergänzung: Amiando nutzt eine einfache Webcam als Ticket-Einlasskontrolle: http://wirsind.amiando.com/2007-11-30/einfaches-einlassmanagement-mit-easyentry/\nAuch eine schöne Anwendung/Idee",
+		"parent": "0",
+		"type": "comment"
+	}
+]

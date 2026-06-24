@@ -1,0 +1,38 @@
+[
+	{
+		"id": "35",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-01-28T08:54:39.000Z",
+		"content": "Ja: Leitmotiv wird im englischen häufiger mit f am Ende (also als \"leitmotif\") geschrieben.\nAber geht wohl beides...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "36",
+		"author": "TJ",
+		"authorUrl": null,
+		"date": "2005-01-28T09:23:44.000Z",
+		"content": "Gibt es dazu eigentlich einen WIkipedia-Eintrag? :)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "37",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-01-28T10:55:13.000Z",
+		"content": "Logisch ;)\nhttp://en.wikipedia.org/wiki/Leitmotif",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "38",
+		"author": "TJ",
+		"authorUrl": null,
+		"date": "2005-01-28T11:43:52.000Z",
+		"content": "Interessant.\nIch dachte aber eher an diese Links:\n\n1. http://de.wikipedia.org/wiki/Kategorie:Wortexport\n2. http://en.wikipedia.org/wiki/List_of_German_expressions_in_English",
+		"parent": "0",
+		"type": "comment"
+	}
+]

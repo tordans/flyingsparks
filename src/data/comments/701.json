@@ -1,0 +1,20 @@
+[
+	{
+		"id": "33306",
+		"author": "Niklas",
+		"authorUrl": "http://www.ringgebiet.de/",
+		"date": "2009-10-27T14:00:07.000Z",
+		"content": "Hi,\nbei dem Google Reader gibt es unter Einstellungen -&gt; Extras dieses Javascript-Lesezeichen \"Abonnieren...\". \nDas erfüllt glaube ich deinen Wunsch nach User Experience. \nDas Script erkennt einen Feed einer Website meistens automatisch. Wenn er nicht im HTML-Head angegeben ist funktioniert es auch, wenn man den Feed direkt öffnet und dann auf den \"Abonnieren..\"-Link klickt.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33308",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-11-01T17:35:43.000Z",
+		"content": "@Niklas Das Script kenne ich. Vielleicht hast du Recht und ich sollte mir angewöhnen, es zu verwenden.\nDas sehe ich aber eher als Workaround als als intelligente Lösung von Seiten Googles.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

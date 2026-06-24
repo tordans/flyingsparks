@@ -1,0 +1,20 @@
+[
+	{
+		"id": "2448",
+		"author": "Tim",
+		"authorUrl": "http://blog.bruysten.com",
+		"date": "2006-06-17T23:15:41.000Z",
+		"content": "Mein Reden! Ich würde dem \"ersatzlos abschaffen\" fast vollständig zustimmen. Es gibt aber einige Ausnahmen. Innerhalb von Computer(gesteuerten)systemen können Fehler auftreten, die durch Software nicht beeinflußbar sind, die aber unbedingt dem Benutzer mitgeteilt werden müssen. In einem solchen Fall, kann die \"Only-OK-Button\"-Box ein adäquates Mittel sein.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2450",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-06-18T11:25:43.000Z",
+		"content": "Hallo Tim. Eigentlich will ich genau das nicht. Denn das ersatzlose streichen hat in diesem Beispiel in der Office-Beta zu großen Problemen geführt, die ich nachvollziehen kann: Die Benutzer wollten feedback, wenn die Überprüfung abgeschlossen ist.\nFür mich ist der Punkt: Feedback ist gut aber es muss nicht mit OK-Klicken erfolgen.\nDie Form des Feedbacks muss angepasst werden...",
+		"parent": "0",
+		"type": "comment"
+	}
+]

@@ -1,0 +1,38 @@
+[
+	{
+		"id": "838",
+		"author": "Oliver Wagner",
+		"authorUrl": "http://www.agenturblog.de",
+		"date": "2006-05-09T07:58:12.000Z",
+		"content": "Danke für den interessanten Hinweis.\n\nHier ein manueller Trackback:\n<a href=\"http://www.agenturblog.de/archives/2006/05/schulterblick-ein-neues-projekt-entsteht.php\">Schulterblick: Ein neues Projekt entsteht</a>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "840",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-05-09T11:45:18.000Z",
+		"content": "Hallo Oliver, interessante Kommentare auf deinen Artikel. RSS gespeichert :-)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "841",
+		"author": "Basic Thinking Blog » Öffentliche Projektplanung inkl. Finanzen",
+		"authorUrl": "http://www.basicthinking.de/blog/2006/05/09/oeffentliche-projektplanung-inkl-finanzen/",
+		"date": "2006-05-09T12:54:42.000Z",
+		"content": "[...] via Flying Sparks      Artikel abgelegt unter: [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "7611",
+		"author": "barenakedapp#2: Selling DropSend - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2007-01-17/barenakedapp2-selling-dropsend/",
+		"date": "2007-01-17T11:25:59.000Z",
+		"content": "[...] Zur Erinnerung (mein Post): Dort haben letzte Jahr die Carsons alle H&#252;llen fallen gelassen und den Entwicklungsprozess ihrer Webapplikation Amigo dokumentiert. [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

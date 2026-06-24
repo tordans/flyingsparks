@@ -1,0 +1,47 @@
+[
+	{
+		"id": "4664",
+		"author": "Pfadiblog - Das Pfadfinder-Magazin. » Gapminder: Spaß mit Statistiken",
+		"authorUrl": "http://www.pfadiblog.de/2006/10/11/gapminder-spas-mit-statistiken/",
+		"date": "2006-10-11T07:55:42.000Z",
+		"content": "[...] Schaut euch einmal das 20-Minuten-Video an, das ich in meinem Beitrag &#34;Gapminder: Weltweite Datenvisualisierung&#34; verlinke. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "22825",
+		"author": "Datenvisualisierung mit Digg Labs, GE Earth, Many Eyes, Swivel etc. « Jakoblog — Das Weblog von Jakob Voß",
+		"authorUrl": "http://jakoblog.de/2007/05/23/datenvisualisierung-mit-digg-labs-ge-earth-many-eyes-swivel-etc/",
+		"date": "2007-05-22T23:19:04.000Z",
+		"content": "[...] Via Documentación, biblioteconomía e información (ausgehend von einer Kurzdarstellung der spanischen Biblioblogosph&#228;re) bin ich auf das anscheinend schon einige Monate alte Digg Labs gesto&#223;en. So richtig konnte ich mit Digg ja noch nie etwas anfangen aber die M&#246;glichkeiten der Visualisierung sind schon interessant und es wird auch eine API bereitgestellt, um selber mit den Daten herumzuspielen. Noch interessanter als das Auslesen von Daten finde ich allerdings Anwendungen, in die Daten zur Visualisierung eingespielt werden k&#246;nnen, wie das hier schon erw&#228;hnte Many Eyes und das vergleichbare swivel, sowie zum Beispiel GE Graph f&#252;r Google Earth. Zu erw&#228;hnen ist auch das auf UN-Daten spezialisierte Gapminder (siehe dazu bei Flying sparks. Nur auf einen guten Dienst f&#252;r die allgemeine Darstellung von Graphen warte ich noch - Daten g&#228;be es gen&#252;gend.  Tags: Blogs, Tagging, Visualisierung | [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "24466",
+		"author": "Ideensammlung. » Blog Archive » Über die Notwendigkeit von Datenvisualisierung",
+		"authorUrl": "http://daniel.omschallom.com/2007/07/24/ueber-die-notwendigkeit-von-datenvisualisierung/",
+		"date": "2007-07-24T09:14:52.000Z",
+		"content": "[...] verbessern. Weil fly.ingsparks.de den Inhalt schon gut zusammengefasst hat, erlaube ich mir, fly.ingsparks.de zu [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33127",
+		"author": "Visualisierungen und die neue API von Google - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-04-06/visualisierungen-und-die-neue-api-von-google/",
+		"date": "2008-04-06T01:01:18.000Z",
+		"content": "[...] erwartet und an welchen Stellen wir zuk&#252;nftig bessere Sicht auf unsere Daten bekommen werden. Hans Rosling (mehr bei mir) wird sich jedenfalls freuen, dass seine beiden TED-Talk-Wunsche jetzt in ref&#252;llung sind: Zum [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33131",
+		"author": "Daten dartstellen in Ruby on Rails",
+		"authorUrl": "http://www.techietalk.de",
+		"date": "2008-04-09T07:30:26.000Z",
+		"content": "Sehr interessantes Thema, kannte gapminder bisher noch nicht. Danke für die Links! Daniel",
+		"parent": "0",
+		"type": "comment"
+	}
+]

@@ -1,0 +1,29 @@
+[
+	{
+		"id": "7021",
+		"author": "WordPress-Ideen- und Mecker-Börse - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2007-01-10/wordpress-ideen-und-mecker-boerse/",
+		"date": "2007-01-10T20:32:50.000Z",
+		"content": "[...] Die Ideenb&#246;rser geht das Ganze von der positiven Seiten an. Wie schon vor knapp einem Jahr bei Pixoh beschrieben, hat das WP-Team seine Forums-Software etwas umgebaut so dass man Ideen schreiben, taggen, bewerten und kommentieren kann. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33123",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-03-31T12:23:57.000Z",
+		"content": "Update: Pixoh heißt wohl inzwischen Snipshot http://snipshot.com/ und hat die Seite, unter der man Verbesserungen einstellen kann, geschlossen. Mehr Infos findet man leider nicht dazu =(.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33124",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-04-03T11:33:03.000Z",
+		"content": "Auf meine Rückfrage hin, warum der Open Innovation-Teil geschlossen wurde, bekam ich schon nach einem Tag eine Antwort (sehr gut!): <blockquote>Tobias,\n\nWe discontinued it because the feedback we got there didn't seem to match the behavior of our users. Every now and again we conduct surveys to figure out what people want, and we pay attention to what they actually do with the software. Thanks for noticing!\n</blockquote>\n\nDas spricht einen interessanten Punkt an, der in diesem Zusammenhang sehr wichtig ist: Die Ideenliste erspart der Firma nicht, selbst innovativ zu denken :).",
+		"parent": "0",
+		"type": "comment"
+	}
+]

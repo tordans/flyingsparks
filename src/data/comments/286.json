@@ -1,0 +1,11 @@
+[
+	{
+		"id": "755",
+		"author": "Christian Samsel",
+		"authorUrl": "http://christian.samsel.name",
+		"date": "2006-03-15T11:44:55.000Z",
+		"content": "mysql Datenbank exportieren (z.b. per <i>mysql --opt datenbankname &gt; mysqldump.sql</i>, dann <i>recode recode ISO-8859-1..UTF-8 mysqldump.sql</i>\nDen Dump editieren und alle Tabellen auf UTF-8 ändern (DEFAULT CHARSET=utf8 hinzufügen)\nmysql Datenbank importieren. (mysql",
+		"parent": "0",
+		"type": "comment"
+	}
+]

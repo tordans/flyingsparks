@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { tagSlug } from '../../lib/slug';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts', ({ data }) => !data.draft);
+	const byTag = new Map<string, { name: string; posts: typeof posts }>();
+	for (const p of posts) {
+		for (const t of p.data.tags) {
+			const slug = tagSlug(t);
+			if (!byTag.has(slug)) byTag.set(slug, { name: t, posts: [] });
+			byTag.get(slug)!.posts.push(p);
+		}
+	}
+	return [...byTag.entries()].map(([slug, { name, posts: list }]) => ({
+		params: { tag: slug },
+		props: {
+			name,
+			posts: list.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+		},
+	}));
+}
+
+const { name, posts } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`Thema: ${name} — ${SITE_TITLE}`} description={`Alle Funken zum Thema ${name}`} />
+	</head>
+	<body id="page" class="content">
+		<Header variant="list" />
+		<h2 id="dieUeberschrift" class="page-title">Alle Funken für das Thema <strong>{name}</strong> ({posts.length})</h2>
+		<ul class="post-index">
+			{
+				posts.map((p) => (
+					<li>
+						<a href={p.data.permalink}>{p.data.title}</a>
+						<FormattedDate date={p.data.pubDate} />
+					</li>
+				))
+			}
+		</ul>
+		<Sidebar />
+		<Footer />
+	</body>
+</html>

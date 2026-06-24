@@ -1,0 +1,29 @@
+[
+	{
+		"id": "33257",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2009-06-28T07:18:01.000Z",
+		"content": "Ist nicht das, was du vorgeschlagen hast, aber wäre ein hübscher Zusatznutzen: Schau dir mal Tweetbacks an. Das ist ein Wordpress-Plugin, was die großen Short-URL'ler beobachtet und Artikel-Backlink als Kommentar darunter veröffentlicht…",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33258",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-06-28T11:52:27.000Z",
+		"content": "@Andi Ja, das ist die nächste Seite in dem Konzept oben, aus dem die Screenshots sind :-)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33271",
+		"author": "Matthias",
+		"authorUrl": "http://www.msdosbefehle.de",
+		"date": "2009-07-21T12:21:48.000Z",
+		"content": "Twitter ist eine tolle Erweiterung für Blogs.\nDas Tool von Mashable eignet sich dafür hervoragend.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

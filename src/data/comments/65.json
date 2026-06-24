@@ -1,0 +1,182 @@
+[
+	{
+		"id": "173",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-03-10T14:19:17.000Z",
+		"content": "Schlimm, sowas, da kann ich dir nur zustimmen.\nEin Kollege schickt immer folgende Signatur mit:\n<blockquote>\nWichtiger Hinweis:\nDiese Information ist fuer den Gebrauch durch die Person oder die Firma/Organisation bestimmt, die in der Empfaengeradresse benannt ist. Wenn Sie nicht der angegebene Empfaenger sind,  nehmen Sie bitte  zur Kenntnis,  dass  Weitergabe, Kopieren,  Verteilung  oder Nutzung des Inhalts dieser EMail-Uebertragung unzulaessig ist. Falls Sie diese EMail irrtuemlich erhalten haben,  benachrichtigen Sie den Absender bitte sofort telefonisch oder durch eine EMail an [Absender-Email].\nVielen Dank.</blockquote>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "177",
+		"author": "Josef",
+		"authorUrl": null,
+		"date": "2005-04-14T15:50:46.000Z",
+		"content": "&gt; \"Der Austausch von Nachrichten via e-mail ist unverbindlich.\n&gt; Rechtsgeschäftliche Erklärungen dürfen über dieses Medium nicht\n&gt; ausgetauscht\n&gt; werden. Die Informationen in diesem e-mail sind vertraulich und\n&gt; ausschließlich für den oder die Adressaten bestimmt. Der Empfänger dieses\n&gt; e-mail, der nicht Adressat oder einer seiner Mitarbeiter ist, darf den\n&gt; Inhalt nicht verwenden, weitergeben oder reproduzieren.\"\n\n\nDie Signatur ist recht cool",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "857",
+		"author": "Paul Kühl",
+		"authorUrl": "http://www.yahoo.de",
+		"date": "2006-05-16T12:07:29.000Z",
+		"content": "Hello World",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3613",
+		"author": "CableGuy",
+		"authorUrl": "http://www.cablemodem.ch",
+		"date": "2006-09-11T18:05:43.000Z",
+		"content": "Weitere idiotische E-Mail Signaturen gibts hier:\nhttp://new.aeolus.ch/home/blog.php",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "6517",
+		"author": "Ramona",
+		"authorUrl": "http://www.hapkemedia.com",
+		"date": "2006-12-29T09:52:55.000Z",
+		"content": "Danke für eure Anregungen.\nIch habe eine zu lange Signatur, weil ich zwei Webseiten und zwei Blogs betreibe.\nBin noch am Grübeln, wie ich es besser machen könnte. Außer \"idiotischen\" müsste es auch vorbildliche geben, kennt ihr da Seiten?\nGrüße Ramona",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25167",
+		"author": "Florian Schmidt",
+		"authorUrl": "http://telemedicus.info",
+		"date": "2007-09-23T12:32:19.000Z",
+		"content": "Ganz einfach: Diese Seite ist der erste *erwünschte* Google-Treffer zum Suchbegriff \"email signatur\". Tatsächlich habe ich nach der Netiquette zum Thema Email-Signatur gesucht.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "29702",
+		"author": "slick mick",
+		"authorUrl": "http://",
+		"date": "2008-01-16T23:19:34.000Z",
+		"content": "genau! ein treffer auf der suche nach der antwort auf die frage: wie trete ich von einer versehentlich an den falschen adressaten gesendete email rechtlich zurück?\n\nes grüßt,\n\nm.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "30227",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-01-20T19:45:48.000Z",
+		"content": "@slick: Danke. Leider weiß ich dazu nichts.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "32400",
+		"author": "Max Morgan",
+		"authorUrl": "http://",
+		"date": "2008-02-14T12:41:11.000Z",
+		"content": "Ich war auf der Suche nach originellen Emailsignaturen",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "32873",
+		"author": "Legiold",
+		"authorUrl": "http://",
+		"date": "2008-02-27T13:05:56.000Z",
+		"content": "Ich war auch auf der Suche nach originellen Emailsignaturen",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33120",
+		"author": "Susanne",
+		"authorUrl": "http://",
+		"date": "2008-03-26T12:34:26.000Z",
+		"content": "Hallo!\nich bin eigentlich auf der Suche nach einer Erklärung für das Phänomen, dass meine (geschäftlichen) E-Mails häufig von Mail-Programmen als Spam klassiert werden.\nDa habe ich mir gedacht, ob es wohl an meiner Signatur in den E-Mails liegen könnte?\nDa steht zwar nur der Name und alle nötigen Kontaktdaten - trotzdem...\nGrosses Fragezeichen, hat da jemand Erfahrungen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33121",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-03-26T22:39:43.000Z",
+		"content": "Hallo Susanne, an deiner Signatur sollte das Spam-Problem nicht liegen. Typischer Weise eher daran, dass du von einem Server aus sendest, der aus irgend welchen Gründen irgendwo auf einer Spam-Blacklist steht. \nIch würde empfehlen a) E-Mail-Test ganz ohne Signatur -- das schließt dieses Problem aus -- und b) mit den Sendeformaten experimentieren (nur-Text vs. HTML vs. Richtext).",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33142",
+		"author": "Luc",
+		"authorUrl": "http://",
+		"date": "2008-04-20T21:11:23.000Z",
+		"content": "Du fragst warum dieser Post so oft von Google Suchenden angesteuert wird? Nun, er ist der erste verwertbare Fund auf der Suche nach e-mail Signatur. Danach suchte ich als  mal wieder eine Bewerbungsmail fällig war. Und da möchte man doch überzeugen, eben auch mit der richtigen Signatur.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33194",
+		"author": "Georg",
+		"authorUrl": "http://",
+		"date": "2008-09-18T13:59:17.000Z",
+		"content": "Also ich suche, wie ich ein Bild aus dem Web in eine Signatur einbinden kann. Mittels HTML-Verweis, damit das Bild kein Attachment wird. Irgendwie schaff ich es nicht.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33207",
+		"author": "Ronny Trautmann",
+		"authorUrl": "http://www.Traumferienhausreisen.de",
+		"date": "2008-11-13T20:19:07.000Z",
+		"content": "unser Ferienhaus Portal sucht eine Möglichkeit unsere Visitenkarte als -mail Signatur anzuhängen! Vielen Dank für jeden Tip!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33235",
+		"author": "Catrin",
+		"authorUrl": "http://www.pepperparties.de",
+		"date": "2009-03-18T19:32:45.000Z",
+		"content": "Tja, ich bin nur auf der Suche nach einer lustigen und vielleicht auch hintegründigen Signatur für mein Forum...\nLeider steht hier viel interessantes, aber nicht das was ich suche :-)\nAber so ist das Internet nun mal und Google wird schon irgendwann das richtige finden!\n\nGruß, Catrin",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33246",
+		"author": "René",
+		"authorUrl": "http://",
+		"date": "2009-06-03T12:50:18.000Z",
+		"content": "Google Suchwörter: Email + Signatur\n\nUnd schwups Platz 4 :)\n\nBye",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33249",
+		"author": "Daniel Wickeroth",
+		"authorUrl": "http://",
+		"date": "2009-06-08T12:57:16.000Z",
+		"content": "Hi,\n\nich war eigentlich auf der Suche nach netten Bildchen aus Textzeichen (wie den Troll) für meine signatur.\n\nGruß,\nDaniel",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33261",
+		"author": "felix",
+		"authorUrl": "http://",
+		"date": "2009-07-06T07:13:51.000Z",
+		"content": "ich war auf der suche nach einer vorlage für eine email signatur ;-))",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33293",
+		"author": "Jasmin",
+		"authorUrl": "http://",
+		"date": "2009-09-12T07:34:35.000Z",
+		"content": "Wenn man Google mit \"private email signatur\" füttert, biste sogar auf Platz 1 ;)\nLG\nJasmin",
+		"parent": "0",
+		"type": "comment"
+	}
+]

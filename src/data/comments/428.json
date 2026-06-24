@@ -1,0 +1,47 @@
+[
+	{
+		"id": "8286",
+		"author": "Webstandard-Team",
+		"authorUrl": "http://webstandard.kulando.de",
+		"date": "2007-01-24T08:31:50.000Z",
+		"content": "Der Ansatz zum <strong>Paper Prototyping</strong> sollte viel häufiger genutzt werden, denn so könnten Fehler bereits im vorneherein erkannt und behoben werden. Klasse LinktTipp - <strong>Danke</strong>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "9145",
+		"author": "intuity.medialab. » Blog Archiv » Gastvortrag an der UdK",
+		"authorUrl": "http://blog.intuitymedialab.eu/2007/02/02/gastvortrag-an-der-udk/",
+		"date": "2007-02-02T10:45:38.000Z",
+		"content": "[...] Den Studenten des Grundstudiums wurde Dokumentationstechniken und Vorteile von Webblogs im Zusammenhang mit Gestaltungsprozessen, wie sie bei Intuity praktiziert werden, vorgestellt. Dabei wurden verschiedene M&#246;glichkeiten der Visualisierung, der Dokumentation sowie der Evaluation erl&#228;utert. Schwerpunkt hierbei waren u.a. Scribbels, das Paper Prototyping (weitere Infos von Tobias Jordans (FlyingSparks) zum Thema Paper Prototyping) sowie Webblogs. So bietet beispielsweise die Webdokumentation unter anderem Vorteile, wie den direkten Austausch mit Experten und die F&#246;rderung von Netzwerkstrukturen, welche Projekte entscheidend beeinflussen k&#246;nnen. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33160",
+		"author": "Information Architecture and Usability » 7. Termin Paper Prototyping I",
+		"authorUrl": "http://blogs.btk-fh.de/infoarch/?p=14",
+		"date": "2008-06-06T10:39:01.000Z",
+		"content": "[...] gute Artikelsammlung zum [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33211",
+		"author": "Marcus",
+		"authorUrl": "http://www.popup-display.info",
+		"date": "2008-11-24T16:34:11.000Z",
+		"content": "Paper Prototyping ist mittlerweile eine klassische Lösung im Bereich Software Engineering, die besonders bei den komplexen Projekten eingesetzt werden kann und auch für die Anfänger zugänglich, nur das kann sich ebenso als Nachteil herausstellen: Die Auswertung der Ergebnisse kann gerade wegen mangelnden technischen Wissens nicht immer den Anforderungen gerecht werden.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33398",
+		"author": "7. Termin Paper Prototyping I — Information Architecture and Usability - btk-fh",
+		"authorUrl": "http://blogs.btk-fh.de/infoarch/?p=19",
+		"date": "2012-07-02T10:43:54.000Z",
+		"content": "[...] gute Artikelsammlung zum [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

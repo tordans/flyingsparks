@@ -1,0 +1,20 @@
+[
+	{
+		"id": "33181",
+		"author": "bofh",
+		"authorUrl": "http://",
+		"date": "2008-08-27T05:35:51.000Z",
+		"content": "Aw stats kann das eigentlich\nnaja nicht so schön wie analog (deren logfile behandlung wunderschön jedoch mit dem nachteildas alle files neu durchgeackert werden)\n\negal\n\njedenfalls es geht indem du logfile\" das logmergeresolvewhatever durchpipes\nauf die art kannst du ein ganzes dir übernehmen\n\nalledings is das logresolve ding mit vorsicht zu genießen\n\nich habe festgestellt es mag es nicht gz und nicht komp. files in einen top zu werfen das gibt eigenartige results\nanalog ist da ja inteligenter\n\ntrozdem könnte man auch ein bashscript in das logfile\"/bin/myscript.sh\" machen\n\nin dem werden alle ops gemacht so das das file dann eben die logfiles aller dirs durchpeitscht so könnte man auch feiner zwischen gz und nicht gz unterscheiden (geht natürlich auch in einer commandline aber fragt mich jetzt nicht wie",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33182",
+		"author": "bofh",
+		"authorUrl": "http://",
+		"date": "2008-08-27T05:38:23.000Z",
+		"content": "ps: du kannst so ziemlich alles in das logfile\"\" reinschreiben also auch gzip -cd zb das ganze dann verketten ganz bashlike",
+		"parent": "0",
+		"type": "comment"
+	}
+]

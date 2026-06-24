@@ -1,0 +1,20 @@
+[
+	{
+		"id": "190",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-06-06T09:44:11.000Z",
+		"content": "Ich nehme die vier und dazu eine doppelte Portion Gyrospommes.\n<b>hä?!</b>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "191",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2005-06-06T15:54:54.000Z",
+		"content": "Soll ich mich missverstanden fühlen?",
+		"parent": "0",
+		"type": "comment"
+	}
+]

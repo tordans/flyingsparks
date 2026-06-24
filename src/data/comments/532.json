@@ -1,0 +1,38 @@
+[
+	{
+		"id": "30413",
+		"author": "Netzwerkanalyse anhand meiner E-Mails - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-01-22/netzwerkanalyse-anhand-meiner-e-mails/",
+		"date": "2008-01-22T12:49:55.000Z",
+		"content": "[...] gewisser Weise passt das zu dem LinkedIn-Beispiel, &#252;ber das ich gestern schrieb: Auch hier geht es darum, die Macht der Daten freizusetzen, in dem man sie zug&#228;nglich macht [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "31000",
+		"author": "Malte",
+		"authorUrl": "http://www.lorm.de/",
+		"date": "2008-01-27T18:44:33.000Z",
+		"content": "Ich denke Punkt 4 ist eigentlich nur eine Erweiterung von Punkt 3, bzw. erklärt diesen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "31007",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-01-27T20:45:42.000Z",
+		"content": "Ja, da hast du nicht unrecht. Andererseits ist die Art der Visualisierung IMO so neu, dass ich es in der Liste gerne explizit stehen habe, damit es auch jeder versteht ;-)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33079",
+		"author": "Dansch",
+		"authorUrl": "http://",
+		"date": "2008-03-02T23:10:28.000Z",
+		"content": "Das finde ich überaus gut zusammengefasst. Will man es marketinggericht anrichten, könnte man von den 4I sprechen:\n- Inszenierung: zeigen, dass man etwas ist/macht/für etwas steht\n- Interaktion: selbst aktiv werden, am liebsten etwas Nützliches oder Lustiges\n- Information: Nachrichten für die eigenen Informationsbedürfnisse\n- Integration: Informationen aus dem Sozialen Netzwerk visualisieren/aggregieren\nDie Essenz aus allem lautet also:\nOhne Nutzen keine Nutzung!",
+		"parent": "0",
+		"type": "comment"
+	}
+]

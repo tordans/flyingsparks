@@ -1,0 +1,20 @@
+[
+	{
+		"id": "8669",
+		"author": "Kai Uhlemeyer",
+		"authorUrl": "http://www.alltagskakophonie.de/",
+		"date": "2007-01-29T13:48:47.000Z",
+		"content": "Ein zentrales Wiki gibt es schon unter http://barcamp.org/.\n\nPS: Sind 9+4 nicht 13?!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "15431",
+		"author": "[Hinweis] Terminabstimmung BarCamp Frankfurt - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2007-03-26/hinweis-terminabstimmung-barcamp-frankfurt/",
+		"date": "2007-03-26T07:13:49.000Z",
+		"content": "[...] F&#252;r das kommende und schon erw&#228;hnte Barcamp in Frankfurt, wird zur Zeit per Online-Vote ein Termin gefunden. Barcamp-Besucher bitte mitmachen :-). [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

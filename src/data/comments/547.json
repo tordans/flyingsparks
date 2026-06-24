@@ -1,0 +1,74 @@
+[
+	{
+		"id": "32473",
+		"author": "stefan",
+		"authorUrl": "http://incomment.net",
+		"date": "2008-02-15T17:40:08.000Z",
+		"content": "Das Leap Video unten erinnert mich irgendwie an Strf + F bzw. / \n\nOder hab ich da was falsch verstanden?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "32506",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-02-16T08:09:42.000Z",
+		"content": "Hallo Stefan, es ist schon richtig, auch Leap befasst sich mit Suchen, so wie die Windowssuche (strg+f) theoretisch auch. Aber es geht 10 Schritte weiter -- das wird ja ganz gut im Video beschrieben. Oder auch bei Enso.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33048",
+		"author": "Ricky",
+		"authorUrl": "http://www.kochmix.de",
+		"date": "2008-03-02T11:31:07.000Z",
+		"content": "Ich habe für mich in diesem Video auch welche Ideen gefunden.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33056",
+		"author": "Inna",
+		"authorUrl": "http://www.ferienhof-ritzer.de",
+		"date": "2008-03-02T15:02:53.000Z",
+		"content": "Das ist wirklich ein tolles Werbevideo.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33063",
+		"author": "Samuel",
+		"authorUrl": "http://www.derpcfuchs.de",
+		"date": "2008-03-02T17:20:38.000Z",
+		"content": "Das Konzept ist auf guten Ideen basiert.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33183",
+		"author": "Werden Aza Raskin und Mozilla Labs die Interface-Welt voranbringen? - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-08-28/werden-aza-raskin-und-mozilla-labs-die-interface-welt-voranbringen/",
+		"date": "2008-08-28T20:52:02.000Z",
+		"content": "[...] des Jahres, wenige Tage nachdem ich zum ersten Mal &#252;ber Aza Raskin und sein Projekt Enso (eine Command-Line-Software bzw. -Plattform) geschrieben habe, hat er eine hervorragende Entscheidung getroffen und bei Mozilla Labs als Head of [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33184",
+		"author": "Ubiquity — ein Commandline-Mashup von Aza Rasking - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-08-28/ubiquity-ein-commandline-mashup-von-aza-rasking/",
+		"date": "2008-08-28T21:12:34.000Z",
+		"content": "[...] Raskin hat sein Projekt Enso (&#252;ber das ich schrieb), bei Mozilla Labs weiterentwickelt und spricht damit nicht nur zentrale Probleme der Interaktion in [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "33204",
+		"author": "Drei Bewohner der Er.de / Informationsspen.de",
+		"authorUrl": "http://www.3bewohnerderer.de/2008/11/humanes-interfacedesign/",
+		"date": "2008-11-11T22:29:53.000Z",
+		"content": "<strong>Humanes Interfacedesign???...</strong>\n\nNach dem schauen wird einem klar &#8220;worüber der Typ da redet&#8230; das verstehe ich ja&#8221;  und genau das finde ich das tolle an solchen Gedankenzügen von Entwicklern. Aus der sicht eines Programmierers ist das ganze so abstrakt, dass es für...",
+		"parent": "0",
+		"type": "trackback"
+	}
+]

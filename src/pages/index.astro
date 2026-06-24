@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { tagSlug } from '../lib/slug';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const recent = posts.slice(0, 15);
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body id="home" class="content">
+		<Header variant="list" />
+
+		<div id="vorwort">
+			<p class="rss">
+				Tipp: <a href="/feed/">RSS-Liste der Artikel</a> und <a href="/comments/feed/">Kommentare</a>.
+			</p>
+			<p class="schwerpunkt">Das persönliche Weblog von Tobias Jordans — ein Archiv (2005–2010).</p>
+		</div>
+
+		{
+			recent.map((post, i) => (
+				<>
+					<article class={`einPost postBG${i % 2 ? 'b' : 'a'}`}>
+						<h2 class="posttitel">
+							<a href={post.data.permalink} rel="bookmark">{post.data.title}</a>
+						</h2>
+						{post.data.description && (
+							<div class="post-content">
+								<p>{post.data.description}</p>
+								<p><a href={post.data.permalink}>Artikel weiterlesen…</a></p>
+							</div>
+						)}
+					</article>
+					<aside class="einPostMeta">
+						<ul>
+							<li class="time"><FormattedDate date={post.data.pubDate} /></li>
+							{post.data.tags.length > 0 && (
+								<li class="themen">
+									Themen:{' '}
+									{post.data.tags.slice(0, 5).map((t, j) => (
+										<>
+											{j > 0 && ', '}
+											<a href={`/tag/${tagSlug(t)}/`}>{t}</a>
+										</>
+									))}
+								</li>
+							)}
+						</ul>
+					</aside>
+					<div class="clear" />
+				</>
+			))
+		}
+
+		<p style="padding:0 15px"><a href="/archiv/">Alle {posts.length} Beiträge im Archiv →</a></p>
+
+		<Sidebar />
+		<Footer />
+	</body>
+</html>

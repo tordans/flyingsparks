@@ -1,0 +1,29 @@
+[
+	{
+		"id": "23808",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-06-06T14:11:13.000Z",
+		"content": "Auch ein schöner Artikel zum Thema: http://www.kopfkribbeln.de/2007/06/05/microsoft-surface/",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33208",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-11-15T14:15:45.000Z",
+		"content": "Einen Schritt weiter: 3D Interace http://www.oblong.com/",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33214",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2008-11-30T22:05:57.000Z",
+		"content": "Update: \n<blockquote>\nMicrosoft hat in seinen Forschungslabors mit SecondLight ein Rückprojektionsgerät entwickelt, das Microsofts Surface ergänzt und Bilder durch das Surface-Display hindurch und auch darüber hinaus projiziert. Dies ermöglicht interessante Effekte und einen Blick unter die Oberfläche.\nWirklich interessant sind die Effekte - auch wenn man einige davon direkt in die “normale” Surface-Technik inkludieren könnte… aber schaut einfach mal das Video an.\n(...)\n<object width=\"480\" height=\"270\"><param name=\"movie\" value=\"http://video.golem.de/player/videoplayer.swf?id=1693&autoPl=false\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"AllowScriptAccess\" value=\"always\"><embed src=\"http://video.golem.de/player/videoplayer.swf?id=1693&autoPl=false\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" AllowScriptAccess=\"always\" width=\"480\" height=\"270\"></embed></param></object><div style=\"width:480px; text-align:center; font-family:verdana,sans-serif; font-size:0.8em;\"><a href=\"http://video.golem.de/audio-video/1693/second-light.html\">Video: SecondLight - Demo</a>&nbsp;(2:12)</div>\nhttp://www.golem.de/0810/63247.html\n</blockquote>",
+		"parent": "0",
+		"type": "comment"
+	}
+]

@@ -1,0 +1,38 @@
+[
+	{
+		"id": "2388",
+		"author": "Z",
+		"authorUrl": null,
+		"date": "2006-05-26T20:33:52.000Z",
+		"content": "Dvorak gibt es auch als deutsche Tastatur mit erheblichen Vorteilen, aber leider nie vorbeschriftet, siehe z.B. http://halibrand.de/dvorak/\n\nKennt irgendjemand von euch eine Fa. die Tastatursticker nach Maß fertigt, denn auch ich habe manchmal das Problem eine Sondertaste zu finden...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2392",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-05-27T23:23:57.000Z",
+		"content": "Hallo Z!\ndvorak Deutsch kannte ich noch nicht. Interessant.\nSticker sollte man sich ziemlich einfach selbst machen lassen. Würde dazu zum Autofolienbeschrifter meines Vertrauens gehen -- in meinem Fall www.imdahl-werbung.de -- und mir einfach welche produzieren lassen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2507",
+		"author": "fenk",
+		"authorUrl": "http://",
+		"date": "2006-07-04T12:02:28.000Z",
+		"content": "die meisten dvorak deutsch layouts sind unausgereift. ich hab mir eins auf der basis von dem von ulf bro (?) gemacht, wo die sonderzeichen weitgehend der deutschen tastatur entsprechen (warum sollte man die umbelegen??) und ansonsten nur die standardzeichen verdreht sind. besser tippen als mit qwertz geht allemal.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4924",
+		"author": "Tastaturdesign #2 und capsoff.org - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2006-10-29/tastaturdesign-2-und-capsofforg/",
+		"date": "2006-10-29T18:59:53.000Z",
+		"content": "[...] Mein Artikel Tastaturdesign bekam im Laufe der Zeit vier Updates erhalten und zwei interessante Kommentare. [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

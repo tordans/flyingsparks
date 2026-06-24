@@ -1,0 +1,20 @@
+[
+	{
+		"id": "2408",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de",
+		"date": "2006-06-01T14:32:42.000Z",
+		"content": "Und der ganze Aufwand ist letztlich doch für die sprichwörtliche Katz(e).\nOhne es mir angeschaut zu haben, hört sich das alles nach etwas an, was durchaus auch ein Spamroboter ohne weiteres automatisch durchführen kann. Mail schicken, registrieren mit PIN, Mail aktivieren -- all das sollte kein Problem und einmal programmiert noch nichteinmal wesentlich mehr Aufwand sein.\n\nWie stellen sich Firmen, die dieses Ding ernsthaft benutzen, vor, überhaupt noch Mails zu benutzen?\nSobald die Mail den _KUNDEN_ verlässt, ist er doch aus dem Schneider, was die Weiterverarbeitung an geht.\nService.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2412",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-06-01T19:47:22.000Z",
+		"content": "Der Pin muss zusätzlich noch aus einem Anti-Spam-Ließ-Mein-Image-und-trag-es-in-ein-Textfeld-ein-Bild ausgelesen werden.\n\nGrundsätzlich hast du natürlich recht aber Spammer wird das a) zu viel Aufwand sein und b) verwenden zum Glück noch nicht genug Firmen dieses Tool.\n\nWobei es auch hoffentlich bleibt...",
+		"parent": "0",
+		"type": "comment"
+	}
+]

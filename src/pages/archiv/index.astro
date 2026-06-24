@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Group by year (newest first).
+const byYear = new Map<number, typeof posts>();
+for (const p of posts) {
+	const y = p.data.pubDate.getFullYear();
+	if (!byYear.has(y)) byYear.set(y, []);
+	byYear.get(y)!.push(p);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`Archiv — ${SITE_TITLE}`} description={`Alle ${posts.length} Beiträge`} />
+	</head>
+	<body id="page" class="content">
+		<Header variant="list" />
+		<h2 id="dieUeberschrift" class="page-title">Archiv — alle {posts.length} Beiträge</h2>
+		{
+			years.map((y) => (
+				<section>
+					<h3 class="archiv-jahr">{y}</h3>
+					<ul class="post-index">
+						{byYear.get(y)!.map((p) => (
+							<li>
+								<a href={p.data.permalink}>{p.data.title}</a>
+								<FormattedDate date={p.data.pubDate} />
+							</li>
+						))}
+					</ul>
+				</section>
+			))
+		}
+		<Sidebar />
+		<Footer />
+	</body>
+</html>

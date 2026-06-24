@@ -1,0 +1,29 @@
+[
+	{
+		"id": "25564",
+		"author": "Janusz",
+		"authorUrl": "http://",
+		"date": "2007-11-02T17:00:08.000Z",
+		"content": "Gibt es irgendwo schon Diskussionen darüber wie Google die Daten auswerten könnte die durch die API fliessen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "25565",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-11-02T17:03:25.000Z",
+		"content": "Ist mir nicht bekannt.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "30309",
+		"author": "Wann werden Socialnetwork-Widgets nützlich/erfolgreich? - flying sparks",
+		"authorUrl": "http://fly.ingsparks.de/2008-01-21/wann-werden-socialnetwork-widgets-nuetzlicherfolgreich/",
+		"date": "2008-01-21T11:17:59.000Z",
+		"content": "[...] einem OpenSocial-Announcement-Video hat LinkedIn eine Kalender-Applikation f&#252;r Messen und Kongresse gezeigt. Kalender f&#252;r [...]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

@@ -1,0 +1,47 @@
+[
+	{
+		"id": "7",
+		"author": "Vera",
+		"authorUrl": null,
+		"date": "2005-01-03T23:14:32.000Z",
+		"content": "Deine bisherigen Kommentare sind aber relativ langweilig. =)\nDer Button unten ist übrigens gemein motivierend, da will man ja sofort was schreiben, damit man drauf klicken kann... =)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "8",
+		"author": "Tobias",
+		"authorUrl": null,
+		"date": "2005-01-03T23:17:33.000Z",
+		"content": "Mh... das mit dem Button ist ja interessant.\nDann ist das sicher noch ausbaufähig.\n\nOnClick muss dann die Seite in Flammen aufgehen oder sowas ;-)\n\n@Matthias: Willste sowas nicht mal eben machen <bg> - ein bisschen JS für Zwischendurch ;-)</bg>",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "9",
+		"author": "Matthias",
+		"authorUrl": "http://mavia.wwwfiles.de",
+		"date": "2005-01-03T23:18:41.000Z",
+		"content": "*nen funken Zünd*\n\nJea... Echtzeit Vorschau rockt das House :D",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "10",
+		"author": "Matthias",
+		"authorUrl": "http://mavia.wwwfiles.de",
+		"date": "2005-01-03T23:20:16.000Z",
+		"content": "@ Tobi: Ich werd den Teufel tun ;-) Frag den Migg :D\n\nBtw: Namen merken im Cookie is gemein ;-) \n*Cookis für die Seite ausschalt* :-P",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "11",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-01-04T05:40:19.000Z",
+		"content": "Ja, will jetzt auch nru mal den tollen Effekt austesten von dem ihr hier sprecht ... ;)",
+		"parent": "0",
+		"type": "comment"
+	}
+]

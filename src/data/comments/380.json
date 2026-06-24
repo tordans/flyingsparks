@@ -1,0 +1,20 @@
+[
+	{
+		"id": "3111",
+		"author": "Rolf",
+		"authorUrl": "http://www.idee-x.de",
+		"date": "2006-08-29T08:18:49.000Z",
+		"content": "Ich schreibe immer \"Angebote\", liste Projektbestandteile aber relativ genau auf. Darunter kommt dann Aufwand in Stunden sowie Preis. Alle Einzelschritte (Konzept, Design, Prototyp etc.) einzeln zu bepreisen wäre kein Problem - ich habe das aber vor einer Weile aufgegeben, da hier doch immer mal wieder seitens der Auftraggeber nachgefragt wird. An sich ok, aber um jede Stunden Aufwand zu feilschen hab ich keine Lust.\n\nWichtig: Irgendwo sollte ein Vermerk erscheinen \"Alle Preise basieren auf dem vorliegenden Briefing, bei Konzeptänderungen wird neu angeboten\". Natürlich etwas freundlicher formuliert :-)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3112",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-08-29T09:23:50.000Z",
+		"content": "Hallo Rolf, ich tendiere auch zu so eine Lösung. Insbesondere, da das Wort Angebot IMO üblicher ist und die Unterschiede so maginal.\nDanke",
+		"parent": "0",
+		"type": "comment"
+	}
+]

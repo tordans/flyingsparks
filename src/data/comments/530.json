@@ -1,0 +1,38 @@
+[
+	{
+		"id": "26423",
+		"author": "Die Hoffnung stirbt zuletzt » Crayon Physics",
+		"authorUrl": "http://blog.somedien.de/?p=43",
+		"date": "2007-12-11T17:41:29.000Z",
+		"content": "[...] das ist doch mal eine ganz abgefahrene Sache. Im FlyingSparks Blog habe ich heute ein durchaus interessantes Spiel entdeckt, das man mit einem TabletPC oder [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "29458",
+		"author": "Vigilant",
+		"authorUrl": "http://www.der-vigilant.de",
+		"date": "2008-01-13T13:19:59.000Z",
+		"content": "Das Spiel macht schon Lust auf mehr. Allerdings denke ich, dass die Tablet PC erst den großen Durchbruch erfahren, sobald die Multitouchtechnologie wie beim iPhone auch hier Einzug hält, zumal auch Bewegungssensoren hier von Vorteil sein können. Originell ist es aber auf alle Fälle.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33118",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-03-25T11:59:50.000Z",
+		"content": "Auf der Microsoft MIX-Konferenz \"the next web now\" hat eine \"Real Time Physics in Silverlight\" den 2. Platz belegt.\n\nhttp://visitmix.com/blogs/Show%20Off/Real-Time-Physics-in-Silverlight/\n\n[via channel9 http://channel9.msdn.com/ShowPost.aspx?PostID=390238]",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33119",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-03-25T12:05:30.000Z",
+		"content": "Phun ist ein weiteres \"Spiel\" im Bereich Physik. Man kann es kostenlos testen und es gibt einige Videos bei YouTube &amp; Co\n\nhttp://phun.cs.umu.se/wiki\nhttp://www.youtube.com/group/phun",
+		"parent": "0",
+		"type": "comment"
+	}
+]

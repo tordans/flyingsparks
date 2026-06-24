@@ -1,0 +1,56 @@
+[
+	{
+		"id": "598",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de/",
+		"date": "2005-11-20T11:16:03.000Z",
+		"content": "Über diese komische Ersatzseite bin ich auch gestolpert. Aber das war ja nicht das erste Mal, dass sich die geändert hat.\nMein Weg ging danach wiefolgt:\nAuf die Website der <a href=\"http://www.sparkasse-dueren.de/\">Sparkasse Düren</a> (logisch, is ja mein zugehöriges Institut). Oben rechts der kasten mit der dicken Überschrift \"Onlinebanking\", darunter \"zu meinem Konto / Depot\". Kontonummer eingegeben, auf OK geklickt, gebookmart. Fertig ;).",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "600",
+		"author": "nullbyte",
+		"authorUrl": null,
+		"date": "2005-11-23T12:33:03.000Z",
+		"content": "Hallo, du hattest eine Anfrage wegen dem update plugin (http://blogshop.de/11072005,406). Den Fehler kann ich mir nicht direktr erklären (auf meinem XAMMP) scheint alles zu laufen. Bitte melde dich das wir den Fehler beheben können. Danke",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "601",
+		"author": "Karl Kliem",
+		"authorUrl": "http://www.dienststelle.de",
+		"date": "2005-11-23T13:43:27.000Z",
+		"content": "Eine alternative wäre evtl. www.ing-diba.de",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "619",
+		"author": "Gerry",
+		"authorUrl": null,
+		"date": "2005-12-04T18:14:37.000Z",
+		"content": "<b>Schade, dass sich immer die aufregen, die der Meinung sind, sie könnten die Welt verbessern und doch selber Ahnung haben!</b>\nDie Änderung der Banking-Domain ist doch ein alter Hut. Wurde die Domain doch bereits Ende September umgestellt und im November erst abgeschaltet. Hat es da jemand es nicht für nötig gehalten, sich aktuelle Infos von der Homepage seiner Sparkasse zu holen? Ach ja, er hatte ja vergessen, wo er sein Konto eröffnet hat! \nDa muss man erst mal google befragen wie die Bank / Sparkasse doch heißt, weil man sich vorher nie irgendwelche Unterlagen durchgelesen hat. \n\nAlso, erst mal an die eigene Nase packen, bevor man im Internet Wirbel macht! Wer sich nämlich aus einem Internet-Auftritt eine Anwendung rauspickt, einen Bookmark erstellt und sich dann aufregt, dass ihn niemand informiert dass sich gerade diese Seite geändert hat, der ist meiner Meinung nach selber Schuld!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "620",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2005-12-04T22:03:13.000Z",
+		"content": "Hallo Gerry,\nbitte lass uns in diesem Zusammenhang nicht über \"Ahnung haben\" sprechen. Ich müsste sonst fragen, welche Profession dich berechtigt, mir mein Wissen und meine Erfahrungen abzusprechen...\n\n<strong>Mich würde viel mehr interessieren, was du auf die im Beitrag gestellten Fragen antwortest!</strong>\n\nMein Beitrag ist ein (natürlich rein subjektiver) Erfahrungsbericht. Ich habe ihn nicht geschrieben um, um der Sparkasse mutwillig zu schaden, sondern mit der Hoffnung im Hinterkopf, das Kundenberichte wie dieser der Sparkasse zeigen, dass sie an der Bedienbarkeit und Fehlertolleranz noch viel verbessern kann. Jef Raskin, eine Person, der man nur schwer die \"Ahnung\" im Feld der HCI (human-computer-interaction) absprechen kann, schreibt dazu in seinem Buch \"Das intelligente Interface\" in Anlehnung an Asimovs 1. Robotergesetz: \"Ein Computer darf Ihre Arbeit nicht beeinträchtigen oder zulassen, dass sie beeinträchtigt wird.\"\n\nOder ein anderes aber ähnliches Beispiel: Ist der Wordbenutzer \"selbst Schuld\", <a href=\"http://flyingsparks.wwwfiles.de/2005-12-01/hilfe-funktionen-helfen-nur-experten/\">wenn er die Hilfefunktion nicht verwendet</a>?\n\nGrüße",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33268",
+		"author": "Paul",
+		"authorUrl": null,
+		"date": "2009-07-20T09:38:21.000Z",
+		"content": "Hat sich mal jemand der vielen User gefragt, was da eigentlich bei der \"Umstellung\" passiert ??\n=&gt; Wer wird für die Daten des Kunden verantwortlich sein. Abgesehen von \"unklaren\" Nicht-Regeln, gibt es keine konkrete verantwortlichkeit mehr.\nFür Datenschutzverstöße etc, wird es dann ein immer längeres Hin und Her geben. In den umgestelleten SPKs gibt es weder eine Kontrollmöglichkeit noch sonstige Instrumente des Datenschutzes...\n(auch haben die lokalen SP's laut Vertrag keinen Einfluss mehr darauf !!)\nDie gesamte lokale DV der Sparkassen wird nach Münster verlagert. Die Kunden sind auf Gedeih und Verderb von der \"Leitung\" abhägig. Ein Ausfall wirkt sich  nun total fatal aus.;- Das hat nix mit \"Sparen zu tun\", und wenn dann auf dem Rücken der Kunden und .. ach ja Angestellten: =&gt; Ein Großteil des lokalen DV-Personals wird überflüssig und die lokalen Investitionen gehen jetzt irgendwohin in die Lande.- Man spare eben, egal wie viel es kostet, abgesegnet durch gewählte Landesvertreter als Mitglied des Vorstandes, fähig eine \"unwissende\" Unterschrift zu tätigen.\n\n(Ein Insider..)",
+		"parent": "0",
+		"type": "comment"
+	}
+]

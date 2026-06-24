@@ -1,0 +1,227 @@
+[
+	{
+		"id": "2455",
+		"author": "Basic Thinking Blog » Extension für Ultimate Tag Warrior",
+		"authorUrl": "http://www.basicthinking.de/blog/2006/06/25/extension-fuer-ultimate-tag-warrior/",
+		"date": "2006-06-25T15:55:33.000Z",
+		"content": "[...] nennt sich ReTag Post-Extension for UTW und kann was:  * list the last 15 posts with title, id, date, author, permalink and body together with your tagcloud and your current tags * prev-next-navigation * you can change the tags of all 15 post in one step and save all the change with one click [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "2954",
+		"author": "Dave Forde",
+		"authorUrl": "http://www.profectio.com",
+		"date": "2006-08-21T00:47:27.000Z",
+		"content": "I tried your plug in and got the following error:\n\nWarning: main(ultimate-tag-warrior-core.php) [function.main]: failed to open stream: No such file or directory in /home/profecti/public_html/wp-content/plugins/ultimate-tag-warrior-retag-posts.php on line 12\n\nWarning: main() [function.include]: Failed opening 'ultimate-tag-warrior-core.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php:.:.:.:.') in /home/profecti/public_html/wp-content/plugins/ultimate-tag-warrior-retag-posts.php on line 12\n\nWarning: main(ultimate-tag-warrior-actions.php) [function.main]: failed to open stream: No such file or directory in /home/profecti/public_html/wp-content/plugins/ultimate-tag-warrior-retag-posts.php on line 13\n\nWarning: main() [function.include]: Failed opening 'ultimate-tag-warrior-actions.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php:.:.:.:.') in /home/profecti/public_html/wp-content/plugins/ultimate-tag-warrior-retag-posts.php on line 13\n\nany ideas what went wrong?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2956",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-08-21T08:22:33.000Z",
+		"content": "Hi Dave.\nCannot tell you at the moment?\nDo you have the latetest UTW up and running?\nAnd an current WP (2.0.2+)?\n\nAs far as I remember I use the UTW-Include-PHP to do the includes so this should be fine.\nWould have to look closer with these information.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3197",
+		"author": "Marius G. Matishek",
+		"authorUrl": "http://",
+		"date": "2006-09-01T16:10:27.000Z",
+		"content": "very useful plugin...\n\nIn my case I have to re-tag twice every 15 posts in order to be memorised. I don't know why :)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3221",
+		"author": "Merlin",
+		"authorUrl": "http://www.43folders.com/",
+		"date": "2006-09-02T17:52:33.000Z",
+		"content": "Re Dave's problem: make sure you have installed the ReTag plugin in the UTW directory; I had it one level up (\"wp-content/plugins/\") and got the same error.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3301",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-09-05T21:18:30.000Z",
+		"content": "@Merlin: Thanks!\n\n@Marius: interesting behaviour... no clue why :)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3750",
+		"author": "oo8ooニルチル",
+		"authorUrl": "http://oo8oo.net/nilcil/131/2006-09-13/retag-plugin/",
+		"date": "2006-09-13T11:13:19.000Z",
+		"content": "<strong>[retag][plugin][UTW]ReTag Post-Extension for UTW - flying sparksをなんとなく解説。...</strong>\n\nReTag Post-Extension for UTW Note for german readers: Zielgruppengerecht ist dieses Post ausnahmsweise in englisch. I use the Ultimate Tag Warrior-Plugin for WordPress here at flyingsparks and at pfadiblog.de and its a great tool!\nReTag Post-Extension ...",
+		"parent": "0",
+		"type": "trackback"
+	},
+	{
+		"id": "4065",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-09-20T15:48:49.000Z",
+		"content": "New Version.\n@Marius: this will solve your problem!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "4139",
+		"author": "Basic Thinking Blog » Wordpress-Plugin: Retag UTW",
+		"authorUrl": "http://www.basicthinking.de/blog/2006/09/21/wordpress-plugin-retag-utw/",
+		"date": "2006-09-21T20:30:36.000Z",
+		"content": "[...] Flying Sparks bietet ein interessantes Zuatzplugin f&#252;r Ultimate Tag Warrior (Wordpress-Tagging Plugin). Mit ReTag kann man recht einfach Tags nachbearbeiten. Leider, leider f&#252;r mich nicht einsetzbar. Denn vom Prinzip her werden die letzten 15 Postings angezeigt, die dort vergebenen Tags und daneben alle Tags, die man jemals vergeben. Nun kann man sich bildlich vorstellen, wie das ausschaut, wenn 15 Postings und jeweils 1447 Tags geladen werden. Auf einem Bildschirm. Der Browser w&#228;re fast vor lauter Links abgeschmiert :) [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "4658",
+		"author": "WordPress Plugin DB Japan » ReTag Post-Extension for UTW",
+		"authorUrl": "http://www.wpplugins.jp/projects/entry/retag-post-extension-for-utw/",
+		"date": "2006-10-10T12:55:35.000Z",
+		"content": "[...] http://fly.ingsparks.de/2006-09-20/retag-post-extension-for-utw/   日本語版のダウンロードページ [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "5337",
+		"author": "2+2+2 - Worldshots",
+		"authorUrl": "http://www.worldshots.hu/2006-11/222/",
+		"date": "2006-11-18T16:18:22.000Z",
+		"content": "[...] ReTag - gyors pótlási lehetőség tagekkel elmaradottaknak. Ultimate Tag Warrior kiegészítő lusta wordpressgazdáknak. (Avagy, miért is nincs mass edit lehetőség&#8230;) [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "6937",
+		"author": "Just Thinkin’ » Blog Archive » UTW–A Quick Follow UP",
+		"authorUrl": "http://just-thinkin.net/backwoods-tech/utw-a-quick-follow-up/",
+		"date": "2007-01-09T02:17:23.000Z",
+		"content": "[...] She also suggested the retag-post-extension-for-utw plugin which I installed and found that it helps immensely in tagging and re-tagging posts. More on this later but for anyone new to using UTW, once you get it up and running with no glitches and are faced with the task of adding tags to all your previous posts, this is the plugin you want. many thanks Christine. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "6970",
+		"author": "Just Thinkin’ » Blog Archive » A Fat Sidebar",
+		"authorUrl": "http://just-thinkin.net/backwoods-tech/a-fat-sidebar/",
+		"date": "2007-01-09T23:02:29.000Z",
+		"content": "[...] Actually it was quite a relief seeing how I had been mucking about with that marvelous UTW plugin and the Re-tag extension that works alongside of it. Thought I had inadvertently messed something up again I did. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "8309",
+		"author": "Kirk M",
+		"authorUrl": "http://just-thinkin.net",
+		"date": "2007-01-24T18:46:57.000Z",
+		"content": "First i have to say I really appreciated the convenience offered by your fine plugin. It made tagging so much easier.\n\nUnfortunately, once I upgraded to Wordpress 2.1, the plugin no longer functioned and I had to deactivate it. In short, the 'Re-Tag' page under the 'Manage Menu' only would show the first page of recent posts and the 'Previous Entries' does not work. Although the link URL indicates that it's linking to the next set of pages, it still only returns the first page of posts.\n\nI tried to include the returned URL's in this comment before but the comment was rejected, apparently for that reason.\n\nI really miss the features of this great plugin so if you ever get a chance to test it out in Wordpress 2.1 and come up with a workaround, that would be great. I do not know how to code per say but I have no problem following instructions and hacking the code.\n\nThanks",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "8310",
+		"author": "Just Thinkin'",
+		"authorUrl": "http://just-thinkin.net/blogging/wordpress-21-running-smoothly-but-a-few-bugs-in-admin/",
+		"date": "2007-01-24T18:51:23.000Z",
+		"content": "<strong>Wordpress 2.1 Running Smoothly but a Few Bugs In Admin...</strong>\n\nI&#8217;m really quite please how smooth the upgrade to Wordpress 2.1 went. Once I had read the upgrade instructions a dozen times and accomplished all the upgrades from 2.0.5 on of course. Ok, so I&#8217;m a slow study but practice makes perfect and I...",
+		"parent": "0",
+		"type": "trackback"
+	},
+	{
+		"id": "9200",
+		"author": "Sergio Pinna",
+		"authorUrl": "http://www.sergejpinka.it/",
+		"date": "2007-02-03T08:18:19.000Z",
+		"content": "Don't work with wordpresss 2.1. Why?\n\nBye, Sergio.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "11490",
+		"author": "After The Dot Net » Blog Archive » links for 2007-02-23",
+		"authorUrl": "http://afterthe.net/journal/web-20/links-for-2007-02-23/",
+		"date": "2007-02-24T18:51:25.000Z",
+		"content": "[...] ReTag Post-Extension 0.11 for UTW - flying sparks (tags: plugin wordpress UTW tagging meta tag) [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "18424",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-04-09T08:22:18.000Z",
+		"content": "Hi Sergio, sorry, didnt test it with 2.1 yet. There will be a version for 2.1... but it'll take some time!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24346",
+		"author": "WP Plugins DB » Plugin Details » Ultimate Tag Warrior: ReTag Post-Extention",
+		"authorUrl": "http://www.wp-plugins-db.org/plugin/ultimate-tag-warrior-retag-post-extention/",
+		"date": "2007-07-07T06:39:44.000Z",
+		"content": "[...] Visit [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "24591",
+		"author": "Johan",
+		"authorUrl": "http://www.mothugg.se",
+		"date": "2007-08-23T09:14:19.000Z",
+		"content": "Sehr praktisch! But it seems that the \"Previous posts\" link is not working. In my install the linked URL includes a long list of seemingly irrelevant stuff (tags that I use, actually), like this:\n \"mysite.tld/wp-admin/edit.php?action=retagposts&amp;page=ultimate-tag-warrior-retag-posts.php&amp;paged=2B%5D=824&amp;retagTagsForPost824=2.0%2C+facebook%2C+n%C3%A4tpolitik&amp;retagPostIDs%5B%5D=823&amp;retagTagsForPost823=2.0%2C+facebook%2C+openid%2C+sociala-n%C3%A4tverk&amp;retagPostIDs%5B%5D=822&amp;retagTagsForPost822=dawit-isaak%2C+eritrea%2C+pressfrihet&amp;retagPostIDs%5B%5D=821&amp;retagTagsForPost821=f%C3%B6rs%C3%A4kring%2C+st%C3%B6ld&amp;retagPostIDs%5B%5D=819&amp;retagTagsForPost819=ryssland%2C+bloggtips&amp;retagPostIDs%5B%5D=817&amp;retagTagsForPost817=2.0%2C+n%C3%A4tpolitik%2C+facebook%2C+open+source&amp;retagPostIDs%5B%5D=816&amp;retagTagsForPost816=fildelning%2C+filmpolitik&amp;retagPostIDs%5B%5D=814&amp;retagTagsForPost814=fildelning&amp;retagPostIDs%5B%5D=812&amp;retagTagsForPost812=2.0%2C+facebook&amp;retagPostIDs%5B%5D=806&amp;retagTagsForPost806=2.0%2C+sociala+n%C3%A4tverk&amp;retagpost=ReTag+all+this+Posts",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24592",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2007-08-23T09:29:58.000Z",
+		"content": "Johan: Which WP-Version do you use? I belive they did some changes to the prev-next-function in 2.x and I didnt test it since 2.0.x...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "24595",
+		"author": "Johan",
+		"authorUrl": "http://www.mothugg.se",
+		"date": "2007-08-23T16:33:52.000Z",
+		"content": "I use Wordpress 2.2.1.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "31730",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2008-02-02T12:17:46.000Z",
+		"content": "Update: This Plugin is not updated anymore. Please read the note at the top of the post!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33289",
+		"author": "Low",
+		"authorUrl": "http://",
+		"date": "2009-08-29T14:33:27.000Z",
+		"content": "das waren noch alte zeiten mit 2.1, jetzt ist schon 2.8.4 draußen und trotzdem gibt es noch viele fehler -.-\n\n\n//Edit: URL entfernt, SEO Spam? Sorry!",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "34991",
+		"author": "Ultimate Tag Warrior WordPress Plugin for Dummies « Lorelle on WordPress",
+		"authorUrl": "https://lorelle.wordpress.com/2007/02/19/ultimate-tag-warrior-wordpress-plugin-for-dummies/",
+		"date": "2017-08-12T04:43:09.000Z",
+		"content": "[&#8230;] Flying Sparks &#8211; ReTag Post Extension Plugin for UTW: Adds a ReTag menu to your Manage Panel to view the last 15 posts with along with your current post tags and site cloud map, allowing changing of the tags on the posts and fast saving. It also features next and previous navigation. [&#8230;]",
+		"parent": "0",
+		"type": "pingback"
+	}
+]

@@ -1,0 +1,569 @@
+/* ************************************************************************
+Theme Name: FlyingSparks
+Theme URI: http://flyingsparks.wwwfiles.de/
+Description: Funken-Template
+Version: 3.0
+Author: Tobias Jordans
+Author URI: http://flyingsparks.wwwfiles.de/
+
+
+Grundsätzliche Hinweise:
+-	CSS-Verschachtelung: Innerhalb der CSS-Dateien sind 
+	die Styledefinitionen eingerückt, wenn sie einen Parent haben.
+	Ähnlich, wie es im HTML guter Stil ist, wird der Tag-Tree hierarchich eingerückt.
+	Dadurch ist es IMO einfacher, die Hierarchien nachzuvollziehen.
+-	CSS-Formatierungen sind meistens nach diesem Muster aufgebau
+	Name { 
+		1. Block - font, color, background
+		2. Block - margin, padding, border
+		3. Block - Display, Positionierung und Groessenangaben
+	}
+
+*/
+
+
+.post-content .taglink {
+	color: Silver !important;
+}
+
+
+/* ************************************************************************
+ *	Import -import-
+ 	alles-null.css wir *vor* dieser Datei interpretiert und setzt in allen Browsern alle Werte auf Null.
+	Das schafft eine einheitliche Gestaltungsbasis.
+ */
+@import url("css-alles-null.css");
+
+
+
+/* ************************************************************************
+ *	Globale Formatierungen
+	-global- -g-
+ */
+BODY {
+	font: normal normal normal 75%/130% Verdana, sans-serif;
+}
+.ausblenden {
+	display: none;
+}
+ACRONYM, ABBR {
+	background-color: #DCDCDC;
+}
+CODE {
+	font-size: 130%; font-family: monospace; font-weight: normal;
+	padding: 0 3px;
+	color: #696969; background-color: #DCDCDC;
+}
+PRE {
+	font-size: 120%;
+	line-height: 105%;
+	font-family: monospace;
+	margin: 8px 0;
+}
+P {
+	margin-bottom: .8em;
+}
+IMG {
+}
+	.imagecontainer {
+		line-height: 100%;
+		margin: 0 0 10px 0;
+	}
+	.imagecontainer IMG {
+		margin: 0 0 0 0;
+	}
+UL {
+	margin: 10px 0 15px 0; padding-left: 35px;
+}
+UL LI {
+	list-style: disc outside url(images/listenstern.gif);
+	margin-bottom: 2px;
+}
+	LI OL,
+	LI UL {
+		margin: 3px 0 3px 20px;
+	}
+		LI UL LI {
+			list-style: disc outside url(images/listenstern_orange.gif);
+		}
+#tags DT {
+	border-left: 7px solid #FF8C00; margin: 4px 0 4px 3px; padding: 0 0 0 10px;
+}
+IMG {
+	margin: 5px 0 7px 0;
+	vertical-align: text-bottom; border: 0;
+}
+	.post-content IMG {
+		border: 15px solid #EBEBEB;
+	}
+	IMG.noborder, IMG.nix, IMG.keinrand, IMG.nostyle {
+		border: 0;
+	}
+	A IMG {
+		margin: 0;
+	}
+INS.block,
+BLOCKQUOTE {
+	background: transparent none repeat-y top left;
+	padding: 2px 1px 0px 35px;
+	margin: 0 0 5px 0;
+}
+INS { 
+	/* verwendet für updates */
+	/* Farbe: Orange */
+	text-decoration: none;
+}
+BLOCKQUOTE,
+INS.block, .update, DIV.block {
+	background: #ffece0 url(images/bg_zitat.gif) repeat top;
+	margin-left: -15px; margin-right: -15px; padding: 5px 15px 5px 7px;
+	border-left: 8px solid #ff8c00;
+}
+	INS.block, .update, DIV.block {
+		display: block;
+		background-color: #ffece0;
+		margin-top: 15px; margin-bottom: 15px;
+	}
+	BLOCKQUOTE,
+	QUOTE, Q {
+		font-family: Georgiea, serif; font-size: 110%; line-height: 160%;
+		background-color: #EAF2FF; border-left-color: #D1D4FC;
+	}
+	INS BLOCKQUOTE, .update BLOCKQUOSTE, DIV.block BLOCKQUOTE,
+	BLOCKQUOTE INS.block {
+		margin-left: 0px;
+	}
+		QUOTE, Q {
+			font-size: 130%; padding: 1px 3px; line-height: 100%;
+		}
+		BLOCKQUOTE P {
+			font-family: Georgia, serif;
+		}
+.floatend {
+	display: block;
+	clear: both;
+}
+
+
+
+/* ************************************************************************
+ *	Spaltenlayout    THX @ http://www.tjkdesign.com/articles/liquid/7.asp
+ 	-spalten-
+ */
+BODY {
+	background: #dcdcdc url(images/bg_seite.gif) repeat left;
+	width:800px;
+	margin:0 auto;
+}
+#kopf,#vorwort,.einPost,.einPostMeta,#sidebar,#footer {
+	overflow: hidden;
+	display: inline-block;
+	text-align: left;
+}
+/* safari and opera need this */
+#vorwort,#sidebar,#footer {width:100%}
+#kopf,.einPost,.einPostMeta,#linkDown {float:left}
+#kopf,.einPost {width:600px;}
+.einPostMeta,#linkDown {width:199px;}
+#sidebar,#footer,.einPost,#vorwort {clear:left}
+
+
+
+/* ************************************************************************
+ *	Link-Formatierungen
+ *	Meta-Informationen und Links die nicht im Post-Text stehen...
+ 	-link- -a- -href-
+ */
+A:LINK,
+A:VISITED,
+A:HOVER,
+A:ACTIVE {
+	color: Black; text-decoration: none;
+	padding: 0 1px; 
+	border-bottom: 1px solid #FF8C00;
+}
+A:VISITED,
+#kopf A.headlink:VISITED,
+#vorwort A:VISITED,
+.einPostMeta A:VISITED {
+	color: #F4AB6D;
+}
+#kopf A.headlink:LINK,
+#vorwort A:LINK,
+.einPostMeta A:LINK {
+	color: Gray;
+	border-bottom-color: Gray;
+}
+#kopf A.headlink:VISITED,
+#vorwort A:VISITED,
+.einPostMeta A:VISITED {
+	border-bottom-color: Gray;
+}
+A:HOVER,
+A:ACTIVE {
+	background-color: Black;
+	color: White !important;
+	border-bottom-width: 2px;
+	border-bottom-color: #FF8C00 !important;
+}
+/* 
+ *	weitere Meta-Informationen und Links die nicht im Post-Text stehen...
+ */
+
+#kopf H1,
+.einPostMeta,
+#vorwort {
+	font: normal normal normal 95%/140% Arial, sans-serif;
+	color: Gray; 
+}
+
+
+/* ************************************************************************ 
+ *	globale Hx-Formatierungen
+ 	-hx-
+ */
+H1 {
+}
+.post-content H2 {
+	font: normal normal bold 130%/100% "Trebuchet MS", sans-serif;
+	margin-left: -15px; margin-right: -15px; border-left: 8px solid #FF8C00; padding: 4px 15px 4px 7px;
+	background-color: #ffece0;
+}
+.post-content H3 {
+	font: normal normal bold 130%/100% "Trebuchet MS", sans-serif; color: #FF8C00;
+	margin-left: -15px; margin-right: -15px; border-left: 8px solid #d3d3d3; padding: 4px 15px 4px 7px;
+	background: #EBEBEB url(images/bg_headline.gif) repeat top;
+}
+.post-content H4 {
+	font: normal normal bold 110%/100% "Trebuchet MS", sans-serif;
+	margin-left: -15px; border-left: 8px solid #F4AB6D; padding-left: 7px;
+}
+
+
+
+/* ************************************************************************ 
+ *	#kopf   -head- -kopf-
+ */
+#kopf H1 {
+	background-color: White;
+	width: 600px;
+	margin: 0; padding: 12px 0 13px 0;
+}
+	#kopf H1 IMG,
+	#kopf H1 A#startseite {
+		margin: 0; padding: 0; border: 0; background-color: transparent !important;
+	}
+	#kopf H1 IMG {
+		float: left; margin-right: 22px; margin-top: -12px;
+	}
+#linkDown UL {
+	padding: 180px 0 0 0; margin: 0;
+}
+	#linkDown LI {
+		margin: 0 0 3px 25px;
+		list-style: square outside url(images/icon_pfeil-runter.gif);
+	}
+
+
+/* ************************************************************************ 
+ *	#vorwort-Formatierungen   -vorwort-
+ */
+#vorwort {
+	height: 100px;
+	width: 600px;
+}
+	#vorwort P {
+		margin: 13px 0 0 15px;
+	}
+#dieUeberschrift {
+	font-family: 'Trebuchet MS', sans-serif;
+	margin: 15px 0 0 0px; padding: 15px 0 10px 15px;
+	background: #FFECE0 url(images/bg_seite.gif) repeat top;
+}
+
+
+
+/* ************************************************************************ 
+ *	Post-Liste -einpost- -post-
+ */
+.einPost {
+}
+	.einPost .posttitel {
+		background: #d3d3d3 url(images/bg_seite.gif) repeat top;
+		margin: 0;
+		border-top: 15px solid White;
+	}
+	.einPost .posttitel A,
+	.einzeln .einPost .posttitel SPAN {
+		font: normal normal bold 160%/100% 'Trebuchet MS', sans-serif;
+		background: #ebebeb url(images/bg_headline.gif) repeat top;
+		padding: 45px 15px 10px 7px;
+		margin: 0 0 0 8px; border: 0;
+		display: block;
+	}
+	#page .posttitel A {
+		padding: 0; margin: 0; display: inline; font-size: 100%; border-bottom: 2px solid;
+	}
+	.einPost .posttitel A:HOVER,
+	.einPost .posttitel A:ACTIVE {
+		color: #FF8C00 !important;
+		/*background-color: #ffece0;*/
+	}
+	.einPost .post-content {
+		padding: 15px 15px 45px 15px;
+		background-color: White;
+	}
+.einPostMeta {
+}
+	.einPostMeta UL {
+		margin: 75px 0 0 10px; padding: 0; 
+	}
+	.einPostMeta LI {
+		list-style: none; margin-bottom: 10px;
+	}
+
+.post-content {
+	line-height: 160%;
+}
+
+
+
+
+/* ************************************************************************ 
+ *	seitennavigation -navi-
+ */
+.seitennavigation {
+	display: table;
+	table-layout: auto;
+	width: 100%;
+	empty-cells: show;
+	background-color: White;
+	font-size: 1.5em;
+}
+	.seitennavigation .tr {
+		display: table-row;
+	}
+		.tr .seite,
+		.tr .punkte {
+			display: table-cell; padding: 10px 4px;
+			border-right: 4px solid #DCDCDC;
+			text-align: center;
+		}
+		.tr .space { display: none; }
+		.tr .letzte { border: 0; }
+		.tr .punkte { font-size: 60%; color: Gray; }
+		.tr .aktuell { background: #DCDCDC url(images/bg_seite.gif) repeat !important; color: #FF8C00; font-weight: bold; }
+		.tr .aktuell.erste { border-left: 4px solid White;  }
+		.tr .letzte.aktuell { border-right: 4px solid White;  }
+		.tr .prev { background: url(images/bg_navi_prev.gif) no-repeat top right; }
+		.tr .next { background: url(images/bg_navi_next.gif) no-repeat top left; }
+	.seitennavigation A {
+		border: 0; margin: 0 2px;
+		color: black !important;
+	}
+	.seitennavigation A:HOVER,
+	.seitennavigation A:ACTIVE {
+		background: #ffece0 url(images/bg_headline.gif) repeat top;
+		color: #FF8C00 !important;
+	}
+	
+#single .seitennavigation { font-size: 90%; }
+#single .seitennavigation .seite { width: 280px; }
+#single .seitennavigation .seite.erste { text-align: left; padding-left: 10px; }
+#single .seitennavigation .seite.letzte { text-align: right; padding-right: 10px; border: 0; }
+
+.weitergehts A { margin-right: 10px; }
+.weitergehts .zupost { font-weight: bold; }
+
+
+/* ************************************************************************ 
+ *	#sidebar-Formatierungen   -sidebar-
+ */
+#sidebar {
+
+}
+	.nachOben { position: relative; left: 620px; bottom: 0px; }
+	#sidebar .suche { margin-top: 15px; }
+	#sidebar .suche,
+	#sidebar .suche INPUT { font-size: 1.3em; }
+	#sidebar .suche .sucheingabe { width: 400px; }
+	#sidebar .suche .suchbutton { width: 100px; }
+	
+	#sidebar .zweiSpalten { width: 290px; float: left; margin: 20px 9px 15px 0; }
+
+
+
+/* ************************************************************************ 
+ *	#archiv 		-archiv- -archive-
+ 	Archiv-Zeile mit timeline()-Plugin
+ * XHTML-Struktur
+ 	DIV#archiv
+		h2
+		DIV.timeline-div#timelineBox
+		TABLE.timeline
+ */
+#archiv { margin-top: 15px; }
+/* ************************************************************************ 
+ *	Timeline-Plugin	-timeline-
+*/
+/* This is the  Timeline plugin for Wordpress */
+/* Author : Raphael Jolivet                   */
+/* Web    : www.lalala.fr                     */
+
+.timeline-div {
+width: 600px;
+overflow: scroll;
+overflow: -moz-scrollbars-horizontal;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+.timeline a img {
+border: 0px;    
+}
+table.timeline {
+font-size: xx-small;
+border-collapse: collapse;
+border: none;
+margin: 0px; width: 100%;
+} 
+table.timeline a {
+text-decoration: none; 
+}
+table.timeline td {
+padding: 1px;
+text-align: center;
+white-space:nowrap;
+}
+
+.tl-year a,
+.tl-month a,
+.tl-day a,
+.tl-post a { color: black; display: block; padding: 0; border-bottom-width: 0px; }
+
+/*.tl-year-even,
+.tl-year-odd { background-color: #f4ab6d; }
+
+.tl-month-even { background-color: #F4AB6D; }
+.tl-month-odd { background-color: #F4AB6D; }
+
+.tl-day-even, 
+.tl-posts-even { background-color: #F4AB6D; }
+.tl-day-odd, 
+.tl-posts-odd { background-color: #F4AB6D; }*/
+
+
+
+/* ************************************************************************ 
+ *	.links und .kommentare / .trackbacks
+ */
+#sidebar .links UL,
+#sidebar .links LI {
+	margin: 0; padding: 0; list-style: none;
+}
+#sidebar .links UL UL,
+#sidebar .kommentare UL,
+#sidebar .trackbacks UL {
+	margin: 10px 0 15px 0; padding-left: 20px;
+}
+#sidebar .links LI LI {
+	list-style: disc outside url(images/listenstern.gif);
+	margin-bottom: 2px; margin-bottom: 7px;
+}
+#sidebar .kommentare LI,
+#sidebar .trackbacks LI {
+	margin-bottom: 7px !important;
+}
+#sidebar .zweiSpalten H2 {
+	font: normal normal bold 140%/100% 'Trebuchet MS', Arial, sans-serif;
+	background: White url(images/bg_seite.gif) repeat top;
+	padding: 4px 5px 4px 20px;
+}
+	#sidebar .zweiSpalten H2 SPAN {
+		font-weight: normal; 
+	}
+
+
+
+/* ************************************************************************ 
+ *	#commentarea-Formatierungen -comments-
+ */
+#commentarea {
+	margin-top: 30px;
+}
+	/* H3 + #zumkommentar siehe oben */
+	#commentarea OL,
+	.formatierung {
+		margin: 5px 0 0px 0px; padding: 0 0 0 20px;
+	}
+	#commentarea OL LI {
+		margin: 0 0 15px 0; padding: 0;
+		clear:both;
+	}
+	#commentarea OL LI P {
+		padding: 0; margin: 0;
+	}
+	#commentarea OL LI CITE {
+		font-style: normal;
+		color: Gray;
+	}
+	#commentarea .showOnHover,
+	#commentarea .showOnHover A {
+		color: White; border-bottom-width: 0;
+	}
+		#commentarea:hover .showOnHover, 
+		#commentarea:hover .showOnHover A {
+			color: Gray; border-bottom-width: 1px;
+		}
+	#commentarea .cByPostAuthor {
+		color: #FF8C00; list-style: url(images/listenstern_orange.gif);
+	}
+	#commentarea .cTypePingback,
+	#commentarea .cTypePingback A {
+		color: #D1D4FC;
+	}
+	#commentform {
+		margin-bottom: 20px;
+	}
+	#commentform P {
+		font-size: 80%;
+	}
+	#commentform #kommentierender {
+		float: right;
+	}
+	#commentform .kommentartext {
+		float: left;
+	}
+	#commentform #kommentierender LABEL {
+		display: block;
+	}
+		#commentform #kommentierender .subscribe-to-comments LABEL {
+			display: inline;
+		}
+	#commentform INPUT,
+	#commentform TEXTAREA {
+		width: 275px;
+		font-size: 150%; font-family: arial, sans-serif; line-height: 120%;
+	}
+	#commentform TEXTAREA {
+		height: 250px;
+	}
+	#commentform INPUT.email,
+	#commentform INPUT.name,
+	#commentform INPUT.hp {
+	}
+	#submit {
+		font-size: 1.5em !important; font-weight: bold;
+		height: 35px;
+		margin-top: 85px;
+	}
+
+
+
+/* ************************************************************************ 
+ *	#footer-Formatierungen   -footer-
+ */
+#footer {
+	margin: 10px 0;
+}
+
+/* /Ende */

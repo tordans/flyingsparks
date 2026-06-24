@@ -1,0 +1,20 @@
+[
+	{
+		"id": "24854",
+		"author": "Pfadiblog - Das Pfadfinder-Magazin. » Beispiel einer guten Webkampagne",
+		"authorUrl": "http://www.pfadiblog.de/2007/09/09/beispiel-einer-guten-webkampagne/",
+		"date": "2007-09-09T09:51:17.000Z",
+		"content": "[...] meinem Blog habe ich &#252;ber ein gutes Beispiel geschrieben, von dem man bei genauer Beobachtung viel lernen kann. Es geht um die Kampagne [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "32599",
+		"author": "Lennart",
+		"authorUrl": null,
+		"date": "2008-02-19T23:30:48.000Z",
+		"content": "Ich habe gerade nach dem Thema \"Usability\" in Bezug auf Umwelt bei Google gesucht und bin hier gelandet.\nIch finde es heute schwierig, bei den ganzen Funktionen, eine Webseite überhaupt noch sinnvoll aufzubauen. Tlws. findet man irgendwo einen kleinen Knopf auf einer großen Seite und dahinter verbergen sich meterlange PHP-Scripts, irgendwie kann es das nicht sein...\n\n//Edit: URL gelöscht da Kommentar nach Linkspam aussah. Sorry.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

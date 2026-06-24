@@ -1,0 +1,56 @@
+[
+	{
+		"id": "2968",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de",
+		"date": "2006-08-21T15:22:14.000Z",
+		"content": "Was spricht dagegen, den Audiostream von Skype via Audacity oder vergleichbaren Tools aufzuzeichnen? Tools, die auf einen allgemeinen Audiostream, nicht nur auf Skype ausgelegt sind?\n(Das ist übrigens auch das Programm mit dem wir bisher die Podcast aufgenommen haben)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2970",
+		"author": "TJ",
+		"authorUrl": "http://flyingsparks.wwwfiles.de",
+		"date": "2006-08-21T16:00:32.000Z",
+		"content": "Laut den Artikeln (insb der erste vitamin-artikel) soll das wohl unsicherer sein. Nachteil ist auch, dass du die Sprechkanäle nicht getrennt hast.\nAußerdem finde ich ein Tool das automatisch aufnimmt praktischer als eines, das man erst konfiugrieren muss ;)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "2972",
+		"author": "Basic Thinking Blog » Skye Gespräche aufnehmen: Neue Tools",
+		"authorUrl": "http://www.basicthinking.de/blog/2006/08/21/skye-gespraeche-aufnehmen-neue-tools/",
+		"date": "2006-08-21T16:39:13.000Z",
+		"content": "[...] Flying Sparks hat sich die M&#252;he gemacht und einige Skypetools zusammengestellt, mit deren Hilfe man Skype Calls aufnehmen kann. Ich hatte damals HotRecorder als Bezahltool und Powergramo ausfindig gemacht (das in der einfachen Variante auch heute noch kostenlos ist). Flying Sparks empfiehlt Pretty May. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "2978",
+		"author": "Andi",
+		"authorUrl": "http://www.andisblog.de",
+		"date": "2006-08-21T20:11:50.000Z",
+		"content": "Jap ok, aber bevor ich für so etwas Geld auslege, nehm ich doch etwas Komfortverlust in Kauf und hab's umsonst.\n(Zählt natürlich nicht für Freeware, sondern speziell eher für's erste, kommerzielle)",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "3004",
+		"author": "SkypeIn für Podcast-Aufnahme - flying sparks",
+		"authorUrl": "http://flyingsparks.wwwfiles.de/2006-08-23/skypein-fuer-podcast-aufnahme/",
+		"date": "2006-08-23T07:02:55.000Z",
+		"content": "[...] Ich habe es schon in der Update-Bemerkung des vorgestrigen Podcast-Links-Artikels anklingen lassen: Zwar funktioniert meine Interviewumgebung mit PrettyMay sehr gut, aber meine Interviewpartner haben weder Skype noch ein Headset. Die Verbreitung dieser Technik habe ich offensichtlich &#252;bersch&#228;tzt. [...]",
+		"parent": "0",
+		"type": "pingback"
+	},
+	{
+		"id": "4463",
+		"author": "Dick Schiferli",
+		"authorUrl": "http://www.pamela-systems.com",
+		"date": "2006-09-30T10:05:27.000Z",
+		"content": "Hallo, schaut euch mal Pamela 3.0 an (www.pamela-systems.com). Hat neben \"normale Aufzeichnung\" auf Skype Video aufnahme und eine komplette Podcast Module welches XML-Datei erzeugt und sogar den Podcast hochladen kann.",
+		"parent": "0",
+		"type": "comment"
+	}
+]

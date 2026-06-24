@@ -1,0 +1,47 @@
+[
+	{
+		"id": "33301",
+		"author": "Gregor",
+		"authorUrl": "http://7e.posterous.com",
+		"date": "2009-10-11T15:00:17.000Z",
+		"content": "hier mein TIpp:\nnutze posterous um Blog beiträge zu veröffentlichen und nutze Outpost um alle Beiträge auch auf deinem Blog zu veröffentlichen. Musst du was editieren, nutzt die Features von Wordpress.\n\nBest of both worlds, was spricht dagegen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33302",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-10-11T19:53:24.000Z",
+		"content": "Es spricht dagegen, dass ich \na) an zwei Stellen meinen Content im Netz habe (SEO, Userverwirrung, Redundanz), \nb) Posterous die meisten der coolen eigenen Funktionen nicht an WordPress weitergeben kann (*) und\nc) Posterous automatisch veröffentlichen würde... so dass ich einen Eintrag, der schon öffentlich ist erst danach kontrollieren kann.\n\n(*) Der verlinkte Artikel mit den PDFs beispielsweise enthielt die PDF-Vorschau nur in Posterous, nicht in WordPress weil Posterous sagt, sie können technisch nicht die gleichen Codes embedded. Ich muss es manuell rüberkopieren.\n\nDie Nutzen-Bilanz stimmt einfach noch nicht in einem solchen Workflow.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33303",
+		"author": "Marian",
+		"authorUrl": "http://",
+		"date": "2009-10-12T08:03:02.000Z",
+		"content": "Hallo Tobias! Rührende Geschichte ;-)\n\nWarum auf posterous umziehen? Nur wegen \"post by email\"? Kann man das nicht auch mit WordPress hinkriegen?",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33304",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-10-12T12:46:59.000Z",
+		"content": "@Marian: Post-by-mail-with-parsing müsste es heißen...\nDas WP-Post-by-mail habe ich noch nie richtig ans Laufen bekommen. Und glaube auch nicht, dass der Mail-HTML-Code gut übersetzt würde...\nWas dann aber fehlt ist die Magic: Bilder aus Mail ziehen und in WordPress hochladen+in Post einfügen ... das gleiche mit PDFs, YouTube-Links etc.\n\nDafür gibts zwar auch Tools die via API anzubinden wären... aber wer will das schon bauen :)...",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33305",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-10-12T12:50:06.000Z",
+		"content": "Oh, klasse, noch ein tolles Feature von Posterous: Es hat jetzt einfach die drei fehlgeschlagenen Versuche, meinen Artikel hier zu posten nachgeholt... und mir dabei das Blog mit drei redundanten Artikel vollgemüllt. #delete",
+		"parent": "0",
+		"type": "comment"
+	}
+]

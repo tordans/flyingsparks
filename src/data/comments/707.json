@@ -1,0 +1,29 @@
+[
+	{
+		"id": "33294",
+		"author": "Gregor",
+		"authorUrl": "http://htmlexpress.de",
+		"date": "2009-10-04T12:38:33.000Z",
+		"content": "Ich muss euch beiden Recht geben. Ich glaube Jason bezieht sich eher auf <a href=\"http://gettingreal.37signals.com/ch05_Start_With_No.php\" rel=\"nofollow\">Start with no!</a>, was ich so total unterschreiben würde. Ich verstehe ihn so, dass sich viele viel Arbeit sparen würden, wenn Sie funktionen einfach weglassen würden, die womöglich gar nicht gebraucht werden, anstatt im Nachhinein zu überlegen, wie man die Komplexität der UI reduziert.\n\nDas Paste in Word ein Key-Feature ist und daher nicht weggelassen werden kann, würde wahrscheinlich auch Jason so sehen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33295",
+		"author": "TJ",
+		"authorUrl": "http://fly.ingsparks.de",
+		"date": "2009-10-04T19:44:33.000Z",
+		"content": "@Gregor: Ich fand Jasons Aussagen auch immer hilfreich. Aber wenn er  polemisch über große Hersteller herzieht ohne ehrlich deren Situation zu berücksichtigen, geht er zu weit. Sprüche wie der oben und Anti-Feature-Sprüche sind zwar griffig, leiten aber fehl. Ich finde es muss in dieser Diskussion wieder zurückgefunden werden zu den wahren Gründen. Und dazu gehört, Feature nicht mehr als Problem anzusehen.",
+		"parent": "0",
+		"type": "comment"
+	},
+	{
+		"id": "33296",
+		"author": "Tamim Swaid",
+		"authorUrl": "http://www.cobocards.com",
+		"date": "2009-10-05T13:19:44.000Z",
+		"content": "@ Tobias. Ja recht hast du. Und manchmal muss man auch ein Feature ausprobieren ob es klappt und es dann entweder rausnehmen oder weiterentwickeln.",
+		"parent": "0",
+		"type": "comment"
+	}
+]
