@@ -1,0 +1,44 @@
+# Copy to project bunfig.toml (local/dev). Do not COPY into Docker before bun install.
+# @see references/bun-install.md
+
+# Supply-chain cooldown — only install versions published at least N seconds ago.
+# @see https://bun.com/docs/runtime/bunfig#install-minimumreleaseage
+[install]
+minimumReleaseAge = 432000 # 5 days (5 × 24 × 60 × 60 seconds)
+# Bun 1.4.0 has no working @scope/* glob here. Astro 7's graph is newer than 5 days.
+minimumReleaseAgeExcludes = [
+  "typescript",
+  "@typescript/typescript-darwin-arm64",
+  "@typescript/typescript-linux-x64",
+  "astro",
+  "@astrojs/check",
+  "@astrojs/compiler",
+  "@astrojs/compiler-binding",
+  "@astrojs/compiler-binding-darwin-arm64",
+  "@astrojs/compiler-binding-darwin-x64",
+  "@astrojs/compiler-binding-linux-arm64-gnu",
+  "@astrojs/compiler-binding-linux-arm64-musl",
+  "@astrojs/compiler-binding-linux-x64-gnu",
+  "@astrojs/compiler-binding-linux-x64-musl",
+  "@astrojs/compiler-binding-wasm32-wasi",
+  "@astrojs/compiler-binding-win32-arm64-msvc",
+  "@astrojs/compiler-binding-win32-x64-msvc",
+  "@astrojs/compiler-rs",
+  "@astrojs/internal-helpers",
+  "@astrojs/language-server",
+  "@astrojs/markdown-remark",
+  "@astrojs/markdown-satteri",
+  "@astrojs/prism",
+  "@astrojs/rss",
+  "@astrojs/sitemap",
+  "@astrojs/telemetry",
+  "@astrojs/yaml2ts",
+]
+
+# Global virtual store — install once, link everywhere (requires isolated linker). Local/dev only.
+# Reinstall after changing linker/store: rm -rf node_modules && bun install
+# Vite dev: server.fs.allow — @see references/bun-install.md
+# Phantom deps inside third-party packages: trustedDependencies / patch — @see references/bun-install.md
+# @see https://bun.com/docs/pm/global-store
+linker = "isolated"
+globalStore = true

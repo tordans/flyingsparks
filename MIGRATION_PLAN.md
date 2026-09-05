@@ -12,14 +12,14 @@ It is grounded in the official Astro "Migrating from WordPress" guide and the
 
 From `db-backups-2026-06-24/flyingsparks.WordPress.2026-06-24.xml` (WXR, UTF-8):
 
-| Item | Count | Notes |
-|---|---|---|
-| Posts | 515 | 512 published · 5 draft · 2 private (incl. pages below) |
-| Pages | 4 | `Über`, `Themen-Liste`, `Vorwort` (public) + `Melatengürtel` (private) |
-| Comments | 784 | **753 approved/public** · 31 trash/admin-only |
-| Tags | 536 | tag-driven blog; only 1 real category |
-| Attachments | 83 | URLs only — binaries come from the FTP backup |
-| Span | 2005 → 2010-ish | ~20 years of archive |
+| Item        | Count           | Notes                                                                  |
+| ----------- | --------------- | ---------------------------------------------------------------------- |
+| Posts       | 515             | 512 published · 5 draft · 2 private (incl. pages below)                |
+| Pages       | 4               | `Über`, `Themen-Liste`, `Vorwort` (public) + `Melatengürtel` (private) |
+| Comments    | 784             | **753 approved/public** · 31 trash/admin-only                          |
+| Tags        | 536             | tag-driven blog; only 1 real category                                  |
+| Attachments | 83              | URLs only — binaries come from the FTP backup                          |
+| Span        | 2005 → 2010-ish | ~20 years of archive                                                   |
 
 - **Live site:** still up, WordPress 6.2.9 on nginx, custom theme **`flyingspark`**.
 - **Permalinks:** `https://fly.ingsparks.de/YYYY-MM-DD/post-name/` (date-prefixed).
@@ -29,6 +29,7 @@ From `db-backups-2026-06-24/flyingsparks.WordPress.2026-06-24.xml` (WXR, UTF-8):
   reference only (saved in `_migration/layout-reference/`).
 
 ### Two things the DB/XML do NOT contain (sourced separately)
+
 1. **Media binaries** — `wp-content/uploads/` (+ ~50 images on the old host
    `flyingsparks.wwwfiles.de`, plus some external/Flickr). → from the FTP backup.
 2. **Theme/layout** — CSS/templates of `flyingspark`. → from FTP + the live crawl.
@@ -100,13 +101,13 @@ conversion (per Astro guide), so layout-of-content matches the original.
 
 ## 5. Flash modernization map (step 4)
 
-| Provider in `.swf` | Modern handling |
-|---|---|
-| Vimeo moogaloop | `https://player.vimeo.com/video/<id>` iframe |
-| TED EmbedPlayer | TED `/talks/<slug>` embed |
-| SlideShare ssplayer | SlideShare oEmbed / link |
-| Scribd Viewer | link to doc (+ archive.org) |
-| Google Video / VideoEgg / Golem / Picasa / deviantART / WWF | placeholder + original link + archive.org |
+| Provider in `.swf`                                          | Modern handling                              |
+| ----------------------------------------------------------- | -------------------------------------------- |
+| Vimeo moogaloop                                             | `https://player.vimeo.com/video/<id>` iframe |
+| TED EmbedPlayer                                             | TED `/talks/<slug>` embed                    |
+| SlideShare ssplayer                                         | SlideShare oEmbed / link                     |
+| Scribd Viewer                                               | link to doc (+ archive.org)                  |
+| Google Video / VideoEgg / Golem / Picasa / deviantART / WWF | placeholder + original link + archive.org    |
 
 A reusable `<FlashEmbed>`/`<LegacyEmbed>` component renders either the modern
 iframe or the placeholder.
