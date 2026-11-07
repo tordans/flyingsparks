@@ -1,0 +1,61 @@
+---
+// Client-side title search over the /funken.json index. The sidebar search form
+// submits here (GET ?q=…). Title-only (lightweight); full-text could use Pagefind.
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`Suche — ${SITE_TITLE}`} description="Beiträge durchsuchen" />
+	</head>
+	<body id="page" class="content">
+		<Header variant="list" />
+		<h2 id="dieUeberschrift" class="page-title">Suche</h2>
+		<div class="post-content" style="background:#fff;padding:15px;">
+			<form id="suche-form" method="get" action="/suche/">
+				<input type="search" id="suche-input" name="q" placeholder="Suchwort…" style="font-size:1.2em;padding:4px;width:60%;" />
+				<button type="submit">suchen</button>
+			</form>
+			<p id="suche-status" style="color:gray;margin-top:10px;"></p>
+			<ul class="post-index" id="suche-results"></ul>
+		</div>
+		<Sidebar />
+		<Footer />
+
+		<script>
+			const params = new URLSearchParams(location.search);
+			const q = (params.get('q') || '').trim();
+			const input = document.getElementById('suche-input') as HTMLInputElement | null;
+			const status = document.getElementById('suche-status');
+			const results = document.getElementById('suche-results');
+			if (input) input.value = q;
+
+			if (q && status && results) {
+				const esc = (s: string) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c] as string);
+				fetch('/funken.json')
+					.then((r) => r.json())
+					.then((data: { t: string; u: string; d: number }[]) => {
+						const needle = q.toLowerCase();
+						const hits = data
+							.filter((p) => p.t.toLowerCase().includes(needle))
+							.sort((a, b) => b.d - a.d);
+						status.textContent = `${hits.length} Treffer für „${q}“ (Titelsuche)`;
+						results.innerHTML = hits
+							.map((p) => {
+								const dt = new Date(p.d).toLocaleDateString('de-DE', { year: 'numeric', month: 'short', day: 'numeric' });
+								return `<li><a href="${p.u}">${esc(p.t)}</a><time>${dt}</time></li>`;
+							})
+							.join('');
+					})
+					.catch(() => { status.textContent = 'Suche derzeit nicht verfügbar.'; });
+			} else if (status) {
+				status.textContent = 'Gib ein Suchwort ein.';
+			}
+		</script>
+	</body>
+</html>

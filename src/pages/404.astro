@@ -1,0 +1,30 @@
+---
+// Themed 404 (GitHub Pages serves /404.html automatically for unknown paths).
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`Nicht gefunden — ${SITE_TITLE}`} description="Seite nicht gefunden" />
+	</head>
+	<body id="page" class="content">
+		<Header variant="list" />
+		<h2 id="dieUeberschrift" class="page-title">Dieser Funke wurde leider nicht gefunden…</h2>
+		<div class="post-content" style="background:#fff;padding:15px;">
+			<p>Die angeforderte Seite gibt es nicht (mehr). Vielleicht hilft eines davon weiter:</p>
+			<ul>
+				<li><a href="/">Zur Startseite</a></li>
+				<li><a href="/archiv/">Alle Beiträge im Archiv</a></li>
+				<li><a href="/themen-liste/">Themen-Liste</a></li>
+				<li><a href="/suche/">Suche</a></li>
+			</ul>
+		</div>
+		<Sidebar />
+		<Footer />
+	</body>
+</html>
