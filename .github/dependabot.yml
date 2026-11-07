@@ -1,4 +1,4 @@
-# Private OSS Astro archive — first-Friday cron. Template: tech-stack examples/dependabot.yml.template
+# Private OSS Astro archive — first-Thursday cron. Template: tech-stack examples/dependabot.yml.template
 # @see references/dependabot.md
 version: 2
 updates:
@@ -7,7 +7,7 @@ updates:
       - /
     schedule:
       interval: cron
-      cronjob: '0 7 * * FRI#1'
+      cronjob: '0 7 * * THU#1'
       timezone: Europe/Berlin
     cooldown:
       default-days: 5
@@ -117,7 +117,7 @@ updates:
     directory: /
     schedule:
       interval: cron
-      cronjob: '0 7 * * FRI#1'
+      cronjob: '0 7 * * THU#1'
       timezone: Europe/Berlin
     cooldown:
       default-days: 5
