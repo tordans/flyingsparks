@@ -19,4 +19,4 @@ Mehr über die FP-Systematik in meinem Post <a href="http://flyingsparks.wwwfile
 
 <strong>Mehr über mich:</strong> <a href="http://www.tobiasjordans.de">www.tobiasjordans.de</a>
 
-<strong>Kontakt:</strong> Tobias Jordans * t@tobiasjordans.de * 0176-17476616 * Franz-Liszt-Straße 10 * 50825 Köln
+<strong>Kontakt &amp; Impressum:</strong> Tobias Jordans * Böhmische Straße 54 * 12055 Berlin * t@tobiasjordans.de
