@@ -1,0 +1,87 @@
+[
+	{
+		"name": "befreundete Blogs",
+		"links": [
+			{
+				"name": "Andisblog",
+				"url": "http://www.andisblog.de"
+			},
+			{
+				"name": "konnexus",
+				"url": "http://www.konnexus.de/news/index.php"
+			},
+			{
+				"name": "Prof. Oliver Wrede",
+				"url": "http://wrede.interfacedesign.org/"
+			},
+			{
+				"name": "Tim Bruysten",
+				"url": "http://weblog.data-house.de/"
+			}
+		]
+	},
+	{
+		"name": "Favoriten",
+		"links": [
+			{
+				"name": "ScoutPress (Diplom)",
+				"url": "http://www.scoutpress.de"
+			}
+		]
+	},
+	{
+		"name": "hier habe ich geschrieben",
+		"links": [
+			{
+				"name": "Continuity-Seminar",
+				"url": "http://nexus.design2.fh-aachen.de/seminare/wrede/continuity/",
+				"title": "Seminarblog am FB Desgin, FH Aachen zum Thema Flow & Continuity"
+			},
+			{
+				"name": "Datensicht:mobil-Seminar",
+				"url": "http://nexus.design2.fh-aachen.de/seminare/gasteier/WS05_1/",
+				"title": "Seminarblog am FB Desgin, FH Aachen zum Thema Interfacedesign"
+			},
+			{
+				"name": "I-Brand-Seminar",
+				"url": "http://seminare.design.fh-aachen.de/ibrand/",
+				"title": "Self-Branding und Marken / Seminar bei Klaus Gasteier / FH Aachen, FB Design"
+			},
+			{
+				"name": "Telekratie-Seminar",
+				"url": "http://seminare.design.fh-aachen.de/telekratie"
+			},
+			{
+				"name": "Visperanto-Seminar",
+				"url": "http://seminare.design.fh-aachen.de/visperanto",
+				"title": "Seminarblog am FB Desgin, FH Aachen zu Thema visuelle Sprachen"
+			}
+		]
+	},
+	{
+		"name": "hier schreibe ich",
+		"links": [
+			{
+				"name": "Pfadfinder Langerwehe",
+				"url": "http://www.dpsg-langerwehe.de",
+				"title": "Stamm Langerwehe, Deutsche Pfadfinderschaft Sankt Georg, DPSG"
+			},
+			{
+				"name": "Pfadiblog",
+				"url": "http://www.pfadiblog.de",
+				"title": "Das Pfadfinder-Magazin"
+			},
+			{
+				"name": "ScoutPress-Blog",
+				"url": "http://blog.scoutpress.de/",
+				"title": "Das System für Pfadfinder-Websites (Diplom)"
+			},
+			{
+				"name": "uxzentrisch – die nexum AG über User Experience",
+				"url": "http://uxzentrisch.de",
+				"title": "Mitarbeiter der nexum AG — darunter auch ich — schreiben über User Experience.",
+				"rel": "me"
+			}
+		]
+	}
+]

@@ -1,13 +1,26 @@
 ---
-// sidebar.php: back-to-top + search box. Single posts (single.php) show only the
-// search box. The original timeline, blogroll and recent-comments widgets were
-// dynamic and are not part of the archive.
+// sidebar.php: back-to-top + search box, then the blogroll and the recent
+// comments/trackbacks columns. Single posts (single.php) show only the search
+// box, so the widgets follow nachOben (Post.astro passes nachOben={!isPost}).
+// The original AJAX timeline (wp_timeline_ajax) is not part of the archive.
+import blogrollData from '../data/blogroll.json';
+import { getRecentComments, getRecentTrackbacks } from '../lib/recentActivity';
 import SearchForm from './SearchForm.astro';
 
 interface Props {
 	nachOben?: boolean;
+	widgets?: boolean;
 }
-const { nachOben = true } = Astro.props;
+const { nachOben = true, widgets = nachOben } = Astro.props;
+interface BlogrollLink {
+	name: string;
+	url: string;
+	title?: string;
+	rel?: string;
+}
+const blogroll = blogrollData as { name: string; links: BlogrollLink[] }[];
+const comments = widgets ? await getRecentComments() : [];
+const trackbacks = widgets ? await getRecentTrackbacks() : [];
 ---
 
 <div id="sidebar">
@@ -22,4 +35,59 @@ const { nachOben = true } = Astro.props;
 		<a id="suche"></a>
 		<SearchForm />
 	</div>
+	{
+		widgets && (
+			<>
+				<div class="zweiSpalten">
+					<div class="links">
+						<a id="links"></a>
+						<ul>
+							{blogroll.map((group) => (
+								<li class="linkcat">
+									<h2>{group.name}</h2>
+									<ul>
+										{group.links.map((link) => (
+											<li>
+												<a href={link.url} title={link.title} rel={link.rel}>
+													{link.name}
+												</a>
+											</li>
+										))}
+									</ul>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+				<div class="zweiSpalten">
+					<div class="kommentare">
+						<a id="kommentare"></a>
+						<h2>
+							aktuelle Funken <span>(Kommentare)</span>
+						</h2>
+						<ul>
+							{comments.map((c) => (
+								<li>
+									<a href={c.href} title={c.linkTitle}>{c.author}</a>: {c.text}
+								</li>
+							))}
+						</ul>
+					</div>
+					<div class="trackbacks">
+						<a id="trackbacks"></a>
+						<h2>
+							andere Feuer <span>(Trackbacks)</span>
+						</h2>
+						<ul>
+							{trackbacks.map((t) => (
+								<li>
+									<a href={t.href} title={t.linkTitle}>{t.author}</a>: {t.text}
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</>
+		)
+	}
 </div>

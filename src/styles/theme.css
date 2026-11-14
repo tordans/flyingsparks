@@ -239,6 +239,11 @@ a:hover, a:active {
 	padding: 4px 5px 4px 20px;
 }
 #sidebar .zweiSpalten h2 span { font-weight: normal; }
+/* .links, .kommentare and .trackbacks lists (old style.css) */
+#sidebar .links ul, #sidebar .links li { margin: 0; padding: 0; list-style: none; }
+#sidebar .links ul ul, #sidebar .kommentare ul, #sidebar .trackbacks ul { margin: 10px 0 15px 0; padding-left: 20px; }
+#sidebar .links li li { list-style: disc outside url(/theme/listenstern.gif); margin-bottom: 7px; }
+#sidebar .kommentare li, #sidebar .trackbacks li { margin-bottom: 7px !important; }
 
 /* ---------- #commentarea ---------- */
 #commentarea { margin-top: 30px; }
