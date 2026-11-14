@@ -1,0 +1,22 @@
+---
+// /page/2/ … /page/N/ of the home list (page 1 is "/").
+import type { GetStaticPaths } from 'astro';
+import PostList from '../../components/PostList.astro';
+import { getPublishedPosts, listPages, type ListPageProps } from '../../lib/archive';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+export const getStaticPaths = (async () =>
+	listPages(await getPublishedPosts(), {}, 'rest')) satisfies GetStaticPaths;
+
+const { posts, paged, maxPage } = Astro.props as ListPageProps;
+---
+
+<PostList
+	title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`}
+	description={SITE_DESCRIPTION}
+	intro
+	posts={posts}
+	base="/"
+	paged={paged}
+	maxPage={maxPage}
+/>

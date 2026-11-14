@@ -1,0 +1,32 @@
+---
+// /2006/page/2/ … (year archive) and /2006-04-24/page/2/ (day archive).
+import type { GetStaticPaths } from 'astro';
+import PostList from '../../../components/PostList.astro';
+import {
+	dayHeading,
+	getPublishedPosts,
+	groupByPeriod,
+	listPages,
+	type ListPageProps,
+} from '../../../lib/archive';
+
+export const getStaticPaths = (async () =>
+	[...groupByPeriod(await getPublishedPosts())].flatMap(([period, posts]) =>
+		listPages(posts, { period }, 'rest'),
+	)) satisfies GetStaticPaths;
+
+const { posts, paged, maxPage } = Astro.props as ListPageProps;
+const { period } = Astro.params;
+const isYear = period.length === 4;
+const label = isYear ? `Alle Funken aus ${period}:` : `Alle Funken für ${dayHeading(period)}:`;
+---
+
+<PostList
+	title={isYear ? period : dayHeading(period)}
+	description={label}
+	heading={label}
+	posts={posts}
+	base={`/${period}/`}
+	paged={paged}
+	maxPage={maxPage}
+/>

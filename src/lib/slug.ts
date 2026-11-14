@@ -5,6 +5,10 @@ export function tagSlug(name: string): string {
   return (
     name
       .toLowerCase()
+      // WordPress dropped "&" and "." instead of turning them into hyphens:
+      // "Film&Fernsehen" -> filmfernsehen, "web2.0" -> web20.
+      .replace(/&(?:[a-z]+|#\d+);/g, '')
+      .replace(/[&.]/g, '')
       .replace(/ä/g, 'ae')
       .replace(/ö/g, 'oe')
       .replace(/ü/g, 'ue')

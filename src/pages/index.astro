@@ -1,72 +1,21 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Sidebar from '../components/Sidebar.astro';
-import Vorwort from '../components/Vorwort.astro';
-import { tagSlug } from '../lib/slug';
-import { wpDay, wpTime } from '../lib/wpDate';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+// Home page = page 1 of the post list (7 posts per page, newest first).
+import PostList from '../components/PostList.astro';
+import { getPublishedPosts } from '../lib/archive';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { POSTS_PER_PAGE, pageCount } from '../lib/pagination';
 
-const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-const recent = posts.slice(0, 15);
+const all = await getPublishedPosts();
+const posts = all.slice(0, POSTS_PER_PAGE);
+const maxPage = pageCount(all.length);
 ---
 
-<!doctype html>
-<html lang="de">
-	<head>
-		<BaseHead title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION} />
-	</head>
-	<body id="index" class="liste">
-		<Header variant="list" />
-
-		<Vorwort>
-			<p class="schwerpunkt">Das persönliche Weblog von Tobias Jordans — ein Archiv (2005–2010).</p>
-		</Vorwort>
-
-		{
-			recent.map((post, i) => (
-				<>
-					<article class={`einPost postBG${i % 2 ? 'b' : 'a'}`}>
-						<h2 class="posttitel">
-							<a href={post.data.permalink} rel="bookmark">{post.data.title}</a>
-						</h2>
-						{post.data.description && (
-							<div class="post-content">
-								<p>{post.data.description}</p>
-								<p><a href={post.data.permalink}>Artikel weiterlesen…</a></p>
-							</div>
-						)}
-					</article>
-					<aside class="einPostMeta">
-						<ul>
-							<li class="time">
-								{wpDay(post.data.pubDate)} &lowast; {wpTime(post.data.pubDate)}
-							</li>
-							{post.data.tags.length > 0 && (
-								<li class="themen">
-									Themen:{' '}
-									{post.data.tags.map((t, j) => (
-										<>
-											{j > 0 && ', '}
-											<a href={`/tag/${tagSlug(t)}/`}>{t}</a>
-										</>
-									))}
-								</li>
-							)}
-						</ul>
-					</aside>
-					<div class="clear" />
-				</>
-			))
-		}
-
-		<p style="padding:0 15px"><a href="/archiv/">Alle {posts.length} Beiträge im Archiv →</a></p>
-
-		<Sidebar />
-		<Footer />
-	</body>
-</html>
+<PostList
+	title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`}
+	description={SITE_DESCRIPTION}
+	intro
+	posts={posts}
+	base="/"
+	paged={1}
+	maxPage={maxPage}
+/>

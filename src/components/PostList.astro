@@ -1,0 +1,107 @@
+---
+// index.php + liste_ein-post.php of the original theme: one page of posts with
+// the full body, the meta column and the up_pagination block above (from page 2)
+// and below the list.
+import { render } from 'astro:content';
+import type { Entry } from '../lib/archive';
+import { tagSlug } from '../lib/slug';
+import { texturizeTitle } from '../lib/texturize';
+import { wpDay, wpTime } from '../lib/wpDate';
+import BaseHead from './BaseHead.astro';
+import Footer from './Footer.astro';
+import Header from './Header.astro';
+import Pagination from './Pagination.astro';
+import Sidebar from './Sidebar.astro';
+import Vorwort from './Vorwort.astro';
+import { SITE_TITLE } from '../consts';
+
+interface Props {
+	title: string;
+	description: string;
+	/** HTML of the h2 heading (tag/year/day lists); omit on the home page */
+	heading?: string;
+	/** show the "Tipp" intro (home page only, like is_home()) */
+	intro?: boolean;
+	posts: Entry[];
+	/** URL of page 1 of this list */
+	base: string;
+	paged: number;
+	maxPage: number;
+}
+const { title, description, heading, intro = false, posts, base, paged, maxPage } = Astro.props;
+
+const rendered = await Promise.all(
+	posts.map(async (post) => ({ post, Content: (await render(post)).Content })),
+);
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`${title}${paged > 1 ? ` — Seite ${paged}` : ''} — ${SITE_TITLE}`} description={description} />
+	</head>
+	<body id="index" class="liste">
+		<Header variant="list" />
+
+		{
+			intro ? (
+				<Vorwort>
+					<p class="schwerpunkt">Das persönliche Weblog von Tobias Jordans — ein Archiv (2005–2010).</p>
+				</Vorwort>
+			) : (
+				<div id="vorwort">
+					<h2 id="dieUeberschrift" set:html={heading} />
+				</div>
+			)
+		}
+
+		<div class="einPost">
+			{paged >= 2 && <Pagination base={base} paged={paged} maxPage={maxPage} id="naviTop" />}
+		</div>
+		<div class="einPostMeta"> </div>
+
+		{
+			rendered.map(({ post, Content }, i) => (
+				<>
+					<div class={`einPost postBG${i % 2 ? 'b' : 'a'}`} id={`post${post.data.wpPostId ?? ''}`}>
+						<h2 class="posttitel">
+							<a
+								href={post.data.permalink}
+								rel="bookmark"
+								title="Artikel einzeln / Direkt-Link zu diesem Artikel."
+								set:html={texturizeTitle(post.data.title)}
+							/>
+						</h2>
+						<div class="post-content">
+							<Content />
+						</div>
+					</div>
+					<div class="einPostMeta" id={`post${post.data.wpPostId ?? ''}Meta`}>
+						<ul>
+							<li class="time">
+								{wpDay(post.data.pubDate)} &lowast; {wpTime(post.data.pubDate)}
+							</li>
+							<li class="themen">
+								Themen:{' '}
+								{post.data.tags.map((t, j) => (
+									<>
+										{j > 0 && ', '}
+										<a href={`/tag/${tagSlug(t)}/`} rel="tag">{t}</a>
+									</>
+								))}
+							</li>
+						</ul>
+					</div>
+				</>
+			))
+		}
+
+		<div class="einPost">
+			<Pagination base={base} paged={paged} maxPage={maxPage} id="naviBottom" />
+		</div>
+		<div class="einPostMeta"> </div>
+
+		<Sidebar />
+		<Footer />
+	</body>
+</html>

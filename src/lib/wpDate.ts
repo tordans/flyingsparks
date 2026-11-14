@@ -1,9 +1,20 @@
-// Date formats of the original theme, rendered in the blog's time zone.
-const TZ = 'Europe/Berlin'
+// Date formats of the original theme.
+// Content dates are stored in UTC, the old WordPress showed them with a fixed
+// offset of UTC+1 that was moved to UTC+2 by hand for the summer of 2006 only
+// (checked against all 509 posts: not Europe/Berlin daylight saving time).
+const SUMMER_2006_START = Date.UTC(2006, 3, 11, 12)
+const SUMMER_2006_END = Date.UTC(2006, 9, 29, 1)
+
+/** The date shifted so that its UTC fields read like the old blog's local time. */
+function local(date: Date): Date {
+  const t = date.getTime()
+  const hours = t >= SUMMER_2006_START && t < SUMMER_2006_END ? 2 : 1
+  return new Date(t + hours * 3600_000)
+}
 
 function parts(date: Date) {
   const get = (opts: Intl.DateTimeFormatOptions) =>
-    new Intl.DateTimeFormat('de-DE', { timeZone: TZ, ...opts }).formatToParts(date)
+    new Intl.DateTimeFormat('de-DE', { timeZone: 'UTC', ...opts }).formatToParts(local(date))
   const p = Object.fromEntries(
     get({
       weekday: 'short',

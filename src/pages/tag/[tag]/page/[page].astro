@@ -1,0 +1,28 @@
+---
+// /tag/<tag>/page/2/ … of the posts with this tag.
+import type { GetStaticPaths } from 'astro';
+import PostList from '../../../../components/PostList.astro';
+import {
+	getTaggedEntries,
+	groupByTag,
+	listPages,
+	type ListPageProps,
+} from '../../../../lib/archive';
+
+export const getStaticPaths = (async () =>
+	groupByTag(await getTaggedEntries()).flatMap(({ slug, name, posts }) =>
+		listPages(posts, { tag: slug }, 'rest').map((p) => ({ ...p, props: { ...p.props, name } })),
+	)) satisfies GetStaticPaths;
+
+const { name, posts, paged, maxPage } = Astro.props as ListPageProps & { name: string };
+---
+
+<PostList
+	title={`Thema: ${name}`}
+	description={`Alle Funken zum Thema ${name}`}
+	heading={`Alle Funken für das Thema <strong>${name.replace(/&/g, '&amp;')}</strong>:`}
+	posts={posts}
+	base={`/tag/${Astro.params.tag}/`}
+	paged={paged}
+	maxPage={maxPage}
+/>

@@ -1,0 +1,62 @@
+---
+// up_pagination, view "deImg": <div class="seitennavigation"> with one cell per page.
+import { pageHref, paginationItems, type PageItem } from '../lib/pagination'
+
+interface Props {
+	/** URL of page 1 of this list, with trailing slash (e.g. "/tag/usability/") */
+	base: string;
+	paged: number;
+	maxPage: number;
+	id?: string;
+}
+const { base, paged, maxPage, id } = Astro.props;
+const items = paginationItems(paged, maxPage);
+
+const ICON: Record<NonNullable<Extract<PageItem, { icon?: unknown }>['icon']>, { src: string; alt: string }> = {
+	first: { src: '/theme/first.png', alt: 'Seite 1' },
+	last: { src: '/theme/last.png', alt: 'letzte Seite' },
+	prev: { src: '/theme/prev.png', alt: 'zurück zu' },
+	next: { src: '/theme/next.png', alt: 'vorwärts zu' },
+};
+---
+
+<div class="seitennavigation" id={id}>
+	<span class="tr">
+		{
+			items.map((item, i) => {
+				const space = i > 0 && <span class="space"> </span>;
+				if (item.type === 'dots') {
+					return (
+						<>
+							{space}
+							<span class="punkte"> ... </span>
+						</>
+					);
+				}
+				const icon = item.icon && ICON[item.icon];
+				const cls = ['seite', ...item.classes, ...(item.type === 'current' ? ['aktuell'] : [])].join(' ');
+				// next/last: icon before the number; first/prev: after it
+				const before = icon && (item.icon === 'next' || item.icon === 'last');
+				const label = (
+					<>
+						{before && <img src={icon.src} alt={icon.alt} />}
+						{before && ' '}
+						{item.page}
+						{icon && !before && ' '}
+						{icon && !before && <img src={icon.src} alt={icon.alt} />}
+					</>
+				);
+				return (
+					<>
+						{space}
+						{item.type === 'current' ? (
+							<span class={cls}>{label}</span>
+						) : (
+							<a class={cls} href={pageHref(base, item.page)}>{label}</a>
+						)}
+					</>
+				);
+			})
+		}
+	</span>
+</div>
