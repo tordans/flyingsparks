@@ -5,6 +5,7 @@ import { join } from 'node:path'
 import sitemap from '@astrojs/sitemap'
 import { defineConfig } from 'astro/config'
 import browserslistToEsbuild from 'browserslist-to-esbuild'
+import { wordpressMarkdown } from './src/lib/markdownProcessor.ts'
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +14,7 @@ export default defineConfig({
   // Keep parity so old links + redirects resolve identically.
   trailingSlash: 'always',
   build: { format: 'directory' },
+  markdown: { processor: wordpressMarkdown() },
   integrations: [sitemap()],
   vite: {
     build: {

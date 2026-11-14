@@ -5,7 +5,7 @@
 import { render } from 'astro:content';
 import type { Entry } from '../lib/archive';
 import { tagSlug } from '../lib/slug';
-import { texturizeTitle } from '../lib/texturize';
+import { titleHtml } from '../lib/title';
 import { wpDay, wpTime } from '../lib/wpDate';
 import BaseHead from './BaseHead.astro';
 import Footer from './Footer.astro';
@@ -20,7 +20,7 @@ interface Props {
 	description: string;
 	/** HTML of the h2 heading (tag/year/day lists); omit on the home page */
 	heading?: string;
-	/** show the "Tipp" intro (home page only, like is_home()) */
+	/** show the foreword (home page and its pages 2+, like is_home()) */
 	intro?: boolean;
 	posts: Entry[];
 	/** URL of page 1 of this list */
@@ -45,9 +45,7 @@ const rendered = await Promise.all(
 
 		{
 			intro ? (
-				<Vorwort>
-					<p class="schwerpunkt">Das persönliche Weblog von Tobias Jordans — ein Archiv (2005–2010).</p>
-				</Vorwort>
+				<Vorwort />
 			) : (
 				<div id="vorwort">
 					<h2 id="dieUeberschrift" set:html={heading} />
@@ -69,7 +67,7 @@ const rendered = await Promise.all(
 								href={post.data.permalink}
 								rel="bookmark"
 								title="Artikel einzeln / Direkt-Link zu diesem Artikel."
-								set:html={texturizeTitle(post.data.title)}
+								set:html={titleHtml(post.data.title)}
 							/>
 						</h2>
 						<div class="post-content">

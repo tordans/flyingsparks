@@ -1,5 +1,5 @@
 ---
-title: "Tampondruck?!"
+title: "Tampondruck<del>?</del><ins>!</ins>"
 pubDate: "2005-09-18T16:55:35.000Z"
 updatedDate: "2021-12-27T18:50:42.000Z"
 slug: "tampondruck"

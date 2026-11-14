@@ -1,10 +1,20 @@
 ---
-// vorwort.php: the "Tipp" line (plus optional extra paragraphs via the slot).
+// vorwort.php of the original theme: the "Tipp" line with the feed links and
+// the foreword paragraph (the "Vorwort" page of the blog, printed verbatim).
+// Shown on the home page (also page 2+), single posts and pages; not on the
+// tag/year/day lists, which have their own heading.
+// The comments feed and the Diigo link list do not exist in the archive, so
+// those two stay plain text; the list of posts links to the RSS feed.
 ---
 
 <div id="vorwort">
 	<p class="rss">
-		Tipp: <a href="/rss.xml"><img src="/theme/rss-mini.gif" alt="RSS-Icon" width="13" height="13" /> RSS-Liste der Artikel</a>.
+		Tipp:
+		<a href="/rss.xml"><img src="/theme/rss-mini.gif" alt="RSS-Icon" width="13" height="13" /> RSS-Liste der Artikel</a>,
+		der Link-Empfehlungen
+		und Kommentare.
 	</p>
-	<slot />
+	<p class="schwerpunkt">
+Zu meinem <strong>Lieblingsthema 'User Experience'</strong> <a title="Über User Experience, von der nexum AG" href="http://uxzentrisch.de/">schreibe ich bei uxzentrisch.de</a>.<br />
+Was mich aktuell beschäftigt, könnt ihr bei <a href="http://www.twitter.com/tordans/">Twitter @tordans</a> und in meinen Links <a href="http://www.delicious.com/tordans/">Delicious/tordans/</a> lesen.	</p>
 </div>

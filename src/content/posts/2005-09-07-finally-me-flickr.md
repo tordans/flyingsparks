@@ -16,11 +16,11 @@ tags: ["fotografie", "tj"]
 Originally uploaded by <a href="http://www.flickr.com/people/59633324@N00/">tordans</a>.
 </span>
 <br clear="all" />
-<p>Heute bin ich <a href="http://wrede.interfacedesign.org/archives/940.html">per Zufall</a> zu <a href="http://www.flickr.com/tools/">dieser Anmeldeseite</a> gelangt und sah diese beiden dicken "Anmelde"-Button. Da ich ohnehin schon einen Yahoo-Account fÃ¼r einige Mailinglisten hatte, dachte ich mir, warum nicht doch einfach mal anmelden.<br />
+<p>Heute bin ich <a href="http://wrede.interfacedesign.org/archives/940.html">per Zufall</a> zu <a href="http://www.flickr.com/tools/">dieser Anmeldeseite</a> gelangt und sah diese beiden dicken "Anmelde"-Button. Da ich ohnehin schon einen Yahoo-Account für einige Mailinglisten hatte, dachte ich mir, warum nicht doch einfach mal anmelden.<br />
 <br />
 Meistens reicht es mir, Services wie Flickr von aussen zu beobachten -- unbeeinflusst vom Community-Geschehen bekommt man das Wichtigste mit, versteht die nötigen Zusammenhänge und Techniken und spart dabei einige Zeit...<br />
 <br />
 Na ja, das ist jetzt vorbei und als erste Amtshandlung in den Reihen der Flickeraner habe ich direkt mal zwei absolute Klischee-Standard-Fotos hochgeladen. Ich sage nur: Panorama, Sonnenuntergang.<br />
-Als nÃ¤chstes folgen dann ein paar Blumenfotos (vorne, oben, seitlich) und natÃ¼rlich meine Katze ;-)</p>
+Als nächstes folgen dann ein paar Blumenfotos (vorne, oben, seitlich) und natürlich meine Katze ;-)</p>
 
 PS: Der "Blogg"-Link und das zugehörige Templatesystem in Flickr funktionieren ja ganz gut. Nur die Umlaute werden geheckselt...

@@ -156,7 +156,7 @@ export async function getRecentComments(): Promise<RecentComment[]> {
     const text = excerpt(splitLongWords(plainText(comment.content)), budgetFor(author))
     return {
       href: `${post.data.permalink}#comment-${comment.id}`,
-      linkTitle: `${decodeEntities(post.data.title)}, ${ymd.format(post.data.pubDate)}`,
+      linkTitle: `${decodeEntities(post.data.title.replace(/<[^>]*>/g, ''))}, ${ymd.format(post.data.pubDate)}`,
       author,
       text,
     }
@@ -190,7 +190,7 @@ export async function getRecentTrackbacks(): Promise<RecentTrackback[]> {
     const shown = title ? excerpt(splitLongWords(title), budgetFor(author)) : text
     return {
       href: `${post.data.permalink}#comment-${comment.id}`,
-      linkTitle: `Trackback to "${decodeEntities(post.data.title)}": ${text}`,
+      linkTitle: `Trackback to "${decodeEntities(post.data.title.replace(/<[^>]*>/g, ''))}": ${text}`,
       author,
       text: shown,
     }

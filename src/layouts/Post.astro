@@ -10,6 +10,7 @@ import TagCloud from '../components/TagCloud.astro';
 import Vorwort from '../components/Vorwort.astro';
 import { SITE_TITLE } from '../consts';
 import { tagSlug } from '../lib/slug';
+import { titleHtml, titleText } from '../lib/title';
 import { timeSince, wpDay, wpTime } from '../lib/wpDate';
 
 type NavLink = { title: string; permalink: string };
@@ -46,7 +47,7 @@ const indent = '    ';
 <!doctype html>
 <html lang="de">
 	<head>
-		<BaseHead title={`${title} — ${SITE_TITLE}`} description={description ?? ''} />
+		<BaseHead title={`${titleText(title)} — ${SITE_TITLE}`} description={description ?? ''} />
 	</head>
 	<body id={bodyId} class="einzeln">
 		<Header variant={isPost ? 'single' : 'list'} />
@@ -61,14 +62,14 @@ const indent = '    ';
 							<div class="seite erste">
 								{prev && (
 									<>
-										&laquo; <a href={prev.permalink} rel="prev" set:html={prev.title} />
+										&laquo; <a href={prev.permalink} rel="prev" set:html={titleHtml(prev.title)} />
 									</>
 								)}
 							</div>
 							<div class="seite letzte">
 								{next && (
 									<>
-										<a href={next.permalink} rel="next" set:html={next.title} /> &raquo;
+										<a href={next.permalink} rel="next" set:html={titleHtml(next.title)} /> &raquo;
 									</>
 								)}
 							</div>
@@ -83,7 +84,7 @@ const indent = '    ';
 				<div class="einPost liste suche" id="tagsuche">
 					<div class="einPost postsingle" id={postId}>
 						<h2 class="posttitel">
-							<span set:html={title} />
+							<span set:html={titleHtml(title, { links: true })} />
 						</h2>
 						<div class="post-content">
 							<slot />
@@ -94,7 +95,7 @@ const indent = '    ';
 			) : (
 				<div class="einPost postsingle" id={postId}>
 					<h2 class="posttitel">
-						<span set:html={title} />
+						<span set:html={titleHtml(title, { links: true })} />
 					</h2>
 					<div class="post-content">
 						<slot />

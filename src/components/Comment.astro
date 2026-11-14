@@ -3,6 +3,7 @@
 // cByPostAuthor (orange), pingbacks cTypePingback (light blue).
 import postAuthorComments from '../data/post-author-comments.json';
 import { sanitizeComment } from '../lib/sanitize';
+import { texturizeHtml } from '../lib/texturize';
 import type { WpComment } from '../lib/wpComments';
 import { wpShortDate, wpTime } from '../lib/wpDate';
 
@@ -47,5 +48,5 @@ const linkAuthor = comment.type !== 'comment' && comment.authorUrl;
 			>
 		</cite>
 	</p>
-	<Fragment set:html={sanitizeComment(comment.content)} />
+	<Fragment set:html={texturizeHtml(sanitizeComment(comment.content))} />
 </li>

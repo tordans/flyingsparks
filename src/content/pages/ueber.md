@@ -1,5 +1,5 @@
 ---
-title: "flI-i[ng] 'spärks"
+title: "<a title=\"speak flying\" href=\"http://www.m-w.com/cgi-bin/audio.pl?flying01.wav=flying\">flI-i[ng]</a> <a title=\"speak sparks\" href=\"http://www.m-w.com/cgi-bin/audio.pl?ggspar01.wav=Sparks\">'spärks</a>"
 pubDate: "2005-12-08T17:04:23.000Z"
 updatedDate: "2010-12-09T12:45:27.000Z"
 slug: "ueber"
@@ -22,6 +22,6 @@ Das persönliche Weblog von Tobias Jordans.
 Funken verglühen mit der Zeit. Sie werden dunkler und fallen zu Boden. Ähnlich ist es mit Weblogbeiträgen: Nur die aktuellen Beiträge werden beachtet. Ältere fallen, wenn sie nicht aktualisiert werden, ins virtuelle Archiv.<br>
 Mehr über die FP-Systematik in meinem Post <a href="http://flyingsparks.wwwfiles.de/2005-06-25/das-feuer-brennt-hoher/">über die Header-Grafik</a>.
 
-<strong>Mehr über mich:</strong> [www.tobiasjordans.de](http://www.tobiasjordans.de)
+<strong>Mehr über mich:</strong> <a href="http://www.tobiasjordans.de">www.tobiasjordans.de</a>
 
 <strong>Kontakt &amp; Impressum:</strong> Tobias Jordans * Böhmische Straße 54 * 12055 Berlin * t@tobiasjordans.de

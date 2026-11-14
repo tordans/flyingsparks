@@ -1,5 +1,5 @@
 ---
-title: "Bitte ein Bitschen Bolzplatz"
+title: "Bitte ein Bit<del>s</del>chen Bolzplatz"
 pubDate: "2005-05-02T18:21:33.000Z"
 updatedDate: "2021-12-27T18:50:44.000Z"
 slug: "bolzplatz-aktion"
