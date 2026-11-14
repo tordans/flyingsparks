@@ -35,19 +35,26 @@ const { name, posts } = Astro.props;
 	<head>
 		<BaseHead title={`Thema: ${name} — ${SITE_TITLE}`} description={`Alle Funken zum Thema ${name}`} />
 	</head>
-	<body id="page" class="content">
+	<body id="index" class="liste">
 		<Header variant="list" />
-		<h2 id="dieUeberschrift" class="page-title">Alle Funken für das Thema <strong>{name}</strong> ({posts.length})</h2>
-		<ul class="post-index">
-			{
-				posts.map((p) => (
-					<li>
-						<a href={p.data.permalink}>{p.data.title}</a>
-						<FormattedDate date={p.data.pubDate} />
-					</li>
-				))
-			}
-		</ul>
+		<div id="vorwort">
+			<h2 id="dieUeberschrift">Alle Funken für das Thema <strong>{name}</strong>:</h2>
+		</div>
+		<div class="einPost">
+			<div class="post-content">
+				<ul class="post-index">
+					{
+						posts.map((p) => (
+							<li>
+								<a href={p.data.permalink}>{p.data.title}</a>
+								<FormattedDate date={p.data.pubDate} />
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+		<div class="einPostMeta"></div>
 		<Sidebar />
 		<Footer />
 	</body>

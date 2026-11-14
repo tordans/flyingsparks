@@ -1,0 +1,16 @@
+---
+// searchform.php: label, text input, submit. Wired to the client-side /suche/ page.
+interface Props {
+	inputId?: string;
+	value?: string;
+}
+const { inputId = 's', value = '' } = Astro.props;
+---
+
+<form class="suchfeld" method="get" action="/suche/">
+	<div>
+		<label class="dynamic" for={inputId}>Suchwort</label>{' '}
+		<input class="sucheingabe" type="text" name="q" id={inputId} value={value} />{' '}
+		<input class="suchbutton" type="submit" value="suchen" />
+	</div>
+</form>

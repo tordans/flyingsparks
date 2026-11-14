@@ -14,18 +14,30 @@ export async function getStaticPaths() {
 		...pages.map((entry) => ({ entry, type: 'page' as const })),
 	].filter(({ entry }) => entry.data.permalink);
 
+	// Previous/next post links (single.php): published posts in chronological order.
+	const chrono = posts
+		.filter((p) => p.data.permalink)
+		.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+	const nav = (p?: (typeof posts)[number]) =>
+		p ? { title: p.data.title, permalink: p.data.permalink! } : undefined;
+
 	const seen = new Set<string>();
 	const paths = [];
 	for (const { entry, type } of entries) {
 		const permalink = entry.data.permalink!.replace(/^\/|\/$/g, '');
 		if (seen.has(permalink)) continue;
 		seen.add(permalink);
-		paths.push({ params: { permalink }, props: { entry, type } });
+		const i = type === 'post' ? chrono.indexOf(entry as (typeof posts)[number]) : -1;
+		const kind = type === 'post' ? 'post' : permalink === 'themen-liste' ? 'tags' : 'page';
+		paths.push({
+			params: { permalink },
+			props: { entry, kind, prev: i > -1 ? nav(chrono[i - 1]) : undefined, next: i > -1 ? nav(chrono[i + 1]) : undefined },
+		});
 	}
 	return paths;
 }
 
-const { entry, type } = Astro.props;
+const { entry, kind, prev, next } = Astro.props;
 const { Content } = await render(entry);
 const { title, description, pubDate, updatedDate, tags, wpPostId } = entry.data;
 ---
@@ -37,7 +49,9 @@ const { title, description, pubDate, updatedDate, tags, wpPostId } = entry.data;
 	updatedDate={updatedDate}
 	tags={tags}
 	wpPostId={wpPostId}
-	kind={type}
+	kind={kind as 'post' | 'page' | 'tags'}
+	prev={prev}
+	next={next}
 >
 	<Content />
 </Post>

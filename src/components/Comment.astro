@@ -1,37 +1,51 @@
 ---
-// Recursive single comment (read-only). Renders its threaded replies via self-import.
-import Self from './Comment.astro';
-import FormattedDate from './FormattedDate.astro';
+// One comment of the flat list (comments.php markup). Post-author comments get
+// cByPostAuthor (orange), pingbacks cTypePingback (light blue).
+import postAuthorComments from '../data/post-author-comments.json';
 import { sanitizeComment } from '../lib/sanitize';
 import type { WpComment } from '../lib/wpComments';
+import { wpShortDate, wpTime } from '../lib/wpDate';
 
 interface Props {
 	comment: WpComment;
-	byParent: Record<string, WpComment[]>;
+	odd: boolean;
 }
-const { comment, byParent } = Astro.props;
-const children = byParent[comment.id] ?? [];
+const { comment, odd } = Astro.props;
+const byAuthor = (postAuthorComments as string[]).includes(comment.id);
+const type = { comment: 'Kommentar', pingback: 'Pingback', trackback: 'Trackback' }[comment.type] ?? 'Kommentar';
+const date = comment.date ? new Date(comment.date) : undefined;
+// comment_author_url_link(): URL without scheme, "www." and trailing slash.
+const urlText = (comment.authorUrl ?? '')
+	.replace(/^https?:\/\/(www\.)?/, '')
+	.replace(/\/$/, '');
+const linkAuthor = comment.type !== 'comment' && comment.authorUrl;
 ---
 
-<li class="comment" id={`comment-${comment.id}`}>
-	<div class="comment-meta">
-		{
-			comment.authorUrl ? (
-				<a class="comment-author" href={comment.authorUrl} rel="nofollow noopener ugc">{comment.author}</a>
-			) : (
-				<span class="comment-author">{comment.author}</span>
-			)
-		}
-		{comment.date && <FormattedDate date={new Date(comment.date)} />}
-	</div>
-	<div class="comment-body" set:html={sanitizeComment(comment.content)} />
-	{
-		children.length > 0 && (
-			<ol class="comment-children">
-				{children.map((child) => (
-					<Self comment={child} byParent={byParent} />
-				))}
-			</ol>
-		)
-	}
+<li
+	class={`cStyle${odd ? 'A' : 'B'} ${byAuthor ? 'cByPostAuthor' : 'cByGuest'} cType${type}`}
+	id={`comment-${comment.id}`}
+>
+	<p>
+		<cite>
+			<span class="cAuthor" title="zur Homepage des Autors"
+				>{
+					linkAuthor ? (
+						<a href={comment.authorUrl} class="url" rel="ugc external nofollow">{comment.author}</a>
+					) : (
+						comment.author
+					)
+				} ({
+					comment.authorUrl && (
+						<a href={comment.authorUrl} rel="ugc external nofollow">{urlText}</a>
+					)
+				})</span
+			>{' '}
+			{date && wpShortDate(date)}{' '}
+			{date && <span class="showOnHover">{wpTime(date)}</span>}{' '}
+			<span class="showOnHover"
+				><a href={`#comment-${comment.id}`} title="Direkter Link zu diesem Kommentar">Direktlink</a></span
+			>
+		</cite>
+	</p>
+	<Fragment set:html={sanitizeComment(comment.content)} />
 </li>

@@ -26,24 +26,31 @@ const years = [...byYear.keys()].sort((a, b) => b - a);
 	<head>
 		<BaseHead title={`Archiv — ${SITE_TITLE}`} description={`Alle ${posts.length} Beiträge`} />
 	</head>
-	<body id="page" class="content">
+	<body id="index" class="liste">
 		<Header variant="list" />
-		<h2 id="dieUeberschrift" class="page-title">Archiv — alle {posts.length} Beiträge</h2>
-		{
-			years.map((y) => (
-				<section>
-					<h3 class="archiv-jahr">{y}</h3>
-					<ul class="post-index">
-						{byYear.get(y)!.map((p) => (
-							<li>
-								<a href={p.data.permalink}>{p.data.title}</a>
-								<FormattedDate date={p.data.pubDate} />
-							</li>
-						))}
-					</ul>
-				</section>
-			))
-		}
+		<div id="vorwort">
+			<h2 id="dieUeberschrift">Archiv — alle {posts.length} Funken:</h2>
+		</div>
+		<div class="einPost">
+			<div class="post-content">
+				{
+					years.map((y) => (
+						<>
+							<h2 class="archiv-jahr">{y}</h2>
+							<ul class="post-index">
+								{byYear.get(y)!.map((p) => (
+									<li>
+										<a href={p.data.permalink}>{p.data.title}</a>
+										<FormattedDate date={p.data.pubDate} />
+									</li>
+								))}
+							</ul>
+						</>
+					))
+				}
+			</div>
+		</div>
+		<div class="einPostMeta"></div>
 		<Sidebar />
 		<Footer />
 	</body>

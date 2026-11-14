@@ -1,19 +1,25 @@
 ---
-// Faithful recreation of the original sidebar: back-to-top + search box.
-// (The original AJAX timeline + blogroll widgets were dynamic; search is wired to
-//  a client-side index on the /suche/ page.)
+// sidebar.php: back-to-top + search box. Single posts (single.php) show only the
+// search box. The original timeline, blogroll and recent-comments widgets were
+// dynamic and are not part of the archive.
+import SearchForm from './SearchForm.astro';
+
+interface Props {
+	nachOben?: boolean;
+}
+const { nachOben = true } = Astro.props;
 ---
 
 <div id="sidebar">
-	<p class="nachOben"><a href="#oben">zurück nach oben</a></p>
+	{
+		nachOben && (
+			<p class="nachOben">
+				<a href="#oben">zurück nach oben</a>
+			</p>
+		)
+	}
 	<div class="suche">
 		<a id="suche"></a>
-		<form class="suchfeld" method="get" action="/suche/">
-			<div>
-				<label class="dynamic" for="s">Suchwort</label>
-				<input class="sucheingabe" type="search" name="q" id="s" placeholder="Beiträge durchsuchen…" />
-				<input class="suchbutton" type="submit" value="suchen" />
-			</div>
-		</form>
+		<SearchForm />
 	</div>
 </div>

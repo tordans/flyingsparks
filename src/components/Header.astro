@@ -4,17 +4,19 @@ import { tagSlug } from '../lib/slug';
 import FunkenHero from './FunkenHero.astro';
 
 interface Props {
-	variant?: 'single' | 'list';
+	variant?: 'single' | 'list' | 'search';
 }
 const { variant = 'list' } = Astro.props;
 
-// Tag cloud: most-used tags (original used wp_tag_cloud, 12 tags).
+// Tag list like the original wp_tag_cloud(number=12, orderby="count"): the 12 most-used
+// tags, shown from least to most used.
 const posts = await getCollection('posts', ({ data }) => !data.draft);
 const counts: Record<string, number> = {};
 for (const p of posts) for (const t of p.data.tags) counts[t] = (counts[t] ?? 0) + 1;
 const topTags = Object.entries(counts)
-	.sort((a, b) => b[1] - a[1])
+	.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
 	.slice(0, 12)
+	.sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]))
 	.map(([t]) => t);
 ---
 
@@ -26,31 +28,49 @@ const topTags = Object.entries(counts)
 	<div id="absender">
 		<h1>
 			<a id="startseite" href="/" title="Zur Startseite."
-				><img src="/theme/flyingsparks-logo.gif" alt="flying sparks" width="180" /></a
+				><img src="/theme/flyingsparks-logo.gif" alt="flying sparks" width="187" height="69" /></a
+			>{' '}
+			<span class="ueber"
+				>ein Weblog von <a class="headlink" href="/ueber/" title="über dieses Weblog">Tobias Jordans</a> zu
+				den Themen</span
+			>{' '}
+			<span class="tags"
+				>{
+					topTags.map((t) => (
+						<><a href={`/tag/${tagSlug(t)}/`} title={`alle Funken zum Thema ${t}`}>{t}</a>{' '}</>
+					))
+				}// <a class="headlink alleTags" href="/themen-liste/"><strong>alle Themen...</strong></a></span
 			>
-			<span class="ueber">ein Weblog von <a class="headlink" href="/ueber/" title="über dieses Weblog">Tobias Jordans</a> zu den Themen</span>
-			<span class="tags">
-				{topTags.map((t) => (
-					<a class="headlink" href={`/tag/${tagSlug(t)}/`} title={`alle Funken zum Thema ${t}`}>{t}</a>
-				))}
-				<a class="headlink alleTags" href="/themen-liste/"><strong>alle Themen…</strong></a>
-			</span>
 		</h1>
 	</div>
 </div>
 <div id="linkDown" class="einPostMeta">
 	<ul>
-		{variant === 'single' ? (
-			<>
-				<li><a href="#kommentare">Kommentare lesen</a></li>
-				<li><a href="#suche">Suche</a></li>
-			</>
-		) : (
-			<>
-				<li><a href="#suche">Suche</a></li>
-				<li><a href="/archiv/">Archiv</a></li>
-				<li><a href="/themen-liste/">Themen</a></li>
-			</>
-		)}
+		{
+			variant === 'single' ? (
+				<>
+					<li>
+						<a href="#kommentare">Kommentare lesen</a>
+					</li>
+					<li>
+						<a href="#suche">Suche</a>
+					</li>
+				</>
+			) : (
+				<>
+					{variant !== 'search' && (
+						<li>
+							<a href="#suche">Suche</a>
+						</li>
+					)}
+					<li>
+						<a href="/archiv/">Archiv</a>
+					</li>
+					<li>
+						<a href="/themen-liste/">Themen</a>
+					</li>
+				</>
+			)
+		}
 	</ul>
 </div>

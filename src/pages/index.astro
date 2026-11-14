@@ -4,8 +4,9 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Sidebar from '../components/Sidebar.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import Vorwort from '../components/Vorwort.astro';
 import { tagSlug } from '../lib/slug';
+import { wpDay, wpTime } from '../lib/wpDate';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -19,15 +20,12 @@ const recent = posts.slice(0, 15);
 	<head>
 		<BaseHead title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION} />
 	</head>
-	<body id="home" class="content">
+	<body id="index" class="liste">
 		<Header variant="list" />
 
-		<div id="vorwort">
-			<p class="rss">
-				Tipp: <a href="/rss.xml">RSS-Liste der Artikel</a>.
-			</p>
+		<Vorwort>
 			<p class="schwerpunkt">Das persönliche Weblog von Tobias Jordans — ein Archiv (2005–2010).</p>
-		</div>
+		</Vorwort>
 
 		{
 			recent.map((post, i) => (
@@ -45,11 +43,13 @@ const recent = posts.slice(0, 15);
 					</article>
 					<aside class="einPostMeta">
 						<ul>
-							<li class="time"><FormattedDate date={post.data.pubDate} /></li>
+							<li class="time">
+								{wpDay(post.data.pubDate)} &lowast; {wpTime(post.data.pubDate)}
+							</li>
 							{post.data.tags.length > 0 && (
 								<li class="themen">
 									Themen:{' '}
-									{post.data.tags.slice(0, 5).map((t, j) => (
+									{post.data.tags.map((t, j) => (
 										<>
 											{j > 0 && ', '}
 											<a href={`/tag/${tagSlug(t)}/`}>{t}</a>

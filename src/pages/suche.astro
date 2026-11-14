@@ -1,9 +1,10 @@
 ---
-// Client-side title search over the /funken.json index. The sidebar search form
-// submits here (GET ?q=…). Title-only (lightweight); full-text could use Pagefind.
+// Search results like search.php: the search form sits in the page heading.
+// Client-side title search over the /funken.json index (title-only, lightweight).
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import SearchForm from '../components/SearchForm.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { SITE_TITLE } from '../consts';
 ---
@@ -13,27 +14,31 @@ import { SITE_TITLE } from '../consts';
 	<head>
 		<BaseHead title={`Suche — ${SITE_TITLE}`} description="Beiträge durchsuchen" />
 	</head>
-	<body id="page" class="content">
-		<Header variant="list" />
-		<h2 id="dieUeberschrift" class="page-title">Suche</h2>
-		<div class="post-content" style="background:#fff;padding:15px;">
-			<form id="suche-form" method="get" action="/suche/">
-				<input type="search" id="suche-input" name="q" placeholder="Suchwort…" style="font-size:1.2em;padding:4px;width:60%;" />
-				<button type="submit">suchen</button>
-			</form>
-			<p id="suche-status" style="color:gray;margin-top:10px;"></p>
-			<ul class="post-index" id="suche-results"></ul>
+	<body id="search" class="liste">
+		<Header variant="search" />
+		<div id="vorwort">
+			<h2 id="dieUeberschrift">
+				<SearchForm inputId="suche-input" />
+			</h2>
 		</div>
+		<div class="einPost">
+			<div class="post-content">
+				<p id="suche-status"></p>
+				<ul class="post-index" id="suche-results"></ul>
+			</div>
+		</div>
+		<div class="einPostMeta"></div>
 		<Sidebar />
 		<Footer />
 
 		<script>
 			const params = new URLSearchParams(location.search);
 			const q = (params.get('q') || '').trim();
-			const input = document.getElementById('suche-input') as HTMLInputElement | null;
 			const status = document.getElementById('suche-status');
 			const results = document.getElementById('suche-results');
-			if (input) input.value = q;
+			document.querySelectorAll<HTMLInputElement>('input[name="q"]').forEach((input) => {
+				input.value = q;
+			});
 
 			if (q && status && results) {
 				const esc = (s: string) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c] as string);

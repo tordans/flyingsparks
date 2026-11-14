@@ -1,12 +1,18 @@
 ---
+// single.php (posts), page.php (pages) and tag-liste.php (Themen-Liste) of the
+// original theme.
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Sidebar from '../components/Sidebar.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Comments from '../components/Comments.astro';
-import { tagSlug } from '../lib/slug';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Sidebar from '../components/Sidebar.astro';
+import TagCloud from '../components/TagCloud.astro';
+import Vorwort from '../components/Vorwort.astro';
 import { SITE_TITLE } from '../consts';
+import { tagSlug } from '../lib/slug';
+import { timeSince, wpDay, wpTime } from '../lib/wpDate';
+
+type NavLink = { title: string; permalink: string };
 
 interface Props {
 	title: string;
@@ -15,10 +21,26 @@ interface Props {
 	updatedDate?: Date;
 	tags?: string[];
 	wpPostId?: string;
-	kind?: 'post' | 'page';
+	kind?: 'post' | 'page' | 'tags';
+	prev?: NavLink;
+	next?: NavLink;
 }
-const { title, description, pubDate, updatedDate, tags = [], wpPostId, kind = 'post' } = Astro.props;
+const {
+	title,
+	description,
+	pubDate,
+	updatedDate,
+	tags = [],
+	wpPostId,
+	kind = 'post',
+	prev,
+	next,
+} = Astro.props;
 const isPost = kind === 'post';
+const bodyId = { post: 'single', page: 'page', tags: 'tags' }[kind];
+const postId = `post${wpPostId ?? ''}`;
+// 4× &nbsp; indent of the date lines in the meta column.
+const indent = '    ';
 ---
 
 <!doctype html>
@@ -26,57 +48,107 @@ const isPost = kind === 'post';
 	<head>
 		<BaseHead title={`${title} — ${SITE_TITLE}`} description={description ?? ''} />
 	</head>
-	<body id={isPost ? 'single' : 'page'} class={isPost ? 'einzeln' : 'content'}>
-		<Header variant="single" />
+	<body id={bodyId} class="einzeln">
+		<Header variant={isPost ? 'single' : 'list'} />
 
-		<div id="vorwort">
-			<p class="rss">
-				Tipp: <a href="/rss.xml">RSS-Liste der Artikel</a>.
-			</p>
-		</div>
+		<Vorwort />
 
-		<article class="einPost postsingle" id={`post${wpPostId ?? ''}`}>
-			<h2 class="posttitel"><span set:html={title} /></h2>
-			<div class="post-content">
-				<slot />
-			</div>
-			{
-				tags.length > 0 && (
-					<div class="post-tags">
-						<strong>Themen:</strong>{' '}
-						{tags.map((t, i) => (
-							<>
-								{i > 0 && ', '}
-								<a class="tag" href={`/tag/${tagSlug(t)}/`}>{t}</a>
-							</>
-						))}
+		{
+			isPost && (
+				<div id="infoblock" class="einPost">
+					<div class="seitennavigation">
+						<div class="tr">
+							<div class="seite erste">
+								{prev && (
+									<>
+										&laquo; <a href={prev.permalink} rel="prev" set:html={prev.title} />
+									</>
+								)}
+							</div>
+							<div class="seite letzte">
+								{next && (
+									<>
+										<a href={next.permalink} rel="next" set:html={next.title} /> &raquo;
+									</>
+								)}
+							</div>
+						</div>
 					</div>
+				</div>
+			)
+		}
+
+		{
+			kind === 'tags' ? (
+				<div class="einPost liste suche" id="tagsuche">
+					<div class="einPost postsingle" id={postId}>
+						<h2 class="posttitel">
+							<span set:html={title} />
+						</h2>
+						<div class="post-content">
+							<slot />
+							<TagCloud />
+						</div>
+					</div>
+				</div>
+			) : (
+				<div class="einPost postsingle" id={postId}>
+					<h2 class="posttitel">
+						<span set:html={title} />
+					</h2>
+					<div class="post-content">
+						<slot />
+					</div>
+				</div>
+			)
+		}
+
+		<div class="einPostMeta" id={`${postId}Meta`}>
+			{
+				kind !== 'tags' && (
+					<ul>
+						{isPost && (
+							<li>
+								<span class="post-themen">
+									&lowast; <strong>Themen:</strong>{' '}
+									{tags.map((t, i) => (
+										<>
+											{i > 0 && ', '}
+											<a href={`/tag/${tagSlug(t)}/`} rel="tag">{t}</a>
+										</>
+									))}
+								</span>
+							</li>
+						)}
+						<li>
+							&lowast; <strong>Flugzeit:</strong> {timeSince(pubDate)}
+						</li>
+						<li>
+							&lowast; <strong>abgehoben am:</strong> <br />
+							{indent}
+							<span title="Erstellungsdatum">
+								{wpDay(pubDate)} &lowast; {wpTime(pubDate)}
+							</span>
+						</li>
+						{updatedDate && updatedDate.getTime() !== pubDate.getTime() && (
+							<li>
+								&lowast; <strong>letzter Aufwind:</strong> <br />
+								{indent}
+								<span title="letzte Bearbeitung">
+									{wpDay(updatedDate)} &lowast; {wpTime(updatedDate, true)}
+								</span>
+							</li>
+						)}
+					</ul>
 				)
 			}
-		</article>
-
-		<aside class="einPostMeta" id={`post${wpPostId ?? ''}Meta`}>
-			<ul>
-				<li>
-					&lowast; <strong>abgehoben am:</strong><br />
-					<FormattedDate date={pubDate} />
-				</li>
-				{
-					updatedDate && (
-						<li>
-							&lowast; <strong>letzter Aufwind:</strong><br />
-							<FormattedDate date={updatedDate} />
-						</li>
-					)
-				}
-			</ul>
-		</aside>
+		</div>
 
 		<div class="clear"></div>
 
-		{isPost && <div id="kommentare"><Comments postId={wpPostId} /></div>}
+		{isPost && <Comments postId={wpPostId} />}
 
-		<Sidebar />
+		<Sidebar nachOben={!isPost} />
 		<Footer />
 	</body>
 </html>
