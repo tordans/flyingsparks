@@ -5,6 +5,7 @@ slug: "datenschutz"
 permalink: "/datenschutz/"
 visibility: "public"
 draft: false
+noindex: true
 tags: []
 ---
 Diese Website ist ein statisches Archiv. Sie erfasst und speichert selbst keine personenbezogenen Daten. Es gibt kein Tracking, keine Cookies und kein Kommentarformular.

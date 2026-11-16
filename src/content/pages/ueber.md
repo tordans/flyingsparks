@@ -7,6 +7,7 @@ wpPostId: "238"
 permalink: "/ueber/"
 visibility: "public"
 draft: false
+noindex: true
 tags: ["tj"]
 ---
 Das persönliche Weblog von Tobias Jordans.

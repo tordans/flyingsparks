@@ -16,6 +16,8 @@ const wpSchema = z.object({
   draft: z.boolean().default(false),
   description: z.string().optional(),
   tags: z.array(z.string()).default([]),
+  // Keep the page out of search engines (robots noindex + not in the sitemap).
+  noindex: z.boolean().default(false),
 })
 
 const posts = defineCollection({

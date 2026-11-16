@@ -39,7 +39,7 @@ export async function getStaticPaths() {
 
 const { entry, kind, prev, next } = Astro.props;
 const { Content } = await render(entry);
-const { title, description, pubDate, updatedDate, tags, wpPostId } = entry.data;
+const { title, description, pubDate, updatedDate, tags, wpPostId, noindex } = entry.data;
 ---
 
 <Post
@@ -52,6 +52,7 @@ const { title, description, pubDate, updatedDate, tags, wpPostId } = entry.data;
 	kind={kind as 'post' | 'page' | 'tags'}
 	prev={prev}
 	next={next}
+	noindex={noindex}
 >
 	<Content />
 </Post>

@@ -15,7 +15,12 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   markdown: { processor: wordpressMarkdown() },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // Pages with `noindex: true` in their frontmatter.
+      filter: (page) => !['/ueber/', '/datenschutz/'].some((path) => page.endsWith(path)),
+    }),
+  ],
   vite: {
     build: {
       target: browserslistToEsbuild(),

@@ -25,6 +25,7 @@ interface Props {
 	kind?: 'post' | 'page' | 'tags';
 	prev?: NavLink;
 	next?: NavLink;
+	noindex?: boolean;
 }
 const {
 	title,
@@ -36,6 +37,7 @@ const {
 	kind = 'post',
 	prev,
 	next,
+	noindex = false,
 } = Astro.props;
 const isPost = kind === 'post';
 const bodyId = { post: 'single', page: 'page', tags: 'tags' }[kind];
@@ -47,7 +49,7 @@ const indent = '    ';
 <!doctype html>
 <html lang="de">
 	<head>
-		<BaseHead title={`${titleText(title)} — ${SITE_TITLE}`} description={description ?? ''} />
+		<BaseHead title={`${titleText(title)} — ${SITE_TITLE}`} description={description ?? ''} noindex={noindex} />
 	</head>
 	<body id={bodyId} class="einzeln">
 		<Header variant={isPost ? 'single' : 'list'} />
