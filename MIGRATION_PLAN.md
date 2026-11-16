@@ -77,7 +77,6 @@ public/
   wp-content/uploads/...   # media kept at original paths → 1:1 URL parity
 _migration/
   layout-reference/        # crawled original HTML + theme CSS (reference)
-  archive/comments-nonpublic.ndjson   # preserved, not built
   scripts/import-wxr.mjs   # the importer
 ```
 
@@ -118,8 +117,9 @@ iframe or the placeholder.
 
 - Approved (753): `src/data/comments/<post-slug>.json` — author (no email),
   date, content (sanitized), parent id (threading). Rendered read-only.
-- Non-public (31 + any admin-only): `_migration/archive/comments-nonpublic.ndjson`
-  — preserved, never built into the site.
+- Non-public (31): all were spam and are not kept in the repo. Re-running the
+  importer writes them to `_migration/archive/comments-nonpublic.ndjson` again —
+  don't commit that file.
 
 ---
 
